@@ -56,13 +56,6 @@ proxy-groups:
     interval: 300
     strategy: consistent-hashing
     proxies:
-    
-  - name: 🚀 节点选择
-    type: select
-    proxies:
-      - ♻️ 自动选择
-      - ⚖ 负载均衡
-      - ☁ WARP
 
   - name: ☁ WARP前置节点
     type: select
@@ -75,11 +68,9 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - ⚖ 负载均衡
-      - 🚀 节点选择
       - ☁ WARP
 
 rules:
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,🌍 选择代理
-  
