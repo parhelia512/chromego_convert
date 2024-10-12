@@ -24,42 +24,6 @@ dns:
     geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
-proxy-groups:
-  - name: ♻️ 自动选择
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    proxies:
-      - RU 🇷🇺-hysteria | 0-1
-      - RU 🇷🇺-Hysteria | 0-0
-      - RU 🇷🇺-Hysteria2 | 0-0
-      - 🏳 CloudFlare-vmess | 0-0
-      - 🏳 CloudFlare-vmess | 1-0
-      - 🏳 CloudFlare-vmess | 2-0
-      - 🏳 CloudFlare-vmess | 3-0
-  - name: ⚖ 负载均衡
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    strategy: consistent-hashing
-    proxies:
-      - RU 🇷🇺-hysteria | 0-1
-      - RU 🇷🇺-Hysteria | 0-0
-      - RU 🇷🇺-Hysteria2 | 0-0
-      - 🏳 CloudFlare-vmess | 0-0
-      - 🏳 CloudFlare-vmess | 1-0
-      - 🏳 CloudFlare-vmess | 2-0
-      - 🏳 CloudFlare-vmess | 3-0
-  - name: 🌍 选择代理
-    type: select
-    proxies:
-      - ♻️ 自动选择
-      - ⚖ 负载均衡
-rules:
-  - GEOIP,LAN,DIRECT
-  - GEOIP,CN,DIRECT
-  - MATCH,🌍 选择代理
 proxies:
   - name: RU 🇷🇺-hysteria | 0-1
     type: hysteria
@@ -173,3 +137,39 @@ proxies:
     h2-opts:
       path: /
       host: []
+proxy-groups:
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - RU 🇷🇺-hysteria | 0-1
+      - RU 🇷🇺-Hysteria | 0-0
+      - RU 🇷🇺-Hysteria2 | 0-0
+      - 🏳 CloudFlare-vmess | 0-0
+      - 🏳 CloudFlare-vmess | 1-0
+      - 🏳 CloudFlare-vmess | 2-0
+      - 🏳 CloudFlare-vmess | 3-0
+  - name: ⚖ 负载均衡
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    strategy: consistent-hashing
+    proxies:
+      - RU 🇷🇺-hysteria | 0-1
+      - RU 🇷🇺-Hysteria | 0-0
+      - RU 🇷🇺-Hysteria2 | 0-0
+      - 🏳 CloudFlare-vmess | 0-0
+      - 🏳 CloudFlare-vmess | 1-0
+      - 🏳 CloudFlare-vmess | 2-0
+      - 🏳 CloudFlare-vmess | 3-0
+  - name: 🌍 选择代理
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - ⚖ 负载均衡
+rules:
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,🌍 选择代理
