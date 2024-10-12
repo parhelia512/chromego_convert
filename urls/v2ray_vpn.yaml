@@ -105,14 +105,7 @@ proxies:
     skip-cert-verify: true
     ws-opts:
       path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
-  - name: 🇺🇸 US-Hysteria2
-    type: hysteria2
-    server: 207.90.239.157
-    port: 11276
-    password: dongtaiwang.com
-    sni: www.bing.com
-    skip-cert-verify: true
-    
+      
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -124,7 +117,7 @@ proxy-groups:
       - fr1a
       - us2a
       - us3a
-      - 🇺🇸 US-Hysteria2
+      
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -137,7 +130,7 @@ proxy-groups:
       - fr1a
       - us2a
       - us3a
-      - 🇺🇸 US-Hysteria2
+      
   - name: 🌍 选择代理
     type: select
     proxies:
