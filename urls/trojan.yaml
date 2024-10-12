@@ -1,48 +1,29 @@
-mixed-port: 7890
+port: 7890
 allow-lan: true
 mode: rule
-ipv6: true
 log-level: info
-external-controller: 0.0.0.0:9090
+unified-delay: true
+global-client-fingerprint: chrome
 dns:
   enable: true
-  listen: 0.0.0.0:53
+  listen: :53
   ipv6: true
-  default-nameserver:
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver: 
     - 223.5.5.5
     - 180.76.76.76
   nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-    - 180.76.76.76
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - "*.lan"
-    - "*.localdomain"
-    - "*.example"
-    - "*.invalid"
-    - "*.localhost"
-    - "*.test"
-    - "*.local"
-    - "*.home.arpa"
-    - router.asus.com
-    - localhost.sec.qq.com
-    - localhost.ptlogin2.qq.com
-    - +.msftconnecttest.com
-tun:
-  enable: true
-  stack: system
-  auto-route: true
-  auto-detect-interface: true
-  dns-hijack:
-    - 180.76.76.76
-    - 119.29.29.29
-    - 223.5.5.5
-    - 8.8.8.8
-    - 8.8.4.4
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  fallback:
     - 1.1.1.1
-    - 1.0.0.1
+    - 8.8.8.8
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
 proxies:
   - name: ru1a
     port: 443
