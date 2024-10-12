@@ -13,6 +13,7 @@ dns:
   default-nameserver:
   - 223.5.5.5
   - 180.76.76.76
+  - 8.8.8.8
   nameserver:
   - https://dns.alidns.com/dns-query
   - https://doh.pub/dns-query
