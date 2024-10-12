@@ -182,19 +182,6 @@ proxy-groups:
       - 🏳 CloudFlare-vmess | 1-0
       - 🏳 CloudFlare-vmess | 2-0
       - 🏳 CloudFlare-vmess | 3-0
-  - name: 🚀 节点选择
-    type: select
-    proxies:
-      - ♻️ 自动选择
-      - ⚖ 负载均衡
-      - ☁ WARP
-      - RU 🇷🇺-hysteria | 0-1
-      - RU 🇷🇺-Hysteria | 0-0
-      - RU 🇷🇺-Hysteria2 | 0-0
-      - 🏳 CloudFlare-vmess | 0-0
-      - 🏳 CloudFlare-vmess | 1-0
-      - 🏳 CloudFlare-vmess | 2-0
-      - 🏳 CloudFlare-vmess | 3-0
   - name: ☁ WARP前置节点
     type: select
     proxies:
@@ -205,7 +192,6 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - ⚖ 负载均衡
-      - 🚀 节点选择
       - ☁ WARP
 rules:
   - GEOIP,LAN,DIRECT
