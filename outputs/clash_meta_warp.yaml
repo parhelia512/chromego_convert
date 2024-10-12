@@ -54,6 +54,156 @@ proxies:
     skip-cert-verify: true
     up: 11 Mbps
     down: 55 Mbps
+  - name: CloudFlare 🇨🇱-trojan | 2-1
+    type: trojan
+    server: cf.zerone-cdn.pp.ua
+    port: 443
+    password: 2281ea89-805f-45fa-8902-6e4ad0e26666
+    udp: false
+    sni: trojan.freews.eu.org
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: trojan.freews.eu.org
+  - name: CloudFlare 🇨🇱-trojan | 2-2
+    type: trojan
+    server: cmcc.090227.xyz
+    port: 8443
+    password: 2281ea89-805f-45fa-8902-6e4ad0e26666
+    udp: false
+    sni: trojan.freews.eu.org
+    network: ws}
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: trojan.freews.eu.org
+  - name: CloudFlare 🇨🇱-trojan | 2-3
+    type: trojan
+    server: cdn.2020111.xyz
+    port: 2053
+    password: 2281ea89-805f-45fa-8902-6e4ad0e26666
+    udp: false
+    sni: trojan.freews.eu.org
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: trojan.freews.eu.org
+  - name: CloudFlare 🇨🇱-trojan | 2-4
+    type: trojan
+    server: cfip.cfcdn.vip
+    port: 2083
+    password: 2281ea89-805f-45fa-8902-6e4ad0e26666
+    udp: false
+    sni: trojan.freews.eu.org
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: trojan.freews.eu.org
+  - name: CloudFlare 🇨🇱-trojan | 2-5
+    type: trojan
+    server: 115155.xyz
+    port: 2087
+    password: 2281ea89-805f-45fa-8902-6e4ad0e26666
+    udp: false
+    sni: trojan.freews.eu.org
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: trojan.freews.eu.org
+  - name: CloudFlare 🇨🇱-trojan | 2-6
+    type: trojan
+    server: cloudflare.182682.xyz
+    port: 2096
+    password: 2281ea89-805f-45fa-8902-6e4ad0e26666
+    udp: false
+    sni: trojan.freews.eu.org
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: trojan.freews.eu.org
+  - name: CloudFlare 🇨🇱-vless | 3-1
+    type: vless
+    server: cf.zerone-cdn.pp.ua
+    port: 443
+    uuid: 2281ea89-805f-45fa-8902-6e4ad0e26666
+    udp: false
+    tls: true
+    network: ws
+    servername: ws.freews.eu.org
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: ws.freews.eu.org
+  - name: CloudFlare 🇨🇱-vless | 3-2
+    type: vless
+    server: cmcc.090227.xyz
+    port: 8443
+    uuid: 2281ea89-805f-45fa-8902-6e4ad0e26666
+    udp: false
+    tls: true
+    network: ws
+    servername: ws.freews.eu.org
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: ws.freews.eu.org
+  - name: CloudFlare 🇨🇱-vless | 3-3
+    type: vless
+    server: cdn.2020111.xyz
+    port: 2053
+    uuid: 2281ea89-805f-45fa-8902-6e4ad0e26666
+    udp: false
+    tls: true
+    network: ws
+    servername: ws.freews.eu.org
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: ws.freews.eu.org
+  - name: CloudFlare 🇨🇱-vless | 3-4
+    type: vless
+    server: cfip.cfcdn.vip
+    port: 2083
+    uuid: 2281ea89-805f-45fa-8902-6e4ad0e26666
+    udp: false
+    tls: true
+    network: ws
+    servername: ws.freews.eu.org
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: ws.freews.eu.org
+  - name: CloudFlare 🇨🇱-vless | 3-5
+    type: vless
+    server: 115155.xyz
+    port: 2087
+    uuid: 2281ea89-805f-45fa-8902-6e4ad0e26666
+    udp: false
+    tls: true
+    network: ws
+    servername: ws.freews.eu.org
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: ws.freews.eu.org
+  - name: CloudFlare 🇨🇱-vless | 3-6
+    type: vless
+    server: cloudflare.182682.xyz
+    port: 2096
+    uuid: 2281ea89-805f-45fa-8902-6e4ad0e26666
+    udp: false
+    tls: true
+    network: ws
+    servername: ws.freews.eu.org
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: ws.freews.eu.org
   - name: RU 🇷🇺-Hysteria | 0-0
     type: hysteria
     server: 46.17.43.223
@@ -163,6 +313,18 @@ proxy-groups:
     tolerance: 50
     proxies:
       - RU 🇷🇺-hysteria | 0-1
+      - CloudFlare 🇨🇱-trojan | 2-1
+      - CloudFlare 🇨🇱-trojan | 2-2
+      - CloudFlare 🇨🇱-trojan | 2-3
+      - CloudFlare 🇨🇱-trojan | 2-4
+      - CloudFlare 🇨🇱-trojan | 2-5
+      - CloudFlare 🇨🇱-trojan | 2-6
+      - CloudFlare 🇨🇱-vless | 3-1
+      - CloudFlare 🇨🇱-vless | 3-2
+      - CloudFlare 🇨🇱-vless | 3-3
+      - CloudFlare 🇨🇱-vless | 3-4
+      - CloudFlare 🇨🇱-vless | 3-5
+      - CloudFlare 🇨🇱-vless | 3-6
       - RU 🇷🇺-Hysteria | 0-0
       - RU 🇷🇺-Hysteria2 | 0-0
       - 🏳 CloudFlare-vmess | 0-0
@@ -176,6 +338,18 @@ proxy-groups:
     strategy: consistent-hashing
     proxies:
       - RU 🇷🇺-hysteria | 0-1
+      - CloudFlare 🇨🇱-trojan | 2-1
+      - CloudFlare 🇨🇱-trojan | 2-2
+      - CloudFlare 🇨🇱-trojan | 2-3
+      - CloudFlare 🇨🇱-trojan | 2-4
+      - CloudFlare 🇨🇱-trojan | 2-5
+      - CloudFlare 🇨🇱-trojan | 2-6
+      - CloudFlare 🇨🇱-vless | 3-1
+      - CloudFlare 🇨🇱-vless | 3-2
+      - CloudFlare 🇨🇱-vless | 3-3
+      - CloudFlare 🇨🇱-vless | 3-4
+      - CloudFlare 🇨🇱-vless | 3-5
+      - CloudFlare 🇨🇱-vless | 3-6
       - RU 🇷🇺-Hysteria | 0-0
       - RU 🇷🇺-Hysteria2 | 0-0
       - 🏳 CloudFlare-vmess | 0-0
