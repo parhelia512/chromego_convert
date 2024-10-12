@@ -1,0 +1,143 @@
+
+port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+unified-delay: true
+global-client-fingerprint: chrome
+dns:
+  enable: true
+  listen: :53
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver: 
+    - 223.5.5.5
+    - 180.76.76.76
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  fallback:
+    - 1.1.1.1
+    - 8.8.8.8
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+
+proxies:
+- name: CF_T8_cf.zerone-cdn.pp.ua_443
+  type: trojan
+  server: cf.zerone-cdn.pp.ua
+  port: 443
+  password: 2281ea89-805f-45fa-8902-6e4ad0e26666
+  udp: false
+  sni: trojan.freews.eu.org
+  network: ws
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: trojan.freews.eu.org
+
+- name: CF_T9_cmcc.090227.xyz_8443
+  type: trojan
+  server: cmcc.090227.xyz
+  port: 8443
+  password: 2281ea89-805f-45fa-8902-6e4ad0e26666
+  udp: false
+  sni: trojan.freews.eu.org
+  network: ws}
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: trojan.freews.eu.org
+
+- name: CF_T10_cdn.2020111.xyz_2053
+  type: trojan
+  server: cdn.2020111.xyz
+  port: 2053
+  password: 2281ea89-805f-45fa-8902-6e4ad0e26666
+  udp: false
+  sni: trojan.freews.eu.org
+  network: ws
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: trojan.freews.eu.org
+
+- name: CF_T11_cfip.cfcdn.vip_2083
+  type: trojan
+  server: cfip.cfcdn.vip
+  port: 2083
+  password: 2281ea89-805f-45fa-8902-6e4ad0e26666
+  udp: false
+  sni: trojan.freews.eu.org
+  network: ws
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: trojan.freews.eu.org
+
+- name: CF_T12_115155.xyz_2087
+  type: trojan
+  server: 115155.xyz
+  port: 2087
+  password: 2281ea89-805f-45fa-8902-6e4ad0e26666
+  udp: false
+  sni: trojan.freews.eu.org
+  network: ws
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: trojan.freews.eu.org
+
+- name: CF_T13_cloudflare.182682.xyz_2096
+  type: trojan
+  server: cloudflare.182682.xyz
+  port: 2096
+  password: 2281ea89-805f-45fa-8902-6e4ad0e26666
+  udp: false
+  sni: trojan.freews.eu.org
+  network: ws
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: trojan.freews.eu.org
+
+proxy-groups:
+- name: 负载均衡
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+    - CF_T8_cf.zerone-cdn.pp.ua_443
+    - CF_T9_cmcc.090227.xyz_8443
+    - CF_T10_cdn.2020111.xyz_2053
+    - CF_T11_cfip.cfcdn.vip_2083
+    - CF_T12_115155.xyz_2087
+    - CF_T13_cloudflare.182682.xyz_2096
+
+- name: 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+    - CF_T8_cf.zerone-cdn.pp.ua_443
+    - CF_T9_cmcc.090227.xyz_8443
+    - CF_T10_cdn.2020111.xyz_2053
+    - CF_T11_cfip.cfcdn.vip_2083
+    - CF_T12_115155.xyz_2087
+    - CF_T13_cloudflare.182682.xyz_2096
+
+- name: 选择代理
+  type: select
+  proxies:
+    - 负载均衡
+    - 自动选择
+
+rules:
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,选择代理
