@@ -1,4 +1,4 @@
-https://raw.githubusercontent.com/Alvin9999/pac2/master/quick/config.yaml
-https://raw.githubusercontent.com/freetcp/chromego_convert/refs/heads/main/urls/v2ray_vpn.yaml
 https://raw.githubusercontent.com/freetcp/chromego_convert/refs/heads/main/urls/cf_trojan.yaml
 https://raw.githubusercontent.com/freetcp/chromego_convert/refs/heads/main/urls/cf_vless.yaml
+https://raw.githubusercontent.com/freetcp/chromego_convert/refs/heads/main/urls/v2ray_vpn.yaml
+https://raw.githubusercontent.com/Alvin9999/pac2/master/quick/config.yaml
