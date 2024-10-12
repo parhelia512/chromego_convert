@@ -26,11 +26,3 @@ A NodeJS script to Convert ChromeGo Proxies
 ## 许可协议
 
 本项目遵循 MIT 许可协议。有关详细信息，请参阅 [LICENSE](LICENSE) 文件。
-
----
-
-**欢迎提出问题或为本项目的开发做出贡献！**
-
-## 统计
-
-![Star History Chart](https://api.star-history.com/svg?repos=ivwv/chromego_convert&type=Date)
