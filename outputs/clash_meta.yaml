@@ -7,7 +7,7 @@ global-client-fingerprint: chrome
 dns:
   enable: true
   listen: ':53'
-  ipv6: false
+  ipv6: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
