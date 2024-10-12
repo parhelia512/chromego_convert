@@ -24,7 +24,8 @@ dns:
     geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
-      
+proxies:
+
 proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
