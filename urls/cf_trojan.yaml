@@ -1,4 +1,3 @@
-
 port: 7890
 allow-lan: true
 mode: rule
@@ -27,7 +26,7 @@ dns:
       - 240.0.0.0/4
 
 proxies:
-- name: CF_T8_cf.zerone-cdn.pp.ua_443
+- name: T8_cf.zerone-cdn.pp.ua_443
   type: trojan
   server: cf.zerone-cdn.pp.ua
   port: 443
@@ -40,7 +39,7 @@ proxies:
     headers:
       Host: trojan.freews.eu.org
 
-- name: CF_T9_cmcc.090227.xyz_8443
+- name: T9_cmcc.090227.xyz_8443
   type: trojan
   server: cmcc.090227.xyz
   port: 8443
@@ -53,7 +52,7 @@ proxies:
     headers:
       Host: trojan.freews.eu.org
 
-- name: CF_T10_cdn.2020111.xyz_2053
+- name: T10_cdn.2020111.xyz_2053
   type: trojan
   server: cdn.2020111.xyz
   port: 2053
@@ -66,7 +65,7 @@ proxies:
     headers:
       Host: trojan.freews.eu.org
 
-- name: CF_T11_cfip.cfcdn.vip_2083
+- name: T11_cfip.cfcdn.vip_2083
   type: trojan
   server: cfip.cfcdn.vip
   port: 2083
@@ -79,7 +78,7 @@ proxies:
     headers:
       Host: trojan.freews.eu.org
 
-- name: CF_T12_115155.xyz_2087
+- name: T12_115155.xyz_2087
   type: trojan
   server: 115155.xyz
   port: 2087
@@ -92,7 +91,7 @@ proxies:
     headers:
       Host: trojan.freews.eu.org
 
-- name: CF_T13_cloudflare.182682.xyz_2096
+- name: T13_cloudflare.182682.xyz_2096
   type: trojan
   server: cloudflare.182682.xyz
   port: 2096
@@ -105,18 +104,30 @@ proxies:
     headers:
       Host: trojan.freews.eu.org
 
+- name: ru2a
+  type: trojan
+  server: 202408-ru2a.88888806.xyz
+  port: 443
+  password: c97cf46e-1554-36cb-8b36-c3556b883dc4
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
+    
 proxy-groups:
 - name: 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-    - CF_T8_cf.zerone-cdn.pp.ua_443
-    - CF_T9_cmcc.090227.xyz_8443
-    - CF_T10_cdn.2020111.xyz_2053
-    - CF_T11_cfip.cfcdn.vip_2083
-    - CF_T12_115155.xyz_2087
-    - CF_T13_cloudflare.182682.xyz_2096
+    - T8_cf.zerone-cdn.pp.ua_443
+    - T9_cmcc.090227.xyz_8443
+    - T10_cdn.2020111.xyz_2053
+    - T11_cfip.cfcdn.vip_2083
+    - T12_115155.xyz_2087
+    - T13_cloudflare.182682.xyz_2096
+    - ru2a
 
 - name: 自动选择
   type: url-test
@@ -124,12 +135,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-    - CF_T8_cf.zerone-cdn.pp.ua_443
-    - CF_T9_cmcc.090227.xyz_8443
-    - CF_T10_cdn.2020111.xyz_2053
-    - CF_T11_cfip.cfcdn.vip_2083
-    - CF_T12_115155.xyz_2087
-    - CF_T13_cloudflare.182682.xyz_2096
+    - T8_cf.zerone-cdn.pp.ua_443
+    - T9_cmcc.090227.xyz_8443
+    - T10_cdn.2020111.xyz_2053
+    - T11_cfip.cfcdn.vip_2083
+    - T12_115155.xyz_2087
+    - T13_cloudflare.182682.xyz_2096
+    - ru2a
 
 - name: 选择代理
   type: select
