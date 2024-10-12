@@ -25,7 +25,7 @@ dns:
     ipcidr:
       - 240.0.0.0/4
 proxies:
-  - name: CloudFlare 🇨🇱-trojan | 0-1
+  - name: CloudFlare 🇨🇱-trojan | 1-1
     type: trojan
     server: cf.zerone-cdn.pp.ua
     port: 443
@@ -37,7 +37,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: trojan.freews.eu.org
-  - name: CloudFlare 🇨🇱-trojan | 0-2
+  - name: CloudFlare 🇨🇱-trojan | 1-2
     type: trojan
     server: cmcc.090227.xyz
     port: 8443
@@ -49,7 +49,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: trojan.freews.eu.org
-  - name: CloudFlare 🇨🇱-trojan | 0-3
+  - name: CloudFlare 🇨🇱-trojan | 1-3
     type: trojan
     server: cdn.2020111.xyz
     port: 2053
@@ -61,7 +61,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: trojan.freews.eu.org
-  - name: CloudFlare 🇨🇱-trojan | 0-4
+  - name: CloudFlare 🇨🇱-trojan | 1-4
     type: trojan
     server: cfip.cfcdn.vip
     port: 2083
@@ -73,7 +73,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: trojan.freews.eu.org
-  - name: CloudFlare 🇨🇱-trojan | 0-5
+  - name: CloudFlare 🇨🇱-trojan | 1-5
     type: trojan
     server: 115155.xyz
     port: 2087
@@ -85,7 +85,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: trojan.freews.eu.org
-  - name: CloudFlare 🇨🇱-trojan | 0-6
+  - name: CloudFlare 🇨🇱-trojan | 1-6
     type: trojan
     server: cloudflare.182682.xyz
     port: 2096
@@ -97,7 +97,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: trojan.freews.eu.org
-  - name: CloudFlare 🇨🇱-vless | 1-1
+  - name: CloudFlare 🇨🇱-vless | 2-1
     type: vless
     server: cf.zerone-cdn.pp.ua
     port: 443
@@ -110,7 +110,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: ws.freews.eu.org
-  - name: CloudFlare 🇨🇱-vless | 1-2
+  - name: CloudFlare 🇨🇱-vless | 2-2
     type: vless
     server: cmcc.090227.xyz
     port: 8443
@@ -123,7 +123,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: ws.freews.eu.org
-  - name: CloudFlare 🇨🇱-vless | 1-3
+  - name: CloudFlare 🇨🇱-vless | 2-3
     type: vless
     server: cdn.2020111.xyz
     port: 2053
@@ -136,7 +136,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: ws.freews.eu.org
-  - name: CloudFlare 🇨🇱-vless | 1-4
+  - name: CloudFlare 🇨🇱-vless | 2-4
     type: vless
     server: cfip.cfcdn.vip
     port: 2083
@@ -149,7 +149,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: ws.freews.eu.org
-  - name: CloudFlare 🇨🇱-vless | 1-5
+  - name: CloudFlare 🇨🇱-vless | 2-5
     type: vless
     server: 115155.xyz
     port: 2087
@@ -162,7 +162,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: ws.freews.eu.org
-  - name: CloudFlare 🇨🇱-vless | 1-6
+  - name: CloudFlare 🇨🇱-vless | 2-6
     type: vless
     server: cloudflare.182682.xyz
     port: 2096
@@ -294,18 +294,18 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - CloudFlare 🇨🇱-trojan | 0-1
-      - CloudFlare 🇨🇱-trojan | 0-2
-      - CloudFlare 🇨🇱-trojan | 0-3
-      - CloudFlare 🇨🇱-trojan | 0-4
-      - CloudFlare 🇨🇱-trojan | 0-5
-      - CloudFlare 🇨🇱-trojan | 0-6
-      - CloudFlare 🇨🇱-vless | 1-1
-      - CloudFlare 🇨🇱-vless | 1-2
-      - CloudFlare 🇨🇱-vless | 1-3
-      - CloudFlare 🇨🇱-vless | 1-4
-      - CloudFlare 🇨🇱-vless | 1-5
-      - CloudFlare 🇨🇱-vless | 1-6
+      - CloudFlare 🇨🇱-trojan | 1-1
+      - CloudFlare 🇨🇱-trojan | 1-2
+      - CloudFlare 🇨🇱-trojan | 1-3
+      - CloudFlare 🇨🇱-trojan | 1-4
+      - CloudFlare 🇨🇱-trojan | 1-5
+      - CloudFlare 🇨🇱-trojan | 1-6
+      - CloudFlare 🇨🇱-vless | 2-1
+      - CloudFlare 🇨🇱-vless | 2-2
+      - CloudFlare 🇨🇱-vless | 2-3
+      - CloudFlare 🇨🇱-vless | 2-4
+      - CloudFlare 🇨🇱-vless | 2-5
+      - CloudFlare 🇨🇱-vless | 2-6
       - RU 🇷🇺-hysteria | 3-1
       - RU 🇷🇺-Hysteria | 0-0
       - RU 🇷🇺-Hysteria2 | 0-0
@@ -319,18 +319,18 @@ proxy-groups:
     interval: 300
     strategy: consistent-hashing
     proxies:
-      - CloudFlare 🇨🇱-trojan | 0-1
-      - CloudFlare 🇨🇱-trojan | 0-2
-      - CloudFlare 🇨🇱-trojan | 0-3
-      - CloudFlare 🇨🇱-trojan | 0-4
-      - CloudFlare 🇨🇱-trojan | 0-5
-      - CloudFlare 🇨🇱-trojan | 0-6
-      - CloudFlare 🇨🇱-vless | 1-1
-      - CloudFlare 🇨🇱-vless | 1-2
-      - CloudFlare 🇨🇱-vless | 1-3
-      - CloudFlare 🇨🇱-vless | 1-4
-      - CloudFlare 🇨🇱-vless | 1-5
-      - CloudFlare 🇨🇱-vless | 1-6
+      - CloudFlare 🇨🇱-trojan | 1-1
+      - CloudFlare 🇨🇱-trojan | 1-2
+      - CloudFlare 🇨🇱-trojan | 1-3
+      - CloudFlare 🇨🇱-trojan | 1-4
+      - CloudFlare 🇨🇱-trojan | 1-5
+      - CloudFlare 🇨🇱-trojan | 1-6
+      - CloudFlare 🇨🇱-vless | 2-1
+      - CloudFlare 🇨🇱-vless | 2-2
+      - CloudFlare 🇨🇱-vless | 2-3
+      - CloudFlare 🇨🇱-vless | 2-4
+      - CloudFlare 🇨🇱-vless | 2-5
+      - CloudFlare 🇨🇱-vless | 2-6
       - RU 🇷🇺-hysteria | 3-1
       - RU 🇷🇺-Hysteria | 0-0
       - RU 🇷🇺-Hysteria2 | 0-0
