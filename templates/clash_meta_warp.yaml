@@ -31,8 +31,8 @@ dns:
 proxies:
   - name: ☁ WARP
     type: vless
-    server: cf.zerone-cdn.pp.ua
-    port: 443
+    server: cloudflare.182682.xyz
+    port: 2096
     uuid: 2281ea89-805f-45fa-8902-6e4ad0e26666
     udp: false
     tls: true
