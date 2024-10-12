@@ -22,39 +22,6 @@ proxies:
     skip-cert-verify: true
     up: 11 Mbps
     down: 55 Mbps
-  - name: RU 🇷🇺-hysteria | 2-1
-    type: hysteria
-    server: 46.29.166.206
-    port: 100
-    auth_str: dongtaiwang.com
-    alpn:
-      - h3
-    sni: www.bing.com
-    skip-cert-verify: true
-    up: 11 Mbps
-    down: 55 Mbps
-  - name: RU 🇷🇺-hysteria | 3-1
-    type: hysteria
-    server: 46.29.166.206
-    port: 100
-    auth_str: dongtaiwang.com
-    alpn:
-      - h3
-    sni: www.bing.com
-    skip-cert-verify: true
-    up: 11 Mbps
-    down: 55 Mbps
-  - name: RU 🇷🇺-hysteria | 4-1
-    type: hysteria
-    server: 46.29.166.206
-    port: 100
-    auth_str: dongtaiwang.com
-    alpn:
-      - h3
-    sni: www.bing.com
-    skip-cert-verify: true
-    up: 11 Mbps
-    down: 55 Mbps
   - name: RU 🇷🇺-Hysteria | 0-0
     type: hysteria
     server: 46.17.43.223
@@ -205,9 +172,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - RU 🇷🇺-hysteria | 1-1
-      - RU 🇷🇺-hysteria | 2-1
-      - RU 🇷🇺-hysteria | 3-1
-      - RU 🇷🇺-hysteria | 4-1
       - RU 🇷🇺-Hysteria | 0-0
       - RU 🇷🇺-Hysteria | 1-0
       - RU 🇷🇺-Hysteria | 2-0
@@ -224,9 +188,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - RU 🇷🇺-hysteria | 1-1
-      - RU 🇷🇺-hysteria | 2-1
-      - RU 🇷🇺-hysteria | 3-1
-      - RU 🇷🇺-hysteria | 4-1
       - RU 🇷🇺-Hysteria | 0-0
       - RU 🇷🇺-Hysteria | 1-0
       - RU 🇷🇺-Hysteria | 2-0

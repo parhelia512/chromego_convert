@@ -1,7 +1,4 @@
 hysteria://46.29.166.206:100/?protocol=udp&insecure=NaN&peer=www.bing.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#RU 🇷🇺-hysteria | 1-1
-hysteria://46.29.166.206:100/?protocol=udp&insecure=NaN&peer=www.bing.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#RU 🇷🇺-hysteria | 2-1
-hysteria://46.29.166.206:100/?protocol=udp&insecure=NaN&peer=www.bing.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#RU 🇷🇺-hysteria | 3-1
-hysteria://46.29.166.206:100/?protocol=udp&insecure=NaN&peer=www.bing.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#RU 🇷🇺-hysteria | 4-1
 hysteria://46.17.43.223:12311/?protocol=udp&insecure=NaN&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#RU 🇷🇺-Hysteria | 0-0
 hysteria://46.17.43.223:12311/?protocol=udp&insecure=NaN&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#RU 🇷🇺-Hysteria | 1-0
 hysteria://46.17.43.223:12311/?protocol=udp&insecure=NaN&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#RU 🇷🇺-Hysteria | 2-0
