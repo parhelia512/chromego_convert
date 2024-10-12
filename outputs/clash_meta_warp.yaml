@@ -43,18 +43,7 @@ proxies:
       - 1.1.1.1
       - 8.8.8.8
     dialer-proxy: ☁ WARP前置节点
-  - name: RU 🇷🇺-hysteria | 0-1
-    type: hysteria
-    server: 46.29.166.206
-    port: 100
-    auth_str: dongtaiwang.com
-    alpn:
-      - h3
-    sni: www.bing.com
-    skip-cert-verify: true
-    up: 11 Mbps
-    down: 55 Mbps
-  - name: CloudFlare 🇨🇱-trojan | 2-1
+  - name: CloudFlare 🇨🇱-trojan | 0-1
     type: trojan
     server: cf.zerone-cdn.pp.ua
     port: 443
@@ -66,7 +55,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: trojan.freews.eu.org
-  - name: CloudFlare 🇨🇱-trojan | 2-2
+  - name: CloudFlare 🇨🇱-trojan | 0-2
     type: trojan
     server: cmcc.090227.xyz
     port: 8443
@@ -78,7 +67,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: trojan.freews.eu.org
-  - name: CloudFlare 🇨🇱-trojan | 2-3
+  - name: CloudFlare 🇨🇱-trojan | 0-3
     type: trojan
     server: cdn.2020111.xyz
     port: 2053
@@ -90,7 +79,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: trojan.freews.eu.org
-  - name: CloudFlare 🇨🇱-trojan | 2-4
+  - name: CloudFlare 🇨🇱-trojan | 0-4
     type: trojan
     server: cfip.cfcdn.vip
     port: 2083
@@ -102,7 +91,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: trojan.freews.eu.org
-  - name: CloudFlare 🇨🇱-trojan | 2-5
+  - name: CloudFlare 🇨🇱-trojan | 0-5
     type: trojan
     server: 115155.xyz
     port: 2087
@@ -114,7 +103,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: trojan.freews.eu.org
-  - name: CloudFlare 🇨🇱-trojan | 2-6
+  - name: CloudFlare 🇨🇱-trojan | 0-6
     type: trojan
     server: cloudflare.182682.xyz
     port: 2096
@@ -126,7 +115,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: trojan.freews.eu.org
-  - name: CloudFlare 🇨🇱-vless | 3-1
+  - name: CloudFlare 🇨🇱-vless | 1-1
     type: vless
     server: cf.zerone-cdn.pp.ua
     port: 443
@@ -139,7 +128,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: ws.freews.eu.org
-  - name: CloudFlare 🇨🇱-vless | 3-2
+  - name: CloudFlare 🇨🇱-vless | 1-2
     type: vless
     server: cmcc.090227.xyz
     port: 8443
@@ -152,7 +141,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: ws.freews.eu.org
-  - name: CloudFlare 🇨🇱-vless | 3-3
+  - name: CloudFlare 🇨🇱-vless | 1-3
     type: vless
     server: cdn.2020111.xyz
     port: 2053
@@ -165,7 +154,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: ws.freews.eu.org
-  - name: CloudFlare 🇨🇱-vless | 3-4
+  - name: CloudFlare 🇨🇱-vless | 1-4
     type: vless
     server: cfip.cfcdn.vip
     port: 2083
@@ -178,7 +167,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: ws.freews.eu.org
-  - name: CloudFlare 🇨🇱-vless | 3-5
+  - name: CloudFlare 🇨🇱-vless | 1-5
     type: vless
     server: 115155.xyz
     port: 2087
@@ -191,7 +180,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: ws.freews.eu.org
-  - name: CloudFlare 🇨🇱-vless | 3-6
+  - name: CloudFlare 🇨🇱-vless | 1-6
     type: vless
     server: cloudflare.182682.xyz
     port: 2096
@@ -204,6 +193,17 @@ proxies:
       path: /?ed=2560
       headers:
         Host: ws.freews.eu.org
+  - name: RU 🇷🇺-hysteria | 3-1
+    type: hysteria
+    server: 46.29.166.206
+    port: 100
+    auth_str: dongtaiwang.com
+    alpn:
+      - h3
+    sni: www.bing.com
+    skip-cert-verify: true
+    up: 11 Mbps
+    down: 55 Mbps
   - name: RU 🇷🇺-Hysteria | 0-0
     type: hysteria
     server: 46.17.43.223
@@ -312,19 +312,19 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - RU 🇷🇺-hysteria | 0-1
-      - CloudFlare 🇨🇱-trojan | 2-1
-      - CloudFlare 🇨🇱-trojan | 2-2
-      - CloudFlare 🇨🇱-trojan | 2-3
-      - CloudFlare 🇨🇱-trojan | 2-4
-      - CloudFlare 🇨🇱-trojan | 2-5
-      - CloudFlare 🇨🇱-trojan | 2-6
-      - CloudFlare 🇨🇱-vless | 3-1
-      - CloudFlare 🇨🇱-vless | 3-2
-      - CloudFlare 🇨🇱-vless | 3-3
-      - CloudFlare 🇨🇱-vless | 3-4
-      - CloudFlare 🇨🇱-vless | 3-5
-      - CloudFlare 🇨🇱-vless | 3-6
+      - CloudFlare 🇨🇱-trojan | 0-1
+      - CloudFlare 🇨🇱-trojan | 0-2
+      - CloudFlare 🇨🇱-trojan | 0-3
+      - CloudFlare 🇨🇱-trojan | 0-4
+      - CloudFlare 🇨🇱-trojan | 0-5
+      - CloudFlare 🇨🇱-trojan | 0-6
+      - CloudFlare 🇨🇱-vless | 1-1
+      - CloudFlare 🇨🇱-vless | 1-2
+      - CloudFlare 🇨🇱-vless | 1-3
+      - CloudFlare 🇨🇱-vless | 1-4
+      - CloudFlare 🇨🇱-vless | 1-5
+      - CloudFlare 🇨🇱-vless | 1-6
+      - RU 🇷🇺-hysteria | 3-1
       - RU 🇷🇺-Hysteria | 0-0
       - RU 🇷🇺-Hysteria2 | 0-0
       - 🏳 CloudFlare-vmess | 0-0
@@ -337,19 +337,19 @@ proxy-groups:
     interval: 300
     strategy: consistent-hashing
     proxies:
-      - RU 🇷🇺-hysteria | 0-1
-      - CloudFlare 🇨🇱-trojan | 2-1
-      - CloudFlare 🇨🇱-trojan | 2-2
-      - CloudFlare 🇨🇱-trojan | 2-3
-      - CloudFlare 🇨🇱-trojan | 2-4
-      - CloudFlare 🇨🇱-trojan | 2-5
-      - CloudFlare 🇨🇱-trojan | 2-6
-      - CloudFlare 🇨🇱-vless | 3-1
-      - CloudFlare 🇨🇱-vless | 3-2
-      - CloudFlare 🇨🇱-vless | 3-3
-      - CloudFlare 🇨🇱-vless | 3-4
-      - CloudFlare 🇨🇱-vless | 3-5
-      - CloudFlare 🇨🇱-vless | 3-6
+      - CloudFlare 🇨🇱-trojan | 0-1
+      - CloudFlare 🇨🇱-trojan | 0-2
+      - CloudFlare 🇨🇱-trojan | 0-3
+      - CloudFlare 🇨🇱-trojan | 0-4
+      - CloudFlare 🇨🇱-trojan | 0-5
+      - CloudFlare 🇨🇱-trojan | 0-6
+      - CloudFlare 🇨🇱-vless | 1-1
+      - CloudFlare 🇨🇱-vless | 1-2
+      - CloudFlare 🇨🇱-vless | 1-3
+      - CloudFlare 🇨🇱-vless | 1-4
+      - CloudFlare 🇨🇱-vless | 1-5
+      - CloudFlare 🇨🇱-vless | 1-6
+      - RU 🇷🇺-hysteria | 3-1
       - RU 🇷🇺-Hysteria | 0-0
       - RU 🇷🇺-Hysteria2 | 0-0
       - 🏳 CloudFlare-vmess | 0-0
