@@ -31,7 +31,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - RU 🇷🇺-hysteria | 1-1
+      - RU 🇷🇺-hysteria | 0-1
       - RU 🇷🇺-Hysteria | 0-0
       - RU 🇷🇺-Hysteria2 | 0-0
       - 🏳 CloudFlare-vmess | 0-0
@@ -44,7 +44,7 @@ proxy-groups:
     interval: 300
     strategy: consistent-hashing
     proxies:
-      - RU 🇷🇺-hysteria | 1-1
+      - RU 🇷🇺-hysteria | 0-1
       - RU 🇷🇺-Hysteria | 0-0
       - RU 🇷🇺-Hysteria2 | 0-0
       - 🏳 CloudFlare-vmess | 0-0
@@ -56,7 +56,7 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - ⚖ 负载均衡
-      - RU 🇷🇺-hysteria | 1-1
+      - RU 🇷🇺-hysteria | 0-1
       - RU 🇷🇺-Hysteria | 0-0
       - RU 🇷🇺-Hysteria2 | 0-0
       - 🏳 CloudFlare-vmess | 0-0
@@ -74,7 +74,7 @@ rules:
   - GEOIP,CN,DIRECT
   - MATCH,🌍 选择代理
 proxies:
-  - name: RU 🇷🇺-hysteria | 1-1
+  - name: RU 🇷🇺-hysteria | 0-1
     type: hysteria
     server: 46.29.166.206
     port: 100

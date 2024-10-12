@@ -43,7 +43,7 @@ proxies:
       - 1.1.1.1
       - 8.8.8.8
     dialer-proxy: ☁ WARP前置节点
-  - name: RU 🇷🇺-hysteria | 1-1
+  - name: RU 🇷🇺-hysteria | 0-1
     type: hysteria
     server: 46.29.166.206
     port: 100
@@ -162,7 +162,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - RU 🇷🇺-hysteria | 1-1
+      - RU 🇷🇺-hysteria | 0-1
       - RU 🇷🇺-Hysteria | 0-0
       - RU 🇷🇺-Hysteria2 | 0-0
       - 🏳 CloudFlare-vmess | 0-0
@@ -175,7 +175,7 @@ proxy-groups:
     interval: 300
     strategy: consistent-hashing
     proxies:
-      - RU 🇷🇺-hysteria | 1-1
+      - RU 🇷🇺-hysteria | 0-1
       - RU 🇷🇺-Hysteria | 0-0
       - RU 🇷🇺-Hysteria2 | 0-0
       - 🏳 CloudFlare-vmess | 0-0
@@ -188,7 +188,7 @@ proxy-groups:
       - ♻️ 自动选择
       - ⚖ 负载均衡
       - ☁ WARP
-      - RU 🇷🇺-hysteria | 1-1
+      - RU 🇷🇺-hysteria | 0-1
       - RU 🇷🇺-Hysteria | 0-0
       - RU 🇷🇺-Hysteria2 | 0-0
       - 🏳 CloudFlare-vmess | 0-0
