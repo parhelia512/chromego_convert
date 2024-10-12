@@ -51,24 +51,11 @@ proxy-groups:
       - 🏳 CloudFlare-vmess | 1-0
       - 🏳 CloudFlare-vmess | 2-0
       - 🏳 CloudFlare-vmess | 3-0
-  - name: 🚀 节点选择
-    type: select
-    proxies:
-      - ♻️ 自动选择
-      - ⚖ 负载均衡
-      - RU 🇷🇺-hysteria | 0-1
-      - RU 🇷🇺-Hysteria | 0-0
-      - RU 🇷🇺-Hysteria2 | 0-0
-      - 🏳 CloudFlare-vmess | 0-0
-      - 🏳 CloudFlare-vmess | 1-0
-      - 🏳 CloudFlare-vmess | 2-0
-      - 🏳 CloudFlare-vmess | 3-0
   - name: 🌍 选择代理
     type: select
     proxies:
       - ♻️ 自动选择
       - ⚖ 负载均衡
-      - 🚀 节点选择
 rules:
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
