@@ -207,7 +207,7 @@ proxies:
     password: dongtaiwang.com
     sni: www.bing.com
     skip-cert-verify: true
-  - name: 🏳 CloudFlare-vmess | 0-0
+  - name: 🏳 CloudFlare-vmess | 1-0
     type: vmess
     server: 104.21.238.36
     port: 2086
@@ -227,7 +227,7 @@ proxies:
     h2-opts:
       path: /
       host: []
-  - name: 🏳 CloudFlare-vmess | 1-0
+  - name: 🏳 CloudFlare-vmess | 2-0
     type: vmess
     server: 104.21.238.37
     port: 2086
@@ -247,7 +247,7 @@ proxies:
     h2-opts:
       path: /
       host: []
-  - name: 🏳 CloudFlare-vmess | 2-0
+  - name: 🏳 CloudFlare-vmess | 3-0
     type: vmess
     server: 104.21.238.38
     port: 2086
@@ -267,7 +267,7 @@ proxies:
     h2-opts:
       path: /
       host: []
-  - name: 🏳 CloudFlare-vmess | 3-0
+  - name: 🏳 CloudFlare-vmess | 4-0
     type: vmess
     server: 104.21.238.39
     port: 2086
@@ -309,10 +309,10 @@ proxy-groups:
       - RU 🇷🇺-hysteria | 3-1
       - RU 🇷🇺-Hysteria | 0-0
       - RU 🇷🇺-Hysteria2 | 0-0
-      - 🏳 CloudFlare-vmess | 0-0
       - 🏳 CloudFlare-vmess | 1-0
       - 🏳 CloudFlare-vmess | 2-0
       - 🏳 CloudFlare-vmess | 3-0
+      - 🏳 CloudFlare-vmess | 4-0
   - name: ⚖ 负载均衡
     type: load-balance
     url: http://www.gstatic.com/generate_204
@@ -334,10 +334,10 @@ proxy-groups:
       - RU 🇷🇺-hysteria | 3-1
       - RU 🇷🇺-Hysteria | 0-0
       - RU 🇷🇺-Hysteria2 | 0-0
-      - 🏳 CloudFlare-vmess | 0-0
       - 🏳 CloudFlare-vmess | 1-0
       - 🏳 CloudFlare-vmess | 2-0
       - 🏳 CloudFlare-vmess | 3-0
+      - 🏳 CloudFlare-vmess | 4-0
   - name: 🌍 选择代理
     type: select
     proxies:
