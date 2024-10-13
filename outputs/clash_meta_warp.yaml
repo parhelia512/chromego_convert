@@ -242,7 +242,7 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        Host: ip9.9447609.xyz
+        Host: ip10.9447609.xyz
     grpc-opts:
       serviceName: /
     h2-opts:
@@ -262,47 +262,7 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        Host: ip9.9447609.xyz
-    grpc-opts:
-      serviceName: /
-    h2-opts:
-      path: /
-      host: []
-  - name: 🏳 CloudFlare-vmess | 3-0
-    type: vmess
-    server: 104.21.238.38
-    port: 2086
-    uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
-    alterId: 0
-    cipher: auto
-    tls: false
-    servername: ''
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip9.9447609.xyz
-    grpc-opts:
-      serviceName: /
-    h2-opts:
-      path: /
-      host: []
-  - name: 🏳 CloudFlare-vmess | 4-0
-    type: vmess
-    server: 104.21.238.39
-    port: 2086
-    uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
-    alterId: 0
-    cipher: auto
-    tls: false
-    servername: ''
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip9.9447609.xyz
+        Host: ip10.9447609.xyz
     grpc-opts:
       serviceName: /
     h2-opts:
@@ -332,8 +292,6 @@ proxy-groups:
       - RU 🇷🇺-Hysteria2 | 0-0
       - 🏳 CloudFlare-vmess | 1-0
       - 🏳 CloudFlare-vmess | 2-0
-      - 🏳 CloudFlare-vmess | 3-0
-      - 🏳 CloudFlare-vmess | 4-0
   - name: ☁ WARP前置节点
     type: select
     proxies:
