@@ -221,27 +221,7 @@ proxies:
     ws-opts:
       path: github.com/Alvin9999
       headers:
-        Host: ip10.9447609.xyz
-    grpc-opts:
-      serviceName: /
-    h2-opts:
-      path: /
-      host: []
-  - name: 🏳 CloudFlare-vmess | 2-0
-    type: vmess
-    server: 104.21.238.37
-    port: 2086
-    uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
-    alterId: 0
-    cipher: auto
-    tls: false
-    servername: ''
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip10.9447609.xyz
+        Host: ip12.9447609.xyz
     grpc-opts:
       serviceName: /
     h2-opts:
@@ -270,7 +250,6 @@ proxy-groups:
       - RU 🇷🇺-Hysteria | 0-0
       - RU 🇷🇺-Hysteria2 | 0-0
       - 🏳 CloudFlare-vmess | 1-0
-      - 🏳 CloudFlare-vmess | 2-0
   - name: 🌍 选择代理
     type: select
     proxies:
