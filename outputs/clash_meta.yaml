@@ -208,7 +208,22 @@ proxies:
     password: dongtaiwang.com
     sni: www.bing.com
     skip-cert-verify: true
-  - name: TW 🇹🇼-vmess | 1-0
+  - name: TW 🇹🇼-vless | 1-0
+    type: vless
+    server: 36.226.252.19
+    port: 56870
+    uuid: 7c4efc45-42f7-48d8-a741-6093cd2886a7
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.yahoo.com
+    network: tcp
+    client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: /
+    reality-opts:
+      public-key: 9J1xcf0tI7OQ8Z6ULcruIIjsM5AK3nZTXdOK6GIhwmA
+      short-id: 239c3cef
+  - name: TW 🇹🇼-vmess | 4-0
     type: vmess
     server: 220.136.144.137
     port: 50002
@@ -249,7 +264,8 @@ proxy-groups:
       - FR 🇫🇷-hysteria | 3-1
       - RU 🇷🇺-Hysteria | 0-0
       - RU 🇷🇺-Hysteria2 | 0-0
-      - TW 🇹🇼-vmess | 1-0
+      - TW 🇹🇼-vless | 1-0
+      - TW 🇹🇼-vmess | 4-0
   - name: 🌍 选择代理
     type: select
     proxies:
