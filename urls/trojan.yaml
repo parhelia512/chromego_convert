@@ -25,26 +25,6 @@ dns:
     ipcidr:
       - 240.0.0.0/4
 proxies:
-  - name: ru1a
-    port: 443
-    server: 202408-ru1a.88888806.xyz
-    type: trojan
-    network: ws
-    udp: true
-    password: c97cf46e-1554-36cb-8b36-c3556b883dc4
-    skip-cert-verify: true
-    ws-opts:
-      path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
-  - name: ru2a
-    port: 443
-    server: 202408-ru2a.88888806.xyz
-    type: trojan
-    network: ws
-    udp: true
-    password: c97cf46e-1554-36cb-8b36-c3556b883dc4
-    skip-cert-verify: true
-    ws-opts:
-      path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
   - name: de1a
     port: 443
     server: de1a-xded888.88888806.xyz
@@ -59,6 +39,16 @@ proxies:
   - name: fr1a
     port: 443
     server: fr1a.88888806.xyz
+    type: trojan
+    network: ws
+    udp: true
+    password: c97cf46e-1554-36cb-8b36-c3556b883dc4
+    skip-cert-verify: true
+    ws-opts:
+      path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
+  - name: fr2a
+    port: 443
+    server: fr2a.88888806.xyz
     type: trojan
     network: ws
     udp: true
@@ -86,18 +76,28 @@ proxies:
     skip-cert-verify: true
     ws-opts:
       path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
+  - name: us4a
+    port: 443
+    server: 2024-us4a.88888806.xyz
+    type: trojan
+    network: ws
+    udp: true
+    password: c97cf46e-1554-36cb-8b36-c3556b883dc4
+    skip-cert-verify: true
+    ws-opts:
+      path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
       
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
-      - ru1a
-      - ru2a
       - de1a
       - fr1a
+      - fr2a
       - us2a
       - us3a
+      - us4a
       
   - name: ♻️ 自动选择
     type: url-test
@@ -105,12 +105,12 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - ru1a
-      - ru2a
       - de1a
       - fr1a
+      - fr2a
       - us2a
       - us3a
+      - us4a
       
   - name: 🌍 选择代理
     type: select
