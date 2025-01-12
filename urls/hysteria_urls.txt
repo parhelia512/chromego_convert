@@ -1,2 +1,1 @@
-https://gitlab.com/free9999/ipupdate/-/raw/master/hysteria/config.json
-https://www.gitlabip.xyz/Alvin9999/pac2/master/hysteria/1/config.json
+https://gitlab.com/free9999/ipupdate/-/raw/master/quick/config.yaml
