@@ -2,3 +2,4 @@ https://raw.githubusercontent.com/freetcp/chromego_convert/refs/heads/main/urls/
 https://raw.githubusercontent.com/freetcp/chromego_convert/refs/heads/main/urls/cf_trojan.yaml
 https://raw.githubusercontent.com/freetcp/chromego_convert/refs/heads/main/urls/cf_vless.yaml
 https://raw.githubusercontent.com/Alvin9999/pac2/refs/heads/master/quick/config.yaml
+https://www.gitlabip.xyz/Alvin9999/pac2/master/quick/1/config.yaml
