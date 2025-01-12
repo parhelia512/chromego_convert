@@ -208,6 +208,18 @@ proxies:
     skip-cert-verify: true
     up: 11 Mbps
     down: 55 Mbps
+  - name: FR 🇫🇷-hysteria | 4-1
+    type: hysteria
+    server: 195.154.184.5
+    port: 22787
+    ports: 30000-40000
+    auth_str: dongtaiwang.com
+    alpn:
+      - h3
+    sni: bing.com
+    skip-cert-verify: true
+    up: 11 Mbps
+    down: 55 Mbps
   - name: RU 🇷🇺-Hysteria2 | 0-0
     type: hysteria2
     server: 46.17.41.189
@@ -250,6 +262,7 @@ proxy-groups:
       - CloudFlare 🇨🇱-vless | 2-5
       - CloudFlare 🇨🇱-vless | 2-6
       - FR 🇫🇷-hysteria | 3-1
+      - FR 🇫🇷-hysteria | 4-1
       - RU 🇷🇺-Hysteria2 | 0-0
       - TW 🇹🇼-vless | 1-0
   - name: ☁ WARP前置节点
