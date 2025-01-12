@@ -201,6 +201,20 @@ proxies:
     skip-cert-verify: true
     alpn:
       - h3
+  - name: RU 🇷🇺-Hysteria | 1-0
+    type: hysteria
+    server: 46.17.43.223
+    port: 64907
+    ports: 30000
+    auth-str: dongtaiwang.com
+    up: 80
+    down: 100
+    fast-open: true
+    protocol: udp
+    sni: bing.com
+    skip-cert-verify: true
+    alpn:
+      - h3
   - name: RU 🇷🇺-Hysteria2 | 0-0
     type: hysteria2
     server: 46.17.41.189
@@ -244,6 +258,7 @@ proxy-groups:
       - CloudFlare 🇨🇱-vless | 2-6
       - FR 🇫🇷-hysteria | 3-1
       - RU 🇷🇺-Hysteria | 0-0
+      - RU 🇷🇺-Hysteria | 1-0
       - RU 🇷🇺-Hysteria2 | 0-0
       - TW 🇹🇼-vless | 1-0
   - name: 🌍 选择代理
