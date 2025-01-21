@@ -175,15 +175,16 @@ proxies:
       path: /?ed=2560
       headers:
         Host: ws.freews.eu.org
-  - name: FR 🇫🇷-hysteria | 3-1
+  - name: RU 🇷🇺-hysteria | 3-1
     type: hysteria
-    server: 195.154.184.5
-    port: 22787
+    server: 185.22.155.71
+    port: 15424
     ports: 30000-40000
     auth_str: dongtaiwang.com
+    obfs: dongtaiwang.com
     alpn:
       - h3
-    sni: bing.com
+    sni: www.bing.com
     skip-cert-verify: true
     up: 11 Mbps
     down: 55 Mbps
@@ -213,7 +214,7 @@ proxy-groups:
       - CloudFlare 🇨🇱-vless | 2-4
       - CloudFlare 🇨🇱-vless | 2-5
       - CloudFlare 🇨🇱-vless | 2-6
-      - FR 🇫🇷-hysteria | 3-1
+      - RU 🇷🇺-hysteria | 3-1
       - RU 🇷🇺-Hysteria2 | 0-0
   - name: 🌍 选择代理
     type: select
