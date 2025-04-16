@@ -212,7 +212,7 @@ proxies:
     server: 46.17.41.217
     port: 64816
     password: dongtaiwang.com
-    sni: apple.com
+    sni: www.bing.com
     skip-cert-verify: true
 proxy-groups:
   - name: ♻️ 自动选择
