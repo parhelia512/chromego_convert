@@ -189,7 +189,7 @@ proxies:
   - name: CloudFlare 🇨🇱-Hysteria2 | 0-0
     type: hysteria2
     server: hy2.694463.xyz
-    port: 10011
+    port: 30033
     password: dongtaiwang.com
     sni: www.bing.com
     skip-cert-verify: true
