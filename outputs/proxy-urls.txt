@@ -1,6 +1,8 @@
 hysteria://62.210.10.113:22662/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#NL-hysteria | 0-1
 tuic://083c4304-78e8-4702-b2ff-7dc899f74d90:dongtaiwang.com@62.210.10.113:22457/?congestion_controller=bbr&udp_relay_mode=native&sni=bing.com&alpn=h3&allow_insecure=NaN&disable_sni=0#NL-tuic | 3-1
 hysteria://198.40.52.27:36194/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#US-hysteria | 4-1
+hysteria://208.87.243.151:17549/?protocol=udp&insecure=NaN&peer=www.bing.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#US-hysteria | 5-1
+hysteria://108.181.24.77:11512/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#US-hysteria | 6-1
 hysteria://195.154.200.40:2345/?protocol=udp&insecure=NaN&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#FR-Hysteria | 0-0
 hysteria://51.159.226.1:14241/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#FR-Hysteria | 1-0
 hysteria2://dongtaiwang.com@51.159.111.32:31180/?sni=apple.com&insecure=NaN#FR-Hysteria2 | 0-0
