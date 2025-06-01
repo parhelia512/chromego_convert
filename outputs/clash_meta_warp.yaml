@@ -46,7 +46,7 @@ proxies:
       - 1.1.1.1
       - 8.8.8.8
     dialer-proxy: ☁ WARP前置节点
-  - name: NL 🇳🇱-hysteria | 0-1
+  - name: 🏳 CloudFlare-hysteria | 0-1
     type: hysteria
     server: 62.210.10.113
     port: 22662
@@ -58,14 +58,14 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: US 🇺🇸-mieru | 1-1
+  - name: 🏳 CloudFlare-mieru | 1-1
     type: mieru
     server: 108.181.23.41
     port: 28676
     transport: TCP
     username: dongtaiwang.com
     password: dongtaiwang.com
-  - name: US 🇺🇸-anytls | 2-1
+  - name: 🏳 CloudFlare-anytls | 2-1
     type: anytls
     server: 208.87.243.187
     port: 61289
@@ -79,7 +79,7 @@ proxies:
       - h2
       - http/1.1
     skip-cert-verify: true
-  - name: NL 🇳🇱-tuic | 3-1
+  - name: 🏳 CloudFlare-tuic | 3-1
     server: 62.210.10.113
     port: 22457
     type: tuic
@@ -92,7 +92,7 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: US 🇺🇸-hysteria | 4-1
+  - name: 🏳 CloudFlare-hysteria | 4-1
     type: hysteria
     server: 198.40.52.27
     port: 36194
@@ -104,7 +104,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR 🇫🇷-Hysteria | 0-0
+  - name: 🏳 CloudFlare-Hysteria | 0-0
     type: hysteria
     server: 195.154.200.40
     port: 2345
@@ -118,7 +118,7 @@ proxies:
     skip-cert-verify: true
     alpn:
       - h3
-  - name: FR 🇫🇷-Hysteria | 1-0
+  - name: 🏳 CloudFlare-Hysteria | 1-0
     type: hysteria
     server: 51.159.226.1
     port: 14241
@@ -132,21 +132,21 @@ proxies:
     skip-cert-verify: true
     alpn:
       - h3
-  - name: FR 🇫🇷-Hysteria2 | 0-0
+  - name: 🏳 CloudFlare-Hysteria2 | 0-0
     type: hysteria2
     server: 51.159.111.32
     port: 31180
     password: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
-  - name: US 🇺🇸-Hysteria2 | 1-0
+  - name: 🏳 CloudFlare-Hysteria2 | 1-0
     type: hysteria2
     server: 108.181.5.130
     port: 57773
     password: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
-  - name: US 🇺🇸-vless | 0-0
+  - name: 🏳 CloudFlare-vless | 0-0
     type: vless
     server: 198.40.52.26
     port: 20783
@@ -161,7 +161,7 @@ proxies:
     reality-opts:
       public-key: hoDqIoXDTQap0fGHAsSkCPmGq3CpUjjnholUcahMb3Y
       short-id: ''
-  - name: RU 🇷🇺-vless | 1-0
+  - name: 🏳 CloudFlare-vless | 1-0
     type: vless
     server: 185.22.155.105
     port: 62750
@@ -183,17 +183,17 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - NL 🇳🇱-hysteria | 0-1
-      - US 🇺🇸-mieru | 1-1
-      - US 🇺🇸-anytls | 2-1
-      - NL 🇳🇱-tuic | 3-1
-      - US 🇺🇸-hysteria | 4-1
-      - FR 🇫🇷-Hysteria | 0-0
-      - FR 🇫🇷-Hysteria | 1-0
-      - FR 🇫🇷-Hysteria2 | 0-0
-      - US 🇺🇸-Hysteria2 | 1-0
-      - US 🇺🇸-vless | 0-0
-      - RU 🇷🇺-vless | 1-0
+      - 🏳 CloudFlare-hysteria | 0-1
+      - 🏳 CloudFlare-mieru | 1-1
+      - 🏳 CloudFlare-anytls | 2-1
+      - 🏳 CloudFlare-tuic | 3-1
+      - 🏳 CloudFlare-hysteria | 4-1
+      - 🏳 CloudFlare-Hysteria | 0-0
+      - 🏳 CloudFlare-Hysteria | 1-0
+      - 🏳 CloudFlare-Hysteria2 | 0-0
+      - 🏳 CloudFlare-Hysteria2 | 1-0
+      - 🏳 CloudFlare-vless | 0-0
+      - 🏳 CloudFlare-vless | 1-0
   - name: ☁ WARP前置节点
     type: select
     proxies:
