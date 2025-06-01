@@ -1,8 +1,8 @@
-hysteria://62.210.10.113:22662/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#{country}-hysteria | 0-1
-tuic://083c4304-78e8-4702-b2ff-7dc899f74d90:dongtaiwang.com@62.210.10.113:22457/?congestion_controller=bbr&udp_relay_mode=native&sni=bing.com&alpn=h3&allow_insecure=NaN&disable_sni=0#{country}-tuic | 3-1
-hysteria://198.40.52.27:36194/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#{country}-hysteria | 4-1
-hysteria://195.154.200.40:2345/?protocol=udp&insecure=NaN&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#{country}-Hysteria | 0-0
-hysteria://51.159.226.1:14241/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#{country}-Hysteria | 1-0
-hysteria2://dongtaiwang.com@51.159.111.32:31180/?sni=apple.com&insecure=NaN#{country}-Hysteria2 | 0-0
-hysteria2://dongtaiwang.com@108.181.5.130:57773/?sni=apple.com&insecure=NaN#{country}-Hysteria2 | 1-0
-vless://ec302de4-6b3d-4f03-a228-3c6d303ed370@1.162.51.106:37898?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.yahoo.com&fp=chrome&pbk=v6uWJJmVGFPd0K040QK3PJHCbPc74kXFoQmAhpu30jQ&sid=e12d7fdb&type=tcp&serviceName=/&host=&path=#{country}-vless | 0-0
+hysteria://62.210.10.113:22662/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#NL-hysteria | 0-1
+tuic://083c4304-78e8-4702-b2ff-7dc899f74d90:dongtaiwang.com@62.210.10.113:22457/?congestion_controller=bbr&udp_relay_mode=native&sni=bing.com&alpn=h3&allow_insecure=NaN&disable_sni=0#NL-tuic | 3-1
+hysteria://198.40.52.27:36194/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#US-hysteria | 4-1
+hysteria://195.154.200.40:2345/?protocol=udp&insecure=NaN&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#FR-Hysteria | 0-0
+hysteria://51.159.226.1:14241/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#FR-Hysteria | 1-0
+hysteria2://dongtaiwang.com@51.159.111.32:31180/?sni=apple.com&insecure=NaN#FR-Hysteria2 | 0-0
+hysteria2://dongtaiwang.com@108.181.5.130:57773/?sni=apple.com&insecure=NaN#US-Hysteria2 | 1-0
+vless://ec302de4-6b3d-4f03-a228-3c6d303ed370@1.162.51.106:37898?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.yahoo.com&fp=chrome&pbk=v6uWJJmVGFPd0K040QK3PJHCbPc74kXFoQmAhpu30jQ&sid=e12d7fdb&type=tcp&serviceName=/&host=&path=#TW-vless | 0-0
