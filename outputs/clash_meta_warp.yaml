@@ -46,7 +46,7 @@ proxies:
       - 1.1.1.1
       - 8.8.8.8
     dialer-proxy: ☁ WARP前置节点
-  - name: NL undefined-hysteria | 0-1
+  - name: undefined-hysteria | 0-1
     type: hysteria
     server: 62.210.10.113
     port: 22662
@@ -58,14 +58,14 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: US undefined-mieru | 1-1
+  - name: undefined-mieru | 1-1
     type: mieru
     server: 108.181.23.41
     port: 28676
     transport: TCP
     username: dongtaiwang.com
     password: dongtaiwang.com
-  - name: US undefined-anytls | 2-1
+  - name: undefined-anytls | 2-1
     type: anytls
     server: 208.87.243.187
     port: 61289
@@ -79,7 +79,7 @@ proxies:
       - h2
       - http/1.1
     skip-cert-verify: true
-  - name: NL undefined-tuic | 3-1
+  - name: undefined-tuic | 3-1
     server: 62.210.10.113
     port: 22457
     type: tuic
@@ -92,7 +92,7 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: US undefined-hysteria | 4-1
+  - name: undefined-hysteria | 4-1
     type: hysteria
     server: 198.40.52.27
     port: 36194
@@ -104,7 +104,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR undefined-Hysteria | 0-0
+  - name: undefined-Hysteria | 0-0
     type: hysteria
     server: 195.154.200.40
     port: 2345
@@ -118,7 +118,7 @@ proxies:
     skip-cert-verify: true
     alpn:
       - h3
-  - name: FR undefined-Hysteria | 1-0
+  - name: undefined-Hysteria | 1-0
     type: hysteria
     server: 51.159.226.1
     port: 14241
@@ -132,21 +132,21 @@ proxies:
     skip-cert-verify: true
     alpn:
       - h3
-  - name: FR undefined-Hysteria2 | 0-0
+  - name: undefined-Hysteria2 | 0-0
     type: hysteria2
     server: 51.159.111.32
     port: 31180
     password: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
-  - name: US undefined-Hysteria2 | 1-0
+  - name: undefined-Hysteria2 | 1-0
     type: hysteria2
     server: 108.181.5.130
     port: 57773
     password: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
-  - name: US undefined-vless | 0-0
+  - name: undefined-vless | 0-0
     type: vless
     server: 198.40.52.26
     port: 20783
@@ -161,7 +161,7 @@ proxies:
     reality-opts:
       public-key: hoDqIoXDTQap0fGHAsSkCPmGq3CpUjjnholUcahMb3Y
       short-id: ''
-  - name: RU undefined-vless | 1-0
+  - name: undefined-vless | 1-0
     type: vless
     server: 185.22.155.105
     port: 62750
@@ -183,17 +183,17 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - NL undefined-hysteria | 0-1
-      - US undefined-mieru | 1-1
-      - US undefined-anytls | 2-1
-      - NL undefined-tuic | 3-1
-      - US undefined-hysteria | 4-1
-      - FR undefined-Hysteria | 0-0
-      - FR undefined-Hysteria | 1-0
-      - FR undefined-Hysteria2 | 0-0
-      - US undefined-Hysteria2 | 1-0
-      - US undefined-vless | 0-0
-      - RU undefined-vless | 1-0
+      - undefined-hysteria | 0-1
+      - undefined-mieru | 1-1
+      - undefined-anytls | 2-1
+      - undefined-tuic | 3-1
+      - undefined-hysteria | 4-1
+      - undefined-Hysteria | 0-0
+      - undefined-Hysteria | 1-0
+      - undefined-Hysteria2 | 0-0
+      - undefined-Hysteria2 | 1-0
+      - undefined-vless | 0-0
+      - undefined-vless | 1-0
   - name: ☁ WARP前置节点
     type: select
     proxies:
