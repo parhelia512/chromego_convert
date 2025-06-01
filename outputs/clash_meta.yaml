@@ -25,7 +25,7 @@ dns:
     ipcidr:
       - 240.0.0.0/4
 proxies:
-  - name: undefined-hysteria | 0-1
+  - name: NL undefined-hysteria | 0-1
     type: hysteria
     server: 62.210.10.113
     port: 22662
@@ -37,14 +37,14 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: undefined-mieru | 1-1
+  - name: US undefined-mieru | 1-1
     type: mieru
     server: 108.181.23.41
     port: 28676
     transport: TCP
     username: dongtaiwang.com
     password: dongtaiwang.com
-  - name: undefined-anytls | 2-1
+  - name: US undefined-anytls | 2-1
     type: anytls
     server: 208.87.243.187
     port: 61289
@@ -58,7 +58,7 @@ proxies:
       - h2
       - http/1.1
     skip-cert-verify: true
-  - name: undefined-tuic | 3-1
+  - name: NL undefined-tuic | 3-1
     server: 62.210.10.113
     port: 22457
     type: tuic
@@ -71,7 +71,7 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: undefined-hysteria | 4-1
+  - name: US undefined-hysteria | 4-1
     type: hysteria
     server: 198.40.52.27
     port: 36194
@@ -83,7 +83,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: undefined-Hysteria | 0-0
+  - name: FR undefined-Hysteria | 0-0
     type: hysteria
     server: 195.154.200.40
     port: 2345
@@ -97,7 +97,7 @@ proxies:
     skip-cert-verify: true
     alpn:
       - h3
-  - name: undefined-Hysteria | 1-0
+  - name: FR undefined-Hysteria | 1-0
     type: hysteria
     server: 51.159.226.1
     port: 14241
@@ -111,50 +111,20 @@ proxies:
     skip-cert-verify: true
     alpn:
       - h3
-  - name: undefined-Hysteria2 | 0-0
+  - name: FR undefined-Hysteria2 | 0-0
     type: hysteria2
     server: 51.159.111.32
     port: 31180
     password: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
-  - name: undefined-Hysteria2 | 1-0
+  - name: US undefined-Hysteria2 | 1-0
     type: hysteria2
     server: 108.181.5.130
     port: 57773
     password: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
-  - name: undefined-vless | 0-0
-    type: vless
-    server: 198.40.52.26
-    port: 20783
-    uuid: 942e9337-6cd1-471e-ae3e-6a4ae0f38465
-    flow: xtls-rprx-vision
-    tls: true
-    servername: aws.amazon.com
-    network: tcp
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: /
-    reality-opts:
-      public-key: hoDqIoXDTQap0fGHAsSkCPmGq3CpUjjnholUcahMb3Y
-      short-id: ''
-  - name: undefined-vless | 1-0
-    type: vless
-    server: 185.22.155.105
-    port: 62750
-    uuid: fdd2d176-2602-46f2-b694-ce247de88b22
-    flow: xtls-rprx-vision
-    tls: true
-    servername: www.paypal.com
-    network: tcp
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: /
-    reality-opts:
-      public-key: _E_YXE_gOkDrffe4t6gcajtnjFZAJ3g7ZwTJbL3IOHA
-      short-id: ''
 proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
@@ -162,17 +132,15 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - undefined-hysteria | 0-1
-      - undefined-mieru | 1-1
-      - undefined-anytls | 2-1
-      - undefined-tuic | 3-1
-      - undefined-hysteria | 4-1
-      - undefined-Hysteria | 0-0
-      - undefined-Hysteria | 1-0
-      - undefined-Hysteria2 | 0-0
-      - undefined-Hysteria2 | 1-0
-      - undefined-vless | 0-0
-      - undefined-vless | 1-0
+      - NL undefined-hysteria | 0-1
+      - US undefined-mieru | 1-1
+      - US undefined-anytls | 2-1
+      - NL undefined-tuic | 3-1
+      - US undefined-hysteria | 4-1
+      - FR undefined-Hysteria | 0-0
+      - FR undefined-Hysteria | 1-0
+      - FR undefined-Hysteria2 | 0-0
+      - US undefined-Hysteria2 | 1-0
   - name: 🌍 选择代理
     type: select
     proxies:
