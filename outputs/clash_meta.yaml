@@ -25,173 +25,64 @@ dns:
     ipcidr:
       - 240.0.0.0/4
 proxies:
-  - name: CloudFlare 🇨🇱-hysteria | 0-1
+  - name: NL 🇳🇱-hysteria | 0-1
     type: hysteria
-    server: clash1.dtku47.xyz
-    port: 11223
-    auth-str: O5tQQiW2xKf5
+    server: 62.210.10.113
+    port: 22662
+    auth-str: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
     alpn:
       - h3
     protocol: udp
-    up: 50 Mbps
-    down: 100 Mbps
-  - name: CloudFlare 🇨🇱-hysteria | 1-1
-    type: hysteria
-    server: hy2.dtku47.xyz
-    port: 15566
-    auth-str: jQrGpwSqp34P
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: US 🇺🇸-mieru | 1-1
+    type: mieru
+    server: 108.181.23.41
+    port: 28676
+    transport: TCP
+    username: dongtaiwang.com
+    password: dongtaiwang.com
+  - name: US 🇺🇸-anytls | 2-1
+    type: anytls
+    server: 208.87.243.187
+    port: 61289
+    password: dongtaiwang.com
+    client-fingerprint: chrome
+    udp: true
+    idle-session-check-interval: 30
+    idle-session-timeout: 30
+    min-idle-session: 0
     alpn:
-      - h3
-    protocol: udp
-    up: 50 Mbps
-    down: 100 Mbps
-  - name: CloudFlare 🇨🇱-hysteria | 2-1
-    type: hysteria
-    server: hy2.dtku47.xyz
-    port: 15566
-    auth-str: jQrGpwSqp34P
-    alpn:
-      - h3
-    protocol: udp
-    up: 50 Mbps
-    down: 100 Mbps
-  - name: CloudFlare 🇨🇱-hysteria | 3-1
-    type: hysteria
-    server: hy1.dtku47.xyz
-    port: 22334
-    auth-str: lASdKzWK0VxL
-    alpn:
-      - h3
-    protocol: udp
-    up: 50 Mbps
-    down: 100 Mbps
-  - name: US 🇺🇸-ss | 4-1
-    type: ss
-    server: 108.181.22.130
-    port: 11256
-    cipher: 2022-blake3-chacha20-poly1305
-    password: +/b6Q+CbYg8b823kivADeViRHa7kdBprvhpyTk15QpY=
-  - name: CloudFlare 🇨🇱-hysteria | 5-1
-    type: hysteria
-    server: hy1.dtku47.xyz
-    port: 11257
-    auth-str: oO5q7L6QPSuJ
-    alpn:
-      - h3
-    protocol: udp
-    up: 50 Mbps
-    down: 100 Mbps
-  - name: CloudFlare 🇨🇱-tuic | 6-1
-    server: tuic1.dtku47.xyz
-    port: 22336
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - name: NL 🇳🇱-tuic | 3-1
+    server: 62.210.10.113
+    port: 22457
     type: tuic
-    uuid: 39edbd65-1a14-4d58-bb5a-3b69c52d0869
-    password: hSOogY0SXn4T
+    uuid: 083c4304-78e8-4702-b2ff-7dc899f74d90
+    password: dongtaiwang.com
     alpn:
       - h3
-    request-timeout: 8000
+    sni: bing.com
+    skip-cert-verify: true
+    reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: CloudFlare 🇨🇱-hysteria | 7-1
+  - name: US 🇺🇸-hysteria | 4-1
     type: hysteria
-    server: hy2.dtku47.xyz
-    port: 15566
-    auth-str: jQrGpwSqp34P
+    server: 198.40.52.27
+    port: 36194
+    auth-str: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
     alpn:
       - h3
     protocol: udp
-    up: 50 Mbps
-    down: 100 Mbps
-  - name: 🏳 CloudFlare-vmess | 8-1
-    type: vmess
-    server: 104.26.9.22
-    port: 8080
-    cipher: auto
-    uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    servername: dual-nothing-prep-exit.trycloudflare.com
-    network: ws
-    ws-opts:
-      path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-      headers:
-        host: dual-nothing-prep-exit.trycloudflare.com
-  - name: US 🇺🇸-vmess | 8-2
-    type: vmess
-    server: 172.64.97.235
-    port: 8080
-    cipher: auto
-    uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    servername: dual-nothing-prep-exit.trycloudflare.com
-    network: ws
-    ws-opts:
-      path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-      headers:
-        host: dual-nothing-prep-exit.trycloudflare.com
-  - name: 🏳 CloudFlare-vmess | 8-3
-    type: vmess
-    server: 104.19.38.28
-    port: 8080
-    cipher: auto
-    uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    servername: dual-nothing-prep-exit.trycloudflare.com
-    network: ws
-    ws-opts:
-      path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-      headers:
-        host: dual-nothing-prep-exit.trycloudflare.com
-  - name: 🏳 CloudFlare-vmess | 8-4
-    type: vmess
-    server: 104.19.38.48
-    port: 8080
-    cipher: auto
-    uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    servername: dual-nothing-prep-exit.trycloudflare.com
-    network: ws
-    ws-opts:
-      path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-      headers:
-        host: dual-nothing-prep-exit.trycloudflare.com
-  - name: CloudFlare 🇨🇱-hysteria | 9-1
-    type: hysteria
-    server: clash1.dtku47.xyz
-    port: 11223
-    auth-str: O5tQQiW2xKf5
-    alpn:
-      - h3
-    protocol: udp
-    up: 50 Mbps
-    down: 100 Mbps
-  - name: CloudFlare 🇨🇱-hysteria | 10-1
-    type: hysteria
-    server: hy2.dtku47.xyz
-    port: 15566
-    auth-str: jQrGpwSqp34P
-    alpn:
-      - h3
-    protocol: udp
-    up: 50 Mbps
-    down: 100 Mbps
-  - name: CloudFlare 🇨🇱-hysteria | 11-1
-    type: hysteria
-    server: hy1.dtku47.xyz
-    port: 22334
-    auth-str: lASdKzWK0VxL
-    alpn:
-      - h3
-    protocol: udp
-    up: 50 Mbps
-    down: 100 Mbps
+    up: 11 Mbps
+    down: 55 Mbps
   - name: RU 🇷🇺-Hysteria2 | 0-0
     type: hysteria2
     server: 45.129.2.108
@@ -241,21 +132,11 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - CloudFlare 🇨🇱-hysteria | 0-1
-      - CloudFlare 🇨🇱-hysteria | 1-1
-      - CloudFlare 🇨🇱-hysteria | 2-1
-      - CloudFlare 🇨🇱-hysteria | 3-1
-      - US 🇺🇸-ss | 4-1
-      - CloudFlare 🇨🇱-hysteria | 5-1
-      - CloudFlare 🇨🇱-tuic | 6-1
-      - CloudFlare 🇨🇱-hysteria | 7-1
-      - 🏳 CloudFlare-vmess | 8-1
-      - US 🇺🇸-vmess | 8-2
-      - 🏳 CloudFlare-vmess | 8-3
-      - 🏳 CloudFlare-vmess | 8-4
-      - CloudFlare 🇨🇱-hysteria | 9-1
-      - CloudFlare 🇨🇱-hysteria | 10-1
-      - CloudFlare 🇨🇱-hysteria | 11-1
+      - NL 🇳🇱-hysteria | 0-1
+      - US 🇺🇸-mieru | 1-1
+      - US 🇺🇸-anytls | 2-1
+      - NL 🇳🇱-tuic | 3-1
+      - US 🇺🇸-hysteria | 4-1
       - RU 🇷🇺-Hysteria2 | 0-0
       - 🏳 CloudFlare-vmess | 0-0
       - TW 🇹🇼-vless | 2-0
