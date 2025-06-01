@@ -337,7 +337,7 @@ async function getPhysicalLocation(address) {
   try {
     const geo = geoip.lookup(address);
     const country = geo ? geo.country : "CloudFlare";
-    return `${country}${getFlagEmoji(country)}`;
+    return `${country} ${getFlagEmoji(country)}`;
   } catch (e) {
     console.error(`区域代码获取失败: ${e}`);
     return "CloudFlare";
@@ -346,7 +346,7 @@ async function getPhysicalLocation(address) {
 
 function getFlagEmoji(countryCode) {
   // 将国家/地区代码转换为大写，以匹配 ISO 3166-1 alpha-2 格式
-  // const countryCodeUpper = countryCode.toUpperCase();
+  const countryCodeUpper = countryCode.toUpperCase();
 
   // 计算国旗 emoji 的 Unicode 编码
   // 每个国家/地区的 Unicode 编码范围是从 'A' 到 'Z'，并且与国家/地区代码对应
