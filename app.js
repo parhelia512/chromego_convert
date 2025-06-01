@@ -354,8 +354,7 @@ function getFlagEmoji(countryCode) {
   const firstLetter = countryCodeUpper.charCodeAt(0);
   const secondLetter = countryCodeUpper.charCodeAt(1);
   const emoji = String.fromCodePoint(firstLetter + unicodeOffset, secondLetter + unicodeOffset);
-
-  return;
+  return emoji;
 }
 
 async function writeClashMetaProfile(templateFile, outputFile, extractedProxies) {
