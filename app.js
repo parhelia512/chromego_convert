@@ -344,19 +344,6 @@ async function getPhysicalLocation(address) {
   }
 }
 
-function getFlagEmoji(countryCode) {
-  // 将国家/地区代码转换为大写，以匹配 ISO 3166-1 alpha-2 格式
-  const countryCodeUpper = countryCode.toUpperCase();
-
-  // 计算国旗 emoji 的 Unicode 编码
-  // 每个国家/地区的 Unicode 编码范围是从 'A' 到 'Z'，并且与国家/地区代码对应
-  const unicodeOffset = 127397; // 国旗 emoji 的 Unicode 偏移量
-  const firstLetter = countryCodeUpper.charCodeAt(0);
-  const secondLetter = countryCodeUpper.charCodeAt(1);
-  const emoji = String.fromCodePoint(firstLetter + unicodeOffset, secondLetter + unicodeOffset);
-
-  return emoji;
-}
 
 async function writeClashMetaProfile(templateFile, outputFile, extractedProxies) {
   try {
