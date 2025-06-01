@@ -25,10 +25,44 @@ dns:
     ipcidr:
       - 240.0.0.0/4
 proxies:
-  - name: RU 🇷🇺-hysteria | 3-1
+  - name: US 🇺🇸-hysteria | 0-1
+    type: hysteria
+    server: 208.87.243.151
+    port: 17549
+    auth_str: dongtaiwang.com
+    alpn:
+      - h3
+    sni: www.bing.com
+    skip-cert-verify: true
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: US 🇺🇸-hysteria | 1-1
+    type: hysteria
+    server: 108.181.24.77
+    port: 11512
+    auth-str: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: RU 🇷🇺-hysteria | 2-1
     type: hysteria
     server: 185.22.155.71
     port: 10803
+    auth_str: dongtaiwang.com
+    alpn:
+      - h3
+    sni: www.bing.com
+    skip-cert-verify: true
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: US 🇺🇸-hysteria | 3-1
+    type: hysteria
+    server: 208.87.243.151
+    port: 17549
     auth_str: dongtaiwang.com
     alpn:
       - h3
@@ -65,7 +99,10 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - RU 🇷🇺-hysteria | 3-1
+      - US 🇺🇸-hysteria | 0-1
+      - US 🇺🇸-hysteria | 1-1
+      - RU 🇷🇺-hysteria | 2-1
+      - US 🇺🇸-hysteria | 3-1
       - RU 🇷🇺-Hysteria2 | 0-0
       - TW 🇹🇼-vless | 0-0
   - name: 🌍 选择代理
