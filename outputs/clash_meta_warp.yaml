@@ -64,6 +64,21 @@ proxies:
     password: dongtaiwang.com
     sni: www.bing.com
     skip-cert-verify: true
+  - name: TW 🇹🇼-vless | 0-0
+    type: vless
+    server: 1.162.51.106
+    port: 37898
+    uuid: ec302de4-6b3d-4f03-a228-3c6d303ed370
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.yahoo.com
+    network: tcp
+    client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: /
+    reality-opts:
+      public-key: v6uWJJmVGFPd0K040QK3PJHCbPc74kXFoQmAhpu30jQ
+      short-id: e12d7fdb
 proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
@@ -73,6 +88,7 @@ proxy-groups:
     proxies:
       - RU 🇷🇺-hysteria | 3-1
       - RU 🇷🇺-Hysteria2 | 0-0
+      - TW 🇹🇼-vless | 0-0
   - name: ☁ WARP前置节点
     type: select
     proxies:
