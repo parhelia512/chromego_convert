@@ -214,13 +214,24 @@ proxy-groups:
   - name: ☁ WARP前置节点
     type: select
     proxies: null
-  - name: 🌍 选择代理
+  - name: 🚀 节点选择
     type: select
     proxies:
-      - ☁ WARP
+      - ☁ WARP前置节点
+      - NL-hysteria | 0-1
+      - US-mieru | 1-1
+      - US-anytls | 2-1
+      - NL-tuic | 3-1
+      - US-hysteria | 4-1
+      - US-hysteria | 5-1
+      - US-hysteria | 6-1
+      - FR-Hysteria | 0-0
+      - FR-Hysteria | 1-0
+      - FR-Hysteria2 | 0-0
+      - US-Hysteria2 | 1-0
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,🌍 选择代理
+  - MATCH,🚀 节点选择
