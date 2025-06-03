@@ -68,12 +68,18 @@ dns:
      
 proxies:
 proxy-groups:
+  - name: 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+    
   - name: 节点选择
     type: select
     proxies:
-    - 
+    - 自动选择
     
-
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
