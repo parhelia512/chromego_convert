@@ -193,20 +193,106 @@ proxies:
     sni: apple.com
     skip-cert-verify: true
 proxy-groups:
-  - name: 节点选择
+  - name: 🚀 节点选择
     type: select
     proxies:
-      - 自动选择
-  - name: 自动选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - NL-hysteria | 0-1
+      - US-mieru | 1-1
+      - US-anytls | 2-1
+      - NL-tuic | 3-1
+      - US-hysteria | 4-1
+      - US-hysteria | 5-1
+      - US-hysteria | 6-1
+      - FR-Hysteria | 0-0
+      - FR-Hysteria | 1-0
+      - FR-Hysteria2 | 0-0
+      - US-Hysteria2 | 1-0
+  - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 节点选择
+      - NL-hysteria | 0-1
+      - US-mieru | 1-1
+      - US-anytls | 2-1
+      - NL-tuic | 3-1
+      - US-hysteria | 4-1
+      - US-hysteria | 5-1
+      - US-hysteria | 6-1
+      - FR-Hysteria | 0-0
+      - FR-Hysteria | 1-0
+      - FR-Hysteria2 | 0-0
+      - US-Hysteria2 | 1-0
+  - name: 📺 巴哈姆特
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+  - name: 📺 哔哩哔哩
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+  - name: 🌏 国内媒体
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+  - name: Ⓜ️ 微软云盘
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+  - name: 📢 谷歌FCM
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+  - name: 🤖 OpenAI
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,节点选择
+  - MATCH,🐟 漏网之鱼
