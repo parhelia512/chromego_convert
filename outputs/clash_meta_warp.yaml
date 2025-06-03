@@ -226,10 +226,27 @@ proxy-groups:
       - FR-Hysteria | 1-0
       - FR-Hysteria2 | 0-0
       - US-Hysteria2 | 1-0
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - NL-hysteria | 0-1
+      - US-mieru | 1-1
+      - US-anytls | 2-1
+      - NL-tuic | 3-1
+      - US-hysteria | 4-1
+      - US-hysteria | 5-1
+      - US-hysteria | 6-1
+      - FR-Hysteria | 0-0
+      - FR-Hysteria | 1-0
+      - FR-Hysteria2 | 0-0
+      - US-Hysteria2 | 1-0
   - name: WARP前置节点
     type: select
     proxies:
-      - 🚀 节点选择
+      - ♻️ 自动选择
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
