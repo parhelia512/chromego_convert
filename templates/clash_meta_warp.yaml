@@ -87,11 +87,11 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - ☁ WARP
+
   - name: ☁ WARP前置节点
     type: select
     proxies:
-      - 🚀 节点选择
+      - ☁ WARP
 
 rules:
   - DOMAIN,clash.razord.top,DIRECT
