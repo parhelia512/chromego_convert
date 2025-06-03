@@ -87,7 +87,8 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - ☁ WARP
+      - ♻️ 自动选择
+      - ☁ WARP 
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
