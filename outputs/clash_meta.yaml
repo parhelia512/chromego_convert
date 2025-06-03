@@ -195,7 +195,8 @@ proxies:
 proxy-groups:
   - name: 节点选择
     type: select
-    proxies: null
+    proxies:
+      - null
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
