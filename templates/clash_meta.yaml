@@ -71,6 +71,8 @@ proxy-groups:
   - name: 节点选择
     type: select
     proxies:
+    - 
+    
 
 rules:
   - DOMAIN,clash.razord.top,DIRECT
@@ -78,3 +80,4 @@ rules:
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,节点选择
+  
