@@ -215,6 +215,7 @@ proxy-groups:
     type: select
     proxies:
       - ☁ WARP
+      - 手动选择
       - NL-hysteria | 0-1
       - US-mieru | 1-1
       - US-anytls | 2-1
