@@ -88,16 +88,11 @@ proxy-groups:
     type: select
     proxies:
       - ☁ WARP
-      - 手动选择
   - name: WARP前置节点
     type: select
     proxies:
-      - 手动选择
+      - 🚀 节点选择
       
-  - name: 手动选择
-    type: select
-    proxies:
-
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
