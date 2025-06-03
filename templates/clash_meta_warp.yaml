@@ -84,14 +84,14 @@ proxies:
     dns: [ 1.1.1.1, 8.8.8.8 ]
     dialer-proxy: "☁ WARP前置节点"
 proxy-groups:
-  - name: ☁ WARP前置节点
-    type: select
-    proxies:
-      - 🚀 节点选择
   - name: 🚀 节点选择
     type: select
     proxies:
       - ☁ WARP
+  - name: ☁ WARP前置节点
+    type: select
+    proxies:
+      - 🚀 节点选择
 
 rules:
   - DOMAIN,clash.razord.top,DIRECT
