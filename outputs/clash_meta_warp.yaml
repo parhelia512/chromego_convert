@@ -211,10 +211,6 @@ proxies:
     sni: apple.com
     skip-cert-verify: true
 proxy-groups:
-  - name: ☁ WARP前置节点
-    type: select
-    proxies:
-      - 🚀 节点选择
   - name: 🚀 节点选择
     type: select
     proxies:
@@ -230,6 +226,10 @@ proxy-groups:
       - FR-Hysteria | 1-0
       - FR-Hysteria2 | 0-0
       - US-Hysteria2 | 1-0
+  - name: ☁ WARP前置节点
+    type: select
+    proxies:
+      - 🚀 节点选择
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
