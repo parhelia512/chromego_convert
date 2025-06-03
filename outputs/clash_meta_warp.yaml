@@ -214,11 +214,11 @@ proxy-groups:
   - name: ☁ WARP前置节点
     type: select
     proxies:
-      - ☁ WARP
+      - 🚀 节点选择
   - name: 🚀 节点选择
     type: select
     proxies:
-      - ☁ WARP前置节点
+      - ☁ WARP
       - NL-hysteria | 0-1
       - US-mieru | 1-1
       - US-anytls | 2-1
