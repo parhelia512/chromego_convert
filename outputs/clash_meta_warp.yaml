@@ -213,7 +213,8 @@ proxies:
 proxy-groups:
   - name: ☁ WARP前置节点
     type: select
-    proxies: null
+    proxies:
+      - 🚀 节点选择
   - name: 🚀 节点选择
     type: select
     proxies:
