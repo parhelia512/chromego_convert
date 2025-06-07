@@ -187,10 +187,10 @@ proxies:
     skip-cert-verify: true
   - name: US-Hysteria2 | 1-0
     type: hysteria2
-    server: 108.181.5.130
-    port: 57773
+    server: 108.181.22.213
+    port: 15167
     password: dongtaiwang.com
-    sni: apple.com
+    sni: www.bing.com
     skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
