@@ -106,10 +106,10 @@ proxies:
     transport: TCP
     username: dongtaiwang.com
     password: dongtaiwang.com
-  - name: US-anytls | 2-1
+  - name: CloudFlare-anytls | 2-1
     type: anytls
-    server: 208.87.243.187
-    port: 61289
+    server: tw.534582.xyz
+    port: 8443
     password: dongtaiwang.com
     client-fingerprint: chrome
     udp: true
@@ -218,7 +218,7 @@ proxy-groups:
       - ☁ WARP
       - NL-hysteria | 0-1
       - US-mieru | 1-1
-      - US-anytls | 2-1
+      - CloudFlare-anytls | 2-1
       - NL-tuic | 3-1
       - FR-hysteria | 4-1
       - US-hysteria | 5-1
@@ -235,7 +235,7 @@ proxy-groups:
     proxies:
       - NL-hysteria | 0-1
       - US-mieru | 1-1
-      - US-anytls | 2-1
+      - CloudFlare-anytls | 2-1
       - NL-tuic | 3-1
       - FR-hysteria | 4-1
       - US-hysteria | 5-1
