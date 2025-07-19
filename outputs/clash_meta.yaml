@@ -152,9 +152,9 @@ proxies:
     down: 55 Mbps
   - name: FR-Hysteria | 0-0
     type: hysteria
-    server: 51.159.226.1
-    port: 14241
-    ports: 14241
+    server: 195.154.200.40
+    port: 15010
+    ports: 15010
     auth-str: dongtaiwang.com
     up: 80
     down: 100
