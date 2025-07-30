@@ -90,7 +90,7 @@ proxies:
   - name: NL-hysteria | 0-1
     type: hysteria
     server: 62.210.10.113
-    port: 22662
+    port: 13767
     auth-str: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
@@ -102,7 +102,7 @@ proxies:
   - name: US-mieru | 1-1
     type: mieru
     server: 108.181.23.41
-    port: 28676
+    port: 50223
     transport: TCP
     username: dongtaiwang.com
     password: dongtaiwang.com
@@ -122,9 +122,9 @@ proxies:
     skip-cert-verify: true
   - name: NL-tuic | 3-1
     server: 62.210.10.113
-    port: 22457
+    port: 33998
     type: tuic
-    uuid: 083c4304-78e8-4702-b2ff-7dc899f74d90
+    uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
     password: dongtaiwang.com
     alpn:
       - h3
@@ -185,8 +185,8 @@ proxies:
   - name: FR-Hysteria | 1-0
     type: hysteria
     server: 51.159.226.1
-    port: 14241
-    ports: 14241
+    port: 49003
+    ports: 49003
     auth-str: dongtaiwang.com
     up: 80
     down: 100
@@ -199,9 +199,9 @@ proxies:
   - name: FR-Hysteria2 | 0-0
     type: hysteria2
     server: 51.159.111.32
-    port: 31180
+    port: 5355
     password: dongtaiwang.com
-    sni: apple.com
+    sni: www.bing.com
     skip-cert-verify: true
   - name: US-Hysteria2 | 1-0
     type: hysteria2
