@@ -154,20 +154,71 @@ proxies:
     transport: TCP
     username: dongtaiwang.com
     password: dongtaiwang.com
-  - name: CloudFlare-anytls | 2-1
-    type: anytls
-    server: tw.399403.xyz
-    port: 8443
+  - name: FR-tuic | 2-1
+    server: 2001:bc8:1203:106::100
+    port: 55111
+    type: tuic
+    uuid: 5ae31731-78ac-483a-b524-011d05072ef5
     password: dongtaiwang.com
-    client-fingerprint: chrome
-    udp: true
-    idle-session-check-interval: 30
-    idle-session-timeout: 30
-    min-idle-session: 0
     alpn:
-      - h2
-      - http/1.1
+      - h3
+    sni: bing.com
     skip-cert-verify: true
+    reduce-rtt: true
+    udp-relay-mode: native
+    congestion-controller: bbr
+  - name: FR-tuic | 2-2
+    server: 2001:bc8:1203:106::101
+    port: 55111
+    type: tuic
+    uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+    password: dongtaiwang.com
+    alpn:
+      - h3
+    sni: bing.com
+    skip-cert-verify: true
+    reduce-rtt: true
+    udp-relay-mode: native
+    congestion-controller: bbr
+  - name: FR-tuic | 2-3
+    server: 2001:bc8:1203:106::102
+    port: 55111
+    type: tuic
+    uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+    password: dongtaiwang.com
+    alpn:
+      - h3
+    sni: bing.com
+    skip-cert-verify: true
+    reduce-rtt: true
+    udp-relay-mode: native
+    congestion-controller: bbr
+  - name: FR-tuic | 2-4
+    server: 2001:bc8:1203:106::103
+    port: 55111
+    type: tuic
+    uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+    password: dongtaiwang.com
+    alpn:
+      - h3
+    sni: bing.com
+    skip-cert-verify: true
+    reduce-rtt: true
+    udp-relay-mode: native
+    congestion-controller: bbr
+  - name: FR-tuic | 2-5
+    server: 2001:bc8:1203:106::104
+    port: 55111
+    type: tuic
+    uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+    password: dongtaiwang.com
+    alpn:
+      - h3
+    sni: bing.com
+    skip-cert-verify: true
+    reduce-rtt: true
+    udp-relay-mode: native
+    congestion-controller: bbr
   - name: NL-tuic | 3-1
     server: 62.210.10.113
     port: 33998
@@ -333,7 +384,11 @@ proxy-groups:
       - FR-hysteria | 0-4
       - FR-hysteria | 0-5
       - US-mieru | 1-1
-      - CloudFlare-anytls | 2-1
+      - FR-tuic | 2-1
+      - FR-tuic | 2-2
+      - FR-tuic | 2-3
+      - FR-tuic | 2-4
+      - FR-tuic | 2-5
       - NL-tuic | 3-1
       - FR-tuic | 3-2
       - FR-tuic | 3-3
@@ -359,7 +414,11 @@ proxy-groups:
       - FR-hysteria | 0-4
       - FR-hysteria | 0-5
       - US-mieru | 1-1
-      - CloudFlare-anytls | 2-1
+      - FR-tuic | 2-1
+      - FR-tuic | 2-2
+      - FR-tuic | 2-3
+      - FR-tuic | 2-4
+      - FR-tuic | 2-5
       - NL-tuic | 3-1
       - FR-tuic | 3-2
       - FR-tuic | 3-3
