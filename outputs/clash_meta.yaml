@@ -69,10 +69,10 @@ dns:
       - tls://dns.google
       - tls://cloudflare-dns.com
 proxies:
-  - name: NL-hysteria | 0-1
+  - name: FR-hysteria | 0-1
     type: hysteria
-    server: 62.210.10.113
-    port: 14801
+    server: 51.159.111.32
+    port: 15670
     auth-str: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
@@ -83,8 +83,8 @@ proxies:
     down: 55 Mbps
   - name: FR-hysteria | 0-2
     type: hysteria
-    server: 2001:bc8:32d7:306::123
-    port: 14801
+    server: 2001:bc8:1203:106::111
+    port: 15670
     auth-str: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
@@ -95,8 +95,8 @@ proxies:
     down: 55 Mbps
   - name: FR-hysteria | 0-3
     type: hysteria
-    server: 2001:bc8:32d7:306::124
-    port: 14801
+    server: 2001:bc8:1203:106::112
+    port: 15670
     auth-str: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
@@ -107,8 +107,8 @@ proxies:
     down: 55 Mbps
   - name: FR-hysteria | 0-4
     type: hysteria
-    server: 2001:bc8:32d7:306::125
-    port: 14801
+    server: 2001:bc8:1203:106::113
+    port: 15670
     auth-str: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
@@ -119,8 +119,8 @@ proxies:
     down: 55 Mbps
   - name: FR-hysteria | 0-5
     type: hysteria
-    server: 2001:bc8:32d7:306::126
-    port: 14801
+    server: 2001:bc8:1203:106::114
+    port: 15670
     auth-str: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
@@ -358,7 +358,7 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - NL-hysteria | 0-1
+      - FR-hysteria | 0-1
       - FR-hysteria | 0-2
       - FR-hysteria | 0-3
       - FR-hysteria | 0-4

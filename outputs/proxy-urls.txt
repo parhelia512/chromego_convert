@@ -1,8 +1,8 @@
-hysteria://62.210.10.113:14801/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#NL-hysteria | 0-1
-hysteria://2001:bc8:32d7:306::123:14801/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#FR-hysteria | 0-2
-hysteria://2001:bc8:32d7:306::124:14801/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#FR-hysteria | 0-3
-hysteria://2001:bc8:32d7:306::125:14801/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#FR-hysteria | 0-4
-hysteria://2001:bc8:32d7:306::126:14801/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#FR-hysteria | 0-5
+hysteria://51.159.111.32:15670/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#FR-hysteria | 0-1
+hysteria://2001:bc8:1203:106::111:15670/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#FR-hysteria | 0-2
+hysteria://2001:bc8:1203:106::112:15670/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#FR-hysteria | 0-3
+hysteria://2001:bc8:1203:106::113:15670/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#FR-hysteria | 0-4
+hysteria://2001:bc8:1203:106::114:15670/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#FR-hysteria | 0-5
 tuic://5ae31731-78ac-483a-b524-011d05072ef5:dongtaiwang.com@2001:bc8:1203:106::100:55111/?congestion_controller=bbr&udp_relay_mode=native&sni=bing.com&alpn=h3&allow_insecure=NaN&disable_sni=0#FR-tuic | 2-1
 tuic://5ae31731-78ac-483a-b524-011d05072ef5:dongtaiwang.com@2001:bc8:1203:106::101:55111/?congestion_controller=bbr&udp_relay_mode=native&sni=bing.com&alpn=h3&allow_insecure=NaN&disable_sni=0#FR-tuic | 2-2
 tuic://5ae31731-78ac-483a-b524-011d05072ef5:dongtaiwang.com@2001:bc8:1203:106::102:55111/?congestion_controller=bbr&udp_relay_mode=native&sni=bing.com&alpn=h3&allow_insecure=NaN&disable_sni=0#FR-tuic | 2-3
