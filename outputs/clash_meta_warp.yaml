@@ -87,6 +87,7 @@ proxies:
       - 1.1.1.1
       - 8.8.8.8
     dialer-proxy: ☁ WARP前置节点
+  - {"name": "🇺🇸 myus IPV6-hys","type": "hysteria","server": "ipv6.mydomain.us","ports": "3891,5520-5530","obfs": "obfsobfsobfsmicrosoft","protocol": "udp","up": "50 Mbps","down": "300 Mbps","skip-cert-verify": true}
   - name: FR-hysteria | 0-1
     type: hysteria
     server: 51.159.107.20
