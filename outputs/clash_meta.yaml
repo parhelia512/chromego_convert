@@ -129,13 +129,19 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: US-mieru | 1-1
-    type: mieru
-    server: 108.181.23.41
-    port: 50223
-    transport: TCP
-    username: dongtaiwang.com
+  - name: FR-tuic | 1-1
+    server: 2001:bc8:32d7:312::2
+    port: 23556
+    type: tuic
+    uuid: e732a82b-612f-415d-a9f8-e4b1df37d066
     password: dongtaiwang.com
+    alpn:
+      - h3
+    sni: bing.com
+    skip-cert-verify: true
+    reduce-rtt: true
+    udp-relay-mode: native
+    congestion-controller: bbr
   - name: FR-tuic | 2-1
     server: 2001:bc8:1203:106::100
     port: 55111
@@ -347,12 +353,12 @@ proxies:
     password: dongtaiwang.com
     sni: www.bing.com
     skip-cert-verify: true
-  - name: US-Hysteria2 | 1-0
+  - name: CloudFlare-Hysteria2 | 1-0
     type: hysteria2
-    server: 108.181.22.213
-    port: 15167
+    server: '[2001'
+    port: .nan
     password: dongtaiwang.com
-    sni: www.bing.com
+    sni: apple.com
     skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
@@ -363,7 +369,7 @@ proxy-groups:
       - FR-hysteria | 0-3
       - FR-hysteria | 0-4
       - FR-hysteria | 0-5
-      - US-mieru | 1-1
+      - FR-tuic | 1-1
       - FR-tuic | 2-1
       - FR-tuic | 2-2
       - FR-tuic | 2-3
@@ -381,7 +387,7 @@ proxy-groups:
       - FR-Hysteria | 0-0
       - FR-Hysteria | 1-0
       - FR-Hysteria2 | 0-0
-      - US-Hysteria2 | 1-0
+      - CloudFlare-Hysteria2 | 1-0
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
