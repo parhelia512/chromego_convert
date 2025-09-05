@@ -147,19 +147,18 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-tuic | 1-1
-    server: 2001:bc8:32d7:312::2
-    port: 23556
-    type: tuic
-    uuid: e732a82b-612f-415d-a9f8-e4b1df37d066
-    password: dongtaiwang.com
+  - name: FR-hysteria | 1-1
+    type: hysteria
+    server: 62.210.10.140
+    port: 42248
+    auth-str: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
     alpn:
       - h3
-    sni: bing.com
-    skip-cert-verify: true
-    reduce-rtt: true
-    udp-relay-mode: native
-    congestion-controller: bbr
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
   - name: FR-tuic | 2-1
     server: 2001:bc8:1203:106::100
     port: 55111
@@ -361,10 +360,10 @@ proxies:
     password: dongtaiwang.com
     sni: www.bing.com
     skip-cert-verify: true
-  - name: CloudFlare-Hysteria2 | 1-0
+  - name: FR-Hysteria2 | 1-0
     type: hysteria2
-    server: '[2001'
-    port: .nan
+    server: 62.210.10.140
+    port: 33224
     password: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
@@ -379,7 +378,7 @@ proxy-groups:
       - FR-hysteria | 0-3
       - FR-hysteria | 0-4
       - FR-hysteria | 0-5
-      - FR-tuic | 1-1
+      - FR-hysteria | 1-1
       - FR-tuic | 2-1
       - FR-tuic | 2-2
       - FR-tuic | 2-3
@@ -396,7 +395,7 @@ proxy-groups:
       - FR-Hysteria | 0-0
       - FR-Hysteria | 1-0
       - FR-Hysteria2 | 0-0
-      - CloudFlare-Hysteria2 | 1-0
+      - FR-Hysteria2 | 1-0
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -408,7 +407,7 @@ proxy-groups:
       - FR-hysteria | 0-3
       - FR-hysteria | 0-4
       - FR-hysteria | 0-5
-      - FR-tuic | 1-1
+      - FR-hysteria | 1-1
       - FR-tuic | 2-1
       - FR-tuic | 2-2
       - FR-tuic | 2-3
@@ -425,7 +424,7 @@ proxy-groups:
       - FR-Hysteria | 0-0
       - FR-Hysteria | 1-0
       - FR-Hysteria2 | 0-0
-      - CloudFlare-Hysteria2 | 1-0
+      - FR-Hysteria2 | 1-0
   - name: WARP前置节点
     type: select
     proxies:
