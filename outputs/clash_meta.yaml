@@ -129,7 +129,20 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-hysteria | 1-1
+  - name: FR-tuic | 1-1
+    server: 62.210.10.140
+    port: 23556
+    type: tuic
+    uuid: e732a82b-612f-415d-a9f8-e4b1df37d066
+    password: dongtaiwang.com
+    alpn:
+      - h3
+    sni: bing.com
+    skip-cert-verify: true
+    reduce-rtt: true
+    udp-relay-mode: native
+    congestion-controller: bbr
+  - name: FR-hysteria | 2-1
     type: hysteria
     server: 62.210.10.140
     port: 42248
@@ -141,7 +154,23 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-tuic | 2-1
+  - name: FR-vless | 3-1
+    type: vless
+    server: 2001:bc8:32d7:158::5
+    port: 10033
+    uuid: 56618bde-5a09-4ef8-ae56-6e7a8d69ec67
+    network: grpc
+    udp: true
+    tls: true
+    flow: null
+    servername: nijigen-works.jp
+    reality-opts:
+      public-key: m1ORavmKKsF8kn6JfNF1m35wRORu8c6YLyxpSfyiYQ0
+      short-id: dfdfb0e2e2d400c4
+    grpc-opts:
+      grpc-service-name: FhwHiFzK
+    client-fingerprint: chrome
+  - name: FR-tuic | 4-1
     server: 2001:bc8:1203:106::100
     port: 55111
     type: tuic
@@ -154,7 +183,7 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: FR-tuic | 2-2
+  - name: FR-tuic | 4-2
     server: 2001:bc8:1203:106::101
     port: 55111
     type: tuic
@@ -167,7 +196,7 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: FR-tuic | 2-3
+  - name: FR-tuic | 4-3
     server: 2001:bc8:1203:106::102
     port: 55111
     type: tuic
@@ -180,7 +209,7 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: FR-tuic | 2-4
+  - name: FR-tuic | 4-4
     server: 2001:bc8:1203:106::103
     port: 55111
     type: tuic
@@ -193,7 +222,7 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: FR-tuic | 2-5
+  - name: FR-tuic | 4-5
     server: 2001:bc8:1203:106::104
     port: 55111
     type: tuic
@@ -206,7 +235,67 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: NL-tuic | 3-1
+  - name: FR-hysteria | 5-1
+    type: hysteria
+    server: 2001:bc8:1203:106::200
+    port: 47821
+    auth-str: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: FR-hysteria | 5-2
+    type: hysteria
+    server: 2001:bc8:1203:106::201
+    port: 47821
+    auth-str: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: FR-hysteria | 5-3
+    type: hysteria
+    server: 2001:bc8:1203:106::202
+    port: 47821
+    auth-str: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: FR-hysteria | 5-4
+    type: hysteria
+    server: 2001:bc8:1203:106::203
+    port: 47821
+    auth-str: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: FR-hysteria | 5-5
+    type: hysteria
+    server: 2001:bc8:1203:106::204
+    port: 47821
+    auth-str: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: NL-tuic | 6-1
     server: 62.210.10.113
     port: 33998
     type: tuic
@@ -219,7 +308,7 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: FR-tuic | 3-2
+  - name: FR-tuic | 6-2
     server: 2001:bc8:32d7:306::123
     port: 33998
     type: tuic
@@ -232,7 +321,7 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: FR-tuic | 3-3
+  - name: FR-tuic | 6-3
     server: 2001:bc8:32d7:306::124
     port: 33998
     type: tuic
@@ -245,7 +334,7 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: FR-tuic | 3-4
+  - name: FR-tuic | 6-4
     server: 2001:bc8:32d7:306::125
     port: 33998
     type: tuic
@@ -258,7 +347,7 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: FR-tuic | 3-5
+  - name: FR-tuic | 6-5
     server: 2001:bc8:32d7:306::126
     port: 33998
     type: tuic
@@ -271,7 +360,19 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: FR-hysteria | 4-1
+  - name: NL-hysteria | 7-1
+    type: hysteria
+    server: 62.210.10.113
+    port: 13767
+    auth-str: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: FR-hysteria | 8-1
     type: hysteria
     server: 51.159.111.32
     port: 23880
@@ -283,30 +384,20 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-hysteria | 5-1
-    type: hysteria
-    server: 2001:bc8:32d7:158::4
-    port: 50011
-    auth-str: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
+  - name: CloudFlare-anytls | 9-1
+    type: anytls
+    server: fan2.856098.xyz
+    port: 8443
+    password: dongtaiwang.com
+    client-fingerprint: chrome
+    udp: true
+    idle-session-check-interval: 30
+    idle-session-timeout: 30
+    min-idle-session: 0
     alpn:
-      - h3
-    protocol: udp
-    up: 11 Mbps
-    down: 55 Mbps
-  - name: FR-hysteria | 6-1
-    type: hysteria
-    server: 62.210.127.217
-    port: 50011
-    auth-str: dongtaiwang.com
-    sni: apple.com
+      - h2
+      - http/1.1
     skip-cert-verify: true
-    alpn:
-      - h3
-    protocol: udp
-    up: 11 Mbps
-    down: 55 Mbps
   - name: FR-Hysteria | 0-0
     type: hysteria
     server: 195.154.200.40
@@ -358,20 +449,27 @@ proxy-groups:
       - FR-hysteria | 0-3
       - FR-hysteria | 0-4
       - FR-hysteria | 0-5
-      - FR-hysteria | 1-1
-      - FR-tuic | 2-1
-      - FR-tuic | 2-2
-      - FR-tuic | 2-3
-      - FR-tuic | 2-4
-      - FR-tuic | 2-5
-      - NL-tuic | 3-1
-      - FR-tuic | 3-2
-      - FR-tuic | 3-3
-      - FR-tuic | 3-4
-      - FR-tuic | 3-5
-      - FR-hysteria | 4-1
+      - FR-tuic | 1-1
+      - FR-hysteria | 2-1
+      - FR-vless | 3-1
+      - FR-tuic | 4-1
+      - FR-tuic | 4-2
+      - FR-tuic | 4-3
+      - FR-tuic | 4-4
+      - FR-tuic | 4-5
       - FR-hysteria | 5-1
-      - FR-hysteria | 6-1
+      - FR-hysteria | 5-2
+      - FR-hysteria | 5-3
+      - FR-hysteria | 5-4
+      - FR-hysteria | 5-5
+      - NL-tuic | 6-1
+      - FR-tuic | 6-2
+      - FR-tuic | 6-3
+      - FR-tuic | 6-4
+      - FR-tuic | 6-5
+      - NL-hysteria | 7-1
+      - FR-hysteria | 8-1
+      - CloudFlare-anytls | 9-1
       - FR-Hysteria | 0-0
       - FR-Hysteria | 1-0
       - FR-Hysteria2 | 0-0
