@@ -479,7 +479,7 @@ proxies:
     password: dongtaiwang.com
     sni: www.bing.com
     skip-cert-verify: true
-  - name: FR-Hysteria2 | 1-0
+  - name: FR-Hysteria2 | 2-0
     type: hysteria2
     server: 62.210.10.140
     port: 33224
@@ -523,7 +523,7 @@ proxy-groups:
       - FR-Hysteria | 2-0
       - FR-Hysteria | 3-0
       - FR-Hysteria2 | 0-0
-      - FR-Hysteria2 | 1-0
+      - FR-Hysteria2 | 2-0
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -561,7 +561,7 @@ proxy-groups:
       - FR-Hysteria | 2-0
       - FR-Hysteria | 3-0
       - FR-Hysteria2 | 0-0
-      - FR-Hysteria2 | 1-0
+      - FR-Hysteria2 | 2-0
   - name: WARP前置节点
     type: select
     proxies:
