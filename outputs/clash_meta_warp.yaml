@@ -432,6 +432,34 @@ proxies:
       - h3
   - name: FR-Hysteria | 1-0
     type: hysteria
+    server: 62.210.127.217
+    port: 40099
+    ports: 40099
+    auth-str: dongtaiwang.com
+    up: 80
+    down: 100
+    fast-open: true
+    protocol: udp
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+  - name: FR-Hysteria | 2-0
+    type: hysteria
+    server: 51.159.226.1
+    port: 49003
+    ports: 49003
+    auth-str: dongtaiwang.com
+    up: 80
+    down: 100
+    fast-open: true
+    protocol: udp
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+  - name: FR-Hysteria | 3-0
+    type: hysteria
     server: 51.159.226.1
     port: 49003
     ports: 49003
@@ -492,6 +520,8 @@ proxy-groups:
       - CloudFlare-anytls | 9-1
       - FR-Hysteria | 0-0
       - FR-Hysteria | 1-0
+      - FR-Hysteria | 2-0
+      - FR-Hysteria | 3-0
       - FR-Hysteria2 | 0-0
       - FR-Hysteria2 | 1-0
   - name: ♻️ 自动选择
@@ -528,6 +558,8 @@ proxy-groups:
       - CloudFlare-anytls | 9-1
       - FR-Hysteria | 0-0
       - FR-Hysteria | 1-0
+      - FR-Hysteria | 2-0
+      - FR-Hysteria | 3-0
       - FR-Hysteria2 | 0-0
       - FR-Hysteria2 | 1-0
   - name: WARP前置节点
