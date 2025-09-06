@@ -486,10 +486,10 @@ proxies:
     password: dongtaiwang.com
     sni: www.bing.com
     skip-cert-verify: true
-  - name: FR-Hysteria2 | 2-0
+  - name: CloudFlare-Hysteria2 | 2-0
     type: hysteria2
-    server: 62.210.10.140
-    port: 33224
+    server: '[2001'
+    port: .nan
     password: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
@@ -538,7 +538,7 @@ proxy-groups:
       - FR-Hysteria | 3-0
       - FR-Hysteria2 | 0-0
       - US-Hysteria2 | 1-0
-      - FR-Hysteria2 | 2-0
+      - CloudFlare-Hysteria2 | 2-0
       - FR-Hysteria2 | 3-0
   - name: ♻️ 自动选择
     type: url-test
@@ -578,7 +578,7 @@ proxy-groups:
       - FR-Hysteria | 3-0
       - FR-Hysteria2 | 0-0
       - US-Hysteria2 | 1-0
-      - FR-Hysteria2 | 2-0
+      - CloudFlare-Hysteria2 | 2-0
       - FR-Hysteria2 | 3-0
   - name: WARP前置节点
     type: select
