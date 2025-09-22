@@ -360,10 +360,10 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: NL-hysteria | 7-1
+  - name: US-hysteria | 7-1
     type: hysteria
-    server: 62.210.10.113
-    port: 13767
+    server: 208.87.243.151
+    port: 10023
     auth-str: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
@@ -509,7 +509,7 @@ proxy-groups:
       - FR-tuic | 6-3
       - FR-tuic | 6-4
       - FR-tuic | 6-5
-      - NL-hysteria | 7-1
+      - US-hysteria | 7-1
       - FR-hysteria | 8-1
       - CloudFlare-anytls | 9-1
       - FR-Hysteria | 0-0
