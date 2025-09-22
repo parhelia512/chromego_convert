@@ -562,6 +562,13 @@ proxies:
     password: dongtaiwang.com
     sni: www.bing.com
     skip-cert-verify: true
+  - name: US-Hysteria2 | 4-0
+    type: hysteria2
+    server: 104.168.10.176
+    port: 35205
+    password: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -607,6 +614,7 @@ proxy-groups:
       - US-Hysteria2 | 1-0
       - CloudFlare-Hysteria2 | 2-0
       - FR-Hysteria2 | 3-0
+      - US-Hysteria2 | 4-0
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -652,6 +660,7 @@ proxy-groups:
       - US-Hysteria2 | 1-0
       - CloudFlare-Hysteria2 | 2-0
       - FR-Hysteria2 | 3-0
+      - US-Hysteria2 | 4-0
   - name: WARP前置节点
     type: select
     proxies:

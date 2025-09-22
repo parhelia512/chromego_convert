@@ -36,3 +36,4 @@ hysteria2://dongtaiwang.com@51.159.111.32:5355/?sni=www.bing.com&insecure=NaN#FR
 hysteria2://dongtaiwang.com@208.87.243.187:22222/?sni=www.bing.com&insecure=NaN#US-Hysteria2 | 1-0
 hysteria2://dongtaiwang.com@[2001:NaN/?sni=apple.com&insecure=NaN#CloudFlare-Hysteria2 | 2-0
 hysteria2://dongtaiwang.com@51.158.218.2:50066/?sni=www.bing.com&insecure=NaN#FR-Hysteria2 | 3-0
+hysteria2://dongtaiwang.com@104.168.10.176:35205/?sni=apple.com&insecure=NaN#US-Hysteria2 | 4-0
