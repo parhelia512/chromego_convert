@@ -534,20 +534,6 @@ proxies:
     skip-cert-verify: true
     alpn:
       - h3
-  - name: NL-Hysteria | 6-0
-    type: hysteria
-    server: 109.104.153.91
-    port: 37519
-    ports: 10000
-    auth-str: dongtaiwang.com
-    up: 80
-    down: 100
-    fast-open: true
-    protocol: udp
-    sni: apple.com
-    skip-cert-verify: true
-    alpn:
-      - h3
   - name: FR-Hysteria2 | 0-0
     type: hysteria2
     server: 51.159.111.32
@@ -575,13 +561,6 @@ proxies:
     port: 50066
     password: dongtaiwang.com
     sni: www.bing.com
-    skip-cert-verify: true
-  - name: US-Hysteria2 | 4-0
-    type: hysteria2
-    server: 104.168.10.176
-    port: 35205
-    password: dongtaiwang.com
-    sni: apple.com
     skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
@@ -624,12 +603,10 @@ proxy-groups:
       - FR-Hysteria | 1-0
       - FR-Hysteria | 2-0
       - FR-Hysteria | 3-0
-      - NL-Hysteria | 6-0
       - FR-Hysteria2 | 0-0
       - US-Hysteria2 | 1-0
       - CloudFlare-Hysteria2 | 2-0
       - FR-Hysteria2 | 3-0
-      - US-Hysteria2 | 4-0
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -671,12 +648,10 @@ proxy-groups:
       - FR-Hysteria | 1-0
       - FR-Hysteria | 2-0
       - FR-Hysteria | 3-0
-      - NL-Hysteria | 6-0
       - FR-Hysteria2 | 0-0
       - US-Hysteria2 | 1-0
       - CloudFlare-Hysteria2 | 2-0
       - FR-Hysteria2 | 3-0
-      - US-Hysteria2 | 4-0
   - name: WARP前置节点
     type: select
     proxies:
