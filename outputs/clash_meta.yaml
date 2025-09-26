@@ -530,13 +530,6 @@ proxies:
     password: dongtaiwang.com
     sni: www.bing.com
     skip-cert-verify: true
-  - name: CloudFlare-Hysteria2 | 2-0
-    type: hysteria2
-    server: '[2001'
-    port: .nan
-    password: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
   - name: FR-Hysteria2 | 3-0
     type: hysteria2
     server: 51.158.218.2
