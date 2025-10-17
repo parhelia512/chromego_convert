@@ -436,7 +436,7 @@ proxies:
     down: 55 Mbps
   - name: FR-hysteria | 13-1
     type: hysteria
-    server: 51.159.111.32
+    server: 163.172.21.105
     port: 23880
     auth-str: dongtaiwang.com
     sni: bing.com
@@ -502,11 +502,11 @@ proxies:
     skip-cert-verify: true
     alpn:
       - h3
-  - name: FR-Hysteria | 3-0
+  - name: CloudFlare-Hysteria | 3-0
     type: hysteria
-    server: 51.159.226.1
-    port: 49003
-    ports: 49003
+    server: '[2604'
+    port: 6600
+    ports: 6600
     auth-str: dongtaiwang.com
     up: 80
     down: 100
@@ -518,15 +518,15 @@ proxies:
       - h3
   - name: FR-Hysteria2 | 0-0
     type: hysteria2
-    server: 51.159.111.32
+    server: 163.172.21.105
     port: 5355
     password: dongtaiwang.com
     sni: www.bing.com
     skip-cert-verify: true
-  - name: US-Hysteria2 | 1-0
+  - name: CloudFlare-Hysteria2 | 1-0
     type: hysteria2
-    server: 208.87.243.187
-    port: 22222
+    server: '[2604'
+    port: 6600
     password: dongtaiwang.com
     sni: www.bing.com
     skip-cert-verify: true
@@ -582,9 +582,9 @@ proxy-groups:
       - FR-Hysteria | 0-0
       - FR-Hysteria | 1-0
       - FR-Hysteria | 2-0
-      - FR-Hysteria | 3-0
+      - CloudFlare-Hysteria | 3-0
       - FR-Hysteria2 | 0-0
-      - US-Hysteria2 | 1-0
+      - CloudFlare-Hysteria2 | 1-0
       - CloudFlare-Hysteria2 | 2-0
       - FR-Hysteria2 | 3-0
 rules:
