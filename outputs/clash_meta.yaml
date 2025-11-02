@@ -502,20 +502,6 @@ proxies:
     skip-cert-verify: true
     alpn:
       - h3
-  - name: CloudFlare-Hysteria | 3-0
-    type: hysteria
-    server: '[2604'
-    port: 6600
-    ports: 6600
-    auth-str: dongtaiwang.com
-    up: 80
-    down: 100
-    fast-open: true
-    protocol: udp
-    sni: apple.com
-    skip-cert-verify: true
-    alpn:
-      - h3
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -554,7 +540,6 @@ proxy-groups:
       - FR-Hysteria | 0-0
       - FR-Hysteria | 1-0
       - FR-Hysteria | 2-0
-      - CloudFlare-Hysteria | 3-0
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
