@@ -6,10 +6,10 @@ proxies:
     transport: TCP
     username: dongtaiwang.com
     password: dongtaiwang.com
-  - name: HK2_mieru
+  - name: tw_mieru
     type: mieru
-    server: 175.29.23.164
-    port: 28855
+    server: 45.221.98.11
+    port: 28866
     transport: TCP
     username: dongtaiwang.com
     password: dongtaiwang.com
