@@ -16,3 +16,7 @@ https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2
 https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/quick/4/config.yaml
 https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/shadowquic/1/client.yaml
 https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/shadowquic/2/client.yaml
+https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/singbox/1/config.json
+https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/singbox/2/config.json
+https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/singbox/3/config.json
+https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/singbox/4/config.json
