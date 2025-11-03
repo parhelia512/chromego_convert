@@ -1,3 +1,4 @@
+https://raw.githubusercontent.com/freetcp/chromego_convert/refs/heads/main/urls/mieru.yaml
 https://raw.githubusercontent.com/Alvin9999/pac2/refs/heads/master/clash.meta2/1/config.yaml
 https://raw.githubusercontent.com/Alvin9999/pac2/refs/heads/master/clash.meta2/2/config.yaml
 https://raw.githubusercontent.com/Alvin9999/pac2/refs/heads/master/clash.meta2/3/config.yaml
