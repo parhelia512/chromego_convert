@@ -163,30 +163,33 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-hysteria | 6-1
-    type: hysteria
+  - name: FR-tuic | 6-1
     server: 51.159.107.20
-    port: 20001
-    auth-str: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
+    port: 10088
+    type: tuic
+    uuid: 79529c4a-4028-4701-a6d6-4e94b78b50fd
+    password: dongtaiwang.com
     alpn:
       - h3
-    protocol: udp
-    up: 11 Mbps
-    down: 55 Mbps
-  - name: FR-hysteria | 6-2
-    type: hysteria
+    sni: bing.com
+    skip-cert-verify: true
+    reduce-rtt: true
+    udp-relay-mode: native
+    congestion-controller: bbr
+  - name: FR-anytls | 6-2
+    type: anytls
     server: 62.210.11.74
-    port: 30011
-    auth-str: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
+    port: 8443
+    password: dongtaiwang.com
+    client-fingerprint: chrome
+    udp: true
+    idle-session-check-interval: 30
+    idle-session-timeout: 30
+    min-idle-session: 0
     alpn:
-      - h3
-    protocol: udp
-    up: 11 Mbps
-    down: 55 Mbps
+      - h2
+      - http/1.1
+    skip-cert-verify: true
   - name: FR-hysteria | 6-3
     type: hysteria
     server: 2001:bc8:1203:25::2
@@ -223,19 +226,20 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-tuic | 7-1
+  - name: FR-anytls | 7-1
+    type: anytls
     server: 62.210.10.140
-    port: 23556
-    type: tuic
-    uuid: e732a82b-612f-415d-a9f8-e4b1df37d066
+    port: 8443
     password: dongtaiwang.com
+    client-fingerprint: chrome
+    udp: true
+    idle-session-check-interval: 30
+    idle-session-timeout: 30
+    min-idle-session: 0
     alpn:
-      - h3
-    sni: bing.com
+      - h2
+      - http/1.1
     skip-cert-verify: true
-    reduce-rtt: true
-    udp-relay-mode: native
-    congestion-controller: bbr
   - name: FR-hysteria | 8-1
     type: hysteria
     server: 62.210.10.140
@@ -547,12 +551,12 @@ proxy-groups:
       - FR-hysteria2 | 3-1
       - FR-tuic | 4-1
       - FR-hysteria2 | 5-1
-      - FR-hysteria | 6-1
-      - FR-hysteria | 6-2
+      - FR-tuic | 6-1
+      - FR-anytls | 6-2
       - FR-hysteria | 6-3
       - FR-hysteria | 6-4
       - FR-hysteria | 6-5
-      - FR-tuic | 7-1
+      - FR-anytls | 7-1
       - FR-hysteria | 8-1
       - FR-vless | 9-1
       - FR-tuic | 10-1
@@ -589,12 +593,12 @@ proxy-groups:
       - FR-hysteria2 | 3-1
       - FR-tuic | 4-1
       - FR-hysteria2 | 5-1
-      - FR-hysteria | 6-1
-      - FR-hysteria | 6-2
+      - FR-tuic | 6-1
+      - FR-anytls | 6-2
       - FR-hysteria | 6-3
       - FR-hysteria | 6-4
       - FR-hysteria | 6-5
-      - FR-tuic | 7-1
+      - FR-anytls | 7-1
       - FR-hysteria | 8-1
       - FR-vless | 9-1
       - FR-tuic | 10-1
