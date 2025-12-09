@@ -556,9 +556,9 @@ proxies:
     skip-cert-verify: true
   - name: FR-Hysteria | 0-0
     type: hysteria
-    server: 195.154.200.40
-    port: 15010
-    ports: 15010
+    server: 62.210.10.186
+    port: 40099
+    ports: 40099
     auth-str: dongtaiwang.com
     up: 80
     down: 100
