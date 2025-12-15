@@ -1,27 +1,27 @@
 proxies:
   - name: tw1_mieru
-    type: mieru
+    输入: mieru
     server: 45.221.98.11
     port: 28866
     transport: TCP
     username: dongtaiwang.com
     password: dongtaiwang.com
   - name: tw2_mieru
-    type: mieru
-    server: 45.145.75.219
-    port: 55778
+    输入: mieru
+    server: 109.104.152.120
+    port: 33990
     transport: TCP
     username: dongtaiwang.com
     password: dongtaiwang.com
 proxy-groups:
   - name: 🚀 节点选择
-    type: select
+    输入: select
     proxies:
       - ♻️ 自动选择
       - tw1_mieru
       - tw2_mieru
   - name: ♻️ 自动选择
-    type: url-test
+    输入: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 5000
