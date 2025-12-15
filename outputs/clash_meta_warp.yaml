@@ -87,17 +87,17 @@ proxies:
       - 1.1.1.1
       - 8.8.8.8
     dialer-proxy: ☁ WARP前置节点
-  - name: TR-mieru | 0-1
-    type: mieru
+  - name: TR-undefined | 0-1
+    输入: mieru
     server: 45.221.98.11
     port: 28866
     transport: TCP
     username: dongtaiwang.com
     password: dongtaiwang.com
-  - name: US-mieru | 0-2
-    type: mieru
-    server: 45.145.75.219
-    port: 55778
+  - name: US-undefined | 0-2
+    输入: mieru
+    server: 109.104.152.120
+    port: 33990
     transport: TCP
     username: dongtaiwang.com
     password: dongtaiwang.com
@@ -535,8 +535,8 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - ☁ WARP
-      - TR-mieru | 0-1
-      - US-mieru | 0-2
+      - TR-undefined | 0-1
+      - US-undefined | 0-2
       - FR-hysteria | 1-1
       - FR-tuic | 2-1
       - FR-hysteria | 3-1
@@ -572,8 +572,8 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - TR-mieru | 0-1
-      - US-mieru | 0-2
+      - TR-undefined | 0-1
+      - US-undefined | 0-2
       - FR-hysteria | 1-1
       - FR-tuic | 2-1
       - FR-hysteria | 3-1
