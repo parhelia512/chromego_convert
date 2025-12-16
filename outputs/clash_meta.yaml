@@ -145,16 +145,15 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: CloudFlare-hysteria | 6-1
-    type: hysteria
-    server: ipv4-2.758733.xyz
-    port: 30077
-    auth-str: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
+  - name: NL-hysteria2 | 6-1
+    type: hysteria2
+    server: 51.158.194.63
+    port: 32952
+    password: dongtaiwang.com
     alpn:
       - h3
-    protocol: udp
+    sni: www.microsoft.com
+    skip-cert-verify: true
     up: 11 Mbps
     down: 55 Mbps
   - name: FR-vless | 6-2
@@ -522,7 +521,7 @@ proxy-groups:
       - FR-hysteria | 3-1
       - FR-tuic | 4-1
       - FR-hysteria | 5-1
-      - CloudFlare-hysteria | 6-1
+      - NL-hysteria2 | 6-1
       - FR-vless | 6-2
       - CloudFlare-hysteria | 6-3
       - FR-hysteria | 6-4
