@@ -331,6 +331,30 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
+  - name: FR-hysteria | 10-1
+    type: hysteria
+    server: 2001:bc8:32d7:902::3
+    port: 26691
+    auth-str: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: FR-hysteria | 11-1
+    type: hysteria
+    server: 62.210.196.68
+    port: 26691
+    auth-str: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
   - name: CA-Hysteria | 0-0
     type: hysteria
     server: 98.142.247.21
@@ -416,6 +440,8 @@ proxy-groups:
       - FR-tuic | 7-4
       - FR-tuic | 7-5
       - FR-hysteria | 9-1
+      - FR-hysteria | 10-1
+      - FR-hysteria | 11-1
       - CA-Hysteria | 0-0
       - CloudFlare-Hysteria | 1-0
       - FR-Hysteria | 2-0
