@@ -355,11 +355,11 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: CA-Hysteria | 0-0
+  - name: CloudFlare-Hysteria | 0-0
     type: hysteria
-    server: 98.142.247.21
-    port: 39228
-    ports: 39228
+    server: '[2604'
+    port: 6600
+    ports: 6600
     auth-str: dongtaiwang.com
     up: 80
     down: 100
@@ -369,11 +369,11 @@ proxies:
     skip-cert-verify: true
     alpn:
       - h3
-  - name: CloudFlare-Hysteria | 1-0
+  - name: CA-Hysteria | 1-0
     type: hysteria
-    server: '[2604'
-    port: 6600
-    ports: 6600
+    server: 98.142.247.21
+    port: 39228
+    ports: 39228
     auth-str: dongtaiwang.com
     up: 80
     down: 100
@@ -442,8 +442,8 @@ proxy-groups:
       - FR-hysteria | 9-1
       - FR-hysteria | 10-1
       - FR-hysteria | 11-1
-      - CA-Hysteria | 0-0
-      - CloudFlare-Hysteria | 1-0
+      - CloudFlare-Hysteria | 0-0
+      - CA-Hysteria | 1-0
       - FR-Hysteria | 2-0
       - US-Hysteria2 | 0-0
       - FR-Hysteria2 | 1-0
