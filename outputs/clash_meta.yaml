@@ -83,7 +83,31 @@ proxies:
     transport: TCP
     username: dongtaiwang.com
     password: dongtaiwang.com
-  - name: FR-hysteria | 1-1
+  - name: FR-hysteria2 | 1-1
+    type: hysteria2
+    server: 2001:bc8:32d7:302::17
+    port: 20088
+    password: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: FR-hysteria | 2-1
+    type: hysteria
+    server: 2001:bc8:32d7:17b::2
+    port: 11000
+    auth-str: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: FR-hysteria | 3-1
     type: hysteria
     server: 5.178.101.33
     port: 23008
@@ -95,7 +119,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-vless | 1-2
+  - name: FR-vless | 3-2
     type: vless
     server: 195.154.200.13
     port: 17401
@@ -119,7 +143,7 @@ proxies:
         enabled: true
         up: 50
         down: 100
-  - name: CloudFlare-hysteria | 1-3
+  - name: CloudFlare-hysteria | 3-3
     type: hysteria
     server: ipv4.758733.xyz
     port: 20001
@@ -131,7 +155,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-hysteria | 1-4
+  - name: FR-hysteria | 3-4
     type: hysteria
     server: 2001:bc8:32d7:402::3
     port: 20001
@@ -143,7 +167,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-hysteria | 1-5
+  - name: FR-hysteria | 3-5
     type: hysteria
     server: 2001:bc8:32d7:402::4
     port: 20001
@@ -155,7 +179,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-vless | 3-1
+  - name: FR-vless | 5-1
     type: vless
     server: 195.154.200.13
     port: 17401
@@ -179,7 +203,7 @@ proxies:
         enabled: true
         up: 50
         down: 100
-  - name: FR-vless | 3-2
+  - name: FR-vless | 5-2
     type: vless
     server: 2001:bc8:32d7:181::2
     port: 17401
@@ -203,7 +227,7 @@ proxies:
         enabled: true
         up: 50
         down: 100
-  - name: FR-vless | 3-3
+  - name: FR-vless | 5-3
     type: vless
     server: 2001:bc8:32d7:181::3
     port: 17401
@@ -227,7 +251,7 @@ proxies:
         enabled: true
         up: 50
         down: 100
-  - name: DE-tuic | 5-1
+  - name: DE-tuic | 7-1
     server: 89.144.35.231
     port: 33457
     type: tuic
@@ -240,7 +264,7 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: CloudFlare-tuic | 5-2
+  - name: CloudFlare-tuic | 7-2
     server: 2a14:7583:299d::a
     port: 33457
     type: tuic
@@ -253,7 +277,7 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: NL-tuic | 7-1
+  - name: NL-tuic | 9-1
     server: 62.210.10.113
     port: 33998
     type: tuic
@@ -266,7 +290,7 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: CloudFlare-anytls | 7-2
+  - name: CloudFlare-anytls | 9-2
     type: anytls
     server: fan3.394615.xyz
     port: 8443
@@ -280,7 +304,7 @@ proxies:
       - h2
       - http/1.1
     skip-cert-verify: true
-  - name: FR-tuic | 7-3
+  - name: FR-tuic | 9-3
     server: 2001:bc8:32d7:306::124
     port: 33998
     type: tuic
@@ -293,7 +317,7 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: FR-tuic | 7-4
+  - name: FR-tuic | 9-4
     server: 2001:bc8:32d7:306::125
     port: 33998
     type: tuic
@@ -306,7 +330,7 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: FR-tuic | 7-5
+  - name: FR-tuic | 9-5
     server: 2001:bc8:32d7:306::126
     port: 33998
     type: tuic
@@ -319,7 +343,7 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: FR-hysteria | 9-1
+  - name: FR-hysteria | 11-1
     type: hysteria
     server: 2001:bc8:32d7:14f::4
     port: 23880
@@ -331,7 +355,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-hysteria | 10-1
+  - name: FR-hysteria | 12-1
     type: hysteria
     server: 2001:bc8:32d7:902::3
     port: 26691
@@ -343,7 +367,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-hysteria | 11-1
+  - name: FR-hysteria | 13-1
     type: hysteria
     server: 62.210.196.68
     port: 26691
@@ -424,24 +448,26 @@ proxy-groups:
     proxies:
       - TR-undefined | 0-1
       - US-undefined | 0-2
-      - FR-hysteria | 1-1
-      - FR-vless | 1-2
-      - CloudFlare-hysteria | 1-3
-      - FR-hysteria | 1-4
-      - FR-hysteria | 1-5
-      - FR-vless | 3-1
+      - FR-hysteria2 | 1-1
+      - FR-hysteria | 2-1
+      - FR-hysteria | 3-1
       - FR-vless | 3-2
-      - FR-vless | 3-3
-      - DE-tuic | 5-1
-      - CloudFlare-tuic | 5-2
-      - NL-tuic | 7-1
-      - CloudFlare-anytls | 7-2
-      - FR-tuic | 7-3
-      - FR-tuic | 7-4
-      - FR-tuic | 7-5
-      - FR-hysteria | 9-1
-      - FR-hysteria | 10-1
+      - CloudFlare-hysteria | 3-3
+      - FR-hysteria | 3-4
+      - FR-hysteria | 3-5
+      - FR-vless | 5-1
+      - FR-vless | 5-2
+      - FR-vless | 5-3
+      - DE-tuic | 7-1
+      - CloudFlare-tuic | 7-2
+      - NL-tuic | 9-1
+      - CloudFlare-anytls | 9-2
+      - FR-tuic | 9-3
+      - FR-tuic | 9-4
+      - FR-tuic | 9-5
       - FR-hysteria | 11-1
+      - FR-hysteria | 12-1
+      - FR-hysteria | 13-1
       - CloudFlare-Hysteria | 0-0
       - CA-Hysteria | 1-0
       - FR-Hysteria | 2-0
