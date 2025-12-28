@@ -417,7 +417,21 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-hysteria | 12-1
+  - name: CloudFlare-anytls | 12-1
+    type: anytls
+    server: fan2.856098.xyz
+    port: 8443
+    password: dongtaiwang.com
+    client-fingerprint: chrome
+    udp: true
+    idle-session-check-interval: 30
+    idle-session-timeout: 30
+    min-idle-session: 0
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - name: FR-hysteria | 13-1
     type: hysteria
     server: 2001:bc8:32d7:902::3
     port: 26691
@@ -429,7 +443,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-hysteria | 13-1
+  - name: FR-hysteria | 14-1
     type: hysteria
     server: 62.210.196.68
     port: 26691
@@ -532,8 +546,9 @@ proxy-groups:
       - FR-tuic | 9-5
       - US-hysteria | 10-1
       - FR-hysteria | 11-1
-      - FR-hysteria | 12-1
+      - CloudFlare-anytls | 12-1
       - FR-hysteria | 13-1
+      - FR-hysteria | 14-1
       - CloudFlare-Hysteria | 0-0
       - FR-Hysteria | 1-0
       - FR-Hysteria | 2-0
