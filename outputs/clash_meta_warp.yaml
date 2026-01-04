@@ -125,7 +125,19 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-hysteria | 3-1
+  - name: DE-hysteria | 3-1
+    type: hysteria
+    server: 89.144.35.30
+    port: 23008
+    auth-str: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: FR-hysteria | 3-2
     type: hysteria
     server: 5.178.101.33
     port: 23008
@@ -137,7 +149,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-vless | 3-2
+  - name: FR-vless | 3-3
     type: vless
     server: 195.154.200.13
     port: 17401
@@ -161,18 +173,6 @@ proxies:
         enabled: true
         up: 50
         down: 100
-  - name: CloudFlare-hysteria | 3-3
-    type: hysteria
-    server: ipv4.758733.xyz
-    port: 20001
-    auth-str: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-    protocol: udp
-    up: 11 Mbps
-    down: 55 Mbps
   - name: FR-hysteria | 3-4
     type: hysteria
     server: 2001:bc8:32d7:402::3
@@ -470,9 +470,9 @@ proxies:
     skip-cert-verify: true
     alpn:
       - h3
-  - name: FR-Hysteria | 1-0
+  - name: DE-Hysteria | 1-0
     type: hysteria
-    server: 5.178.101.106
+    server: 89.144.35.34
     port: 39228
     ports: 39228
     auth-str: dongtaiwang.com
@@ -624,9 +624,9 @@ proxy-groups:
       - US-mieru | 0-2
       - FR-hysteria2 | 1-1
       - FR-hysteria | 2-1
-      - FR-hysteria | 3-1
-      - FR-vless | 3-2
-      - CloudFlare-hysteria | 3-3
+      - DE-hysteria | 3-1
+      - FR-hysteria | 3-2
+      - FR-vless | 3-3
       - FR-hysteria | 3-4
       - FR-hysteria | 3-5
       - TR-anytls | 4-1
@@ -648,7 +648,7 @@ proxy-groups:
       - FR-hysteria | 13-1
       - FR-hysteria | 14-1
       - CloudFlare-Hysteria | 0-0
-      - FR-Hysteria | 1-0
+      - DE-Hysteria | 1-0
       - CA-Hysteria | 2-0
       - FR-Hysteria | 3-0
       - DE-Hysteria | 4-0
@@ -670,9 +670,9 @@ proxy-groups:
       - US-mieru | 0-2
       - FR-hysteria2 | 1-1
       - FR-hysteria | 2-1
-      - FR-hysteria | 3-1
-      - FR-vless | 3-2
-      - CloudFlare-hysteria | 3-3
+      - DE-hysteria | 3-1
+      - FR-hysteria | 3-2
+      - FR-vless | 3-3
       - FR-hysteria | 3-4
       - FR-hysteria | 3-5
       - TR-anytls | 4-1
@@ -694,7 +694,7 @@ proxy-groups:
       - FR-hysteria | 13-1
       - FR-hysteria | 14-1
       - CloudFlare-Hysteria | 0-0
-      - FR-Hysteria | 1-0
+      - DE-Hysteria | 1-0
       - CA-Hysteria | 2-0
       - FR-Hysteria | 3-0
       - DE-Hysteria | 4-0
