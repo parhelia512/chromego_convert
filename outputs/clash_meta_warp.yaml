@@ -316,12 +316,12 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: FR-hysteria | 8-1
+  - name: CloudFlare-hysteria | 8-1
     type: hysteria
-    server: 2001:bc8:32d7:14f::4
-    port: 23880
+    server: 2a14:7584:d097::a
+    port: 54177
     auth-str: dongtaiwang.com
-    sni: bing.com
+    sni: apple.com
     skip-cert-verify: true
     alpn:
       - h3
@@ -406,10 +406,10 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-hysteria | 11-1
+  - name: CloudFlare-hysteria | 11-1
     type: hysteria
-    server: 2001:bc8:32d7:14f::4
-    port: 23880
+    server: 2a14:7584:d097::a
+    port: 54177
     auth-str: dongtaiwang.com
     sni: bing.com
     skip-cert-verify: true
@@ -498,17 +498,17 @@ proxies:
     skip-cert-verify: true
     alpn:
       - h3
-  - name: FR-Hysteria | 3-0
+  - name: DE-Hysteria | 3-0
     type: hysteria
-    server: 62.210.127.177
-    port: 23880
-    ports: 23880
+    server: 5.83.129.90
+    port: 54177
+    ports: 54177
     auth-str: dongtaiwang.com
     up: 80
     down: 100
     fast-open: true
     protocol: udp
-    sni: bing.com
+    sni: apple.com
     skip-cert-verify: true
     alpn:
       - h3
@@ -599,21 +599,21 @@ proxies:
     reality-opts:
       public-key: kfw5DgkyKiovC3dzb-o2PUYnZPnbYvbx2IwERUv9czY
       short-id: 225e2cc8
-  - name: FR-vless | 7-0
+  - name: CloudFlare-vless | 7-0
     type: vless
-    server: 2001:bc8:32d7:14f::6
-    port: 60011
-    uuid: a1f699e4-d7b7-4cdc-8414-1105e08fe4c5
+    server: 2a14:7584:d097::a
+    port: 11330
+    uuid: 53d74aab-6471-4c1b-ace7-fac837d1bfbd
     flow: ''
     tls: true
-    servername: www.pixiv.co.jp
+    servername: toarumajutsunoindex.fandom.com
     network: xhttp
     client-fingerprint: chrome
     grpc-opts:
       grpc-service-name: /
     reality-opts:
-      public-key: BTCE_8R4FJ7wf9mR7PkONJyeihtHqi_TptjC20eMhic
-      short-id: ea22dff3025e4ff8
+      public-key: 3HaD5Ztk3X4gi3aJLVesV6KSJTW2YGG-hvGD3ZumJkE
+      short-id: fa789b2f5ff56959
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -636,21 +636,21 @@ proxy-groups:
       - US-mieru | 6-1
       - DE-tuic | 7-1
       - CloudFlare-tuic | 7-2
-      - FR-hysteria | 8-1
+      - CloudFlare-hysteria | 8-1
       - NL-tuic | 9-1
       - CloudFlare-anytls | 9-2
       - FR-tuic | 9-3
       - FR-tuic | 9-4
       - FR-tuic | 9-5
       - US-hysteria | 10-1
-      - FR-hysteria | 11-1
+      - CloudFlare-hysteria | 11-1
       - CloudFlare-anytls | 12-1
       - FR-hysteria | 13-1
       - FR-hysteria | 14-1
       - CloudFlare-Hysteria | 0-0
       - DE-Hysteria | 1-0
       - CA-Hysteria | 2-0
-      - FR-Hysteria | 3-0
+      - DE-Hysteria | 3-0
       - DE-Hysteria | 4-0
       - US-Hysteria2 | 0-0
       - FR-Hysteria2 | 2-0
@@ -659,7 +659,7 @@ proxy-groups:
       - FR-vless | 4-0
       - CloudFlare-vless | 5-0
       - DE-vless | 6-0
-      - FR-vless | 7-0
+      - CloudFlare-vless | 7-0
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -682,21 +682,21 @@ proxy-groups:
       - US-mieru | 6-1
       - DE-tuic | 7-1
       - CloudFlare-tuic | 7-2
-      - FR-hysteria | 8-1
+      - CloudFlare-hysteria | 8-1
       - NL-tuic | 9-1
       - CloudFlare-anytls | 9-2
       - FR-tuic | 9-3
       - FR-tuic | 9-4
       - FR-tuic | 9-5
       - US-hysteria | 10-1
-      - FR-hysteria | 11-1
+      - CloudFlare-hysteria | 11-1
       - CloudFlare-anytls | 12-1
       - FR-hysteria | 13-1
       - FR-hysteria | 14-1
       - CloudFlare-Hysteria | 0-0
       - DE-Hysteria | 1-0
       - CA-Hysteria | 2-0
-      - FR-Hysteria | 3-0
+      - DE-Hysteria | 3-0
       - DE-Hysteria | 4-0
       - US-Hysteria2 | 0-0
       - FR-Hysteria2 | 2-0
@@ -705,7 +705,7 @@ proxy-groups:
       - FR-vless | 4-0
       - CloudFlare-vless | 5-0
       - DE-vless | 6-0
-      - FR-vless | 7-0
+      - CloudFlare-vless | 7-0
   - name: WARP前置节点
     type: select
     proxies:
