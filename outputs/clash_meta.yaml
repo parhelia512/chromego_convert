@@ -420,9 +420,9 @@ proxies:
       - h2
       - http/1.1
     skip-cert-verify: true
-  - name: FR-hysteria | 13-1
+  - name: CloudFlare-hysteria | 13-1
     type: hysteria
-    server: 2001:bc8:32d7:902::3
+    server: 2a14:7584:d099::a
     port: 26691
     auth-str: dongtaiwang.com
     sni: apple.com
@@ -432,9 +432,9 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-hysteria | 14-1
+  - name: DE-hysteria | 14-1
     type: hysteria
-    server: 62.210.196.68
+    server: 5.83.129.143
     port: 26691
     auth-str: dongtaiwang.com
     sni: apple.com
@@ -631,8 +631,8 @@ proxy-groups:
       - US-hysteria | 10-1
       - CloudFlare-hysteria | 11-1
       - CloudFlare-anytls | 12-1
-      - FR-hysteria | 13-1
-      - FR-hysteria | 14-1
+      - CloudFlare-hysteria | 13-1
+      - DE-hysteria | 14-1
       - CloudFlare-Hysteria | 0-0
       - DE-Hysteria | 1-0
       - CA-Hysteria | 2-0
