@@ -528,12 +528,12 @@ proxies:
     password: dongtaiwang.com
     sni: www.microsoft.com
     skip-cert-verify: true
-  - name: NL-Hysteria2 | 3-0
+  - name: CloudFlare-Hysteria2 | 3-0
     type: hysteria2
-    server: 51.158.194.63
-    port: 32952
+    server: '[2a14'
+    port: 7584
     password: dongtaiwang.com
-    sni: www.microsoft.com
+    sni: apple.com
     skip-cert-verify: true
   - name: CloudFlare-Hysteria2 | 4-0
     type: hysteria2
@@ -640,7 +640,7 @@ proxy-groups:
       - DE-Hysteria | 4-0
       - US-Hysteria2 | 0-0
       - FR-Hysteria2 | 2-0
-      - NL-Hysteria2 | 3-0
+      - CloudFlare-Hysteria2 | 3-0
       - CloudFlare-Hysteria2 | 4-0
       - FR-vless | 4-0
       - CloudFlare-vless | 5-0
