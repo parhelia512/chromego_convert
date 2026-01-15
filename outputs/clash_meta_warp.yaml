@@ -478,9 +478,9 @@ proxies:
       - h3
   - name: DE-Hysteria | 1-0
     type: hysteria
-    server: 89.144.35.34
-    port: 39228
-    ports: 39228
+    server: 5.83.129.153
+    port: 20088
+    ports: 20088
     auth-str: dongtaiwang.com
     up: 80
     down: 100
@@ -560,21 +560,21 @@ proxies:
     password: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
-  - name: FR-vless | 4-0
+  - name: DE-vless | 4-0
     type: vless
-    server: 62.210.127.177
-    port: 60011
-    uuid: a1f699e4-d7b7-4cdc-8414-1105e08fe4c5
+    server: 89.144.35.231
+    port: 23889
+    uuid: 2460b5d1-0d74-427d-ad6c-bbe2aaab65cf
     flow: ''
     tls: true
-    servername: www.pixiv.co.jp
+    servername: www.sky.com
     network: xhttp
     client-fingerprint: chrome
     grpc-opts:
       grpc-service-name: /
     reality-opts:
-      public-key: BTCE_8R4FJ7wf9mR7PkONJyeihtHqi_TptjC20eMhic
-      short-id: ea22dff3025e4ff8
+      public-key: JNcfkAqeuYew3pxXliMPe8vDro8JmzbJynQobOipGn4
+      short-id: 8f589d63440b23a0
   - name: CloudFlare-vless | 5-0
     type: vless
     server: fan3.394615.xyz
@@ -662,7 +662,7 @@ proxy-groups:
       - FR-Hysteria2 | 2-0
       - CloudFlare-Hysteria2 | 3-0
       - CloudFlare-Hysteria2 | 4-0
-      - FR-vless | 4-0
+      - DE-vless | 4-0
       - CloudFlare-vless | 5-0
       - DE-vless | 6-0
       - CloudFlare-vless | 7-0
@@ -708,7 +708,7 @@ proxy-groups:
       - FR-Hysteria2 | 2-0
       - CloudFlare-Hysteria2 | 3-0
       - CloudFlare-Hysteria2 | 4-0
-      - FR-vless | 4-0
+      - DE-vless | 4-0
       - CloudFlare-vless | 5-0
       - DE-vless | 6-0
       - CloudFlare-vless | 7-0
