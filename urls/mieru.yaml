@@ -1,13 +1,13 @@
 proxies:
   - name: hk_mieru
-    type: mieru
-    server: 45.221.98.11
-    port: 28866
+    输入: mieru
+    server: 173.234.25.51
+    port: 44444
     transport: TCP
     username: dongtaiwang.com
     password: dongtaiwang.com
   - name: hk2_mieru
-    type: mieru
+    输入: mieru
     server: 157.254.223.48
     port: 33990
     transport: TCP
@@ -15,13 +15,13 @@ proxies:
     password: dongtaiwang.com
 proxy-groups:
   - name: 🚀 节点选择
-    type: select
+    输入: select
     proxies:
       - ♻️ 自动选择
       - hk_mieru
       - hk2_mieru
   - name: ♻️ 自动选择
-    type: url-test
+    输入: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 5000
