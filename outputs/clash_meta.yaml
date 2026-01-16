@@ -69,15 +69,15 @@ dns:
       - tls://dns.google
       - tls://cloudflare-dns.com
 proxies:
-  - name: TR-mieru | 0-1
-    type: mieru
-    server: 45.221.98.11
-    port: 28866
+  - name: US-undefined | 0-1
+    输入: mieru
+    server: 173.234.25.51
+    port: 44444
     transport: TCP
     username: dongtaiwang.com
     password: dongtaiwang.com
-  - name: US-mieru | 0-2
-    type: mieru
+  - name: US-undefined | 0-2
+    输入: mieru
     server: 157.254.223.48
     port: 33990
     transport: TCP
@@ -613,8 +613,8 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - TR-mieru | 0-1
-      - US-mieru | 0-2
+      - US-undefined | 0-1
+      - US-undefined | 0-2
       - FR-hysteria2 | 1-1
       - FR-hysteria | 2-1
       - DE-hysteria | 3-1
