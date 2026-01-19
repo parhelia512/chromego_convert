@@ -212,16 +212,16 @@ proxies:
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: DE-hysteria | 6-1
-    type: hysteria
-    server: 89.144.35.30
-    port: 23008
-    auth-str: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
+  - name: US-hysteria2 | 6-1
+    type: hysteria2
+    server: 157.254.223.24
+    port: 30088
+    ports: 31000-32000
+    password: alvin9999.com
     alpn:
       - h3
-    protocol: udp
+    sni: apple.com
+    skip-cert-verify: true
     up: 11 Mbps
     down: 55 Mbps
   - name: FR-hysteria | 6-2
@@ -423,13 +423,6 @@ proxies:
     password: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
-  - name: US-Hysteria2 | 1-0
-    type: hysteria2
-    server: 157.254.223.24
-    port: 30088
-    password: alvin9999.com
-    sni: apple.com
-    skip-cert-verify: true
   - name: FR-Hysteria2 | 2-0
     type: hysteria2
     server: 62.210.124.146
@@ -524,7 +517,7 @@ proxy-groups:
       - US-mieru | 4-1
       - DE-tuic | 5-1
       - CloudFlare-tuic | 5-2
-      - DE-hysteria | 6-1
+      - US-hysteria2 | 6-1
       - FR-hysteria | 6-2
       - FR-vless | 6-3
       - FR-hysteria | 6-4
@@ -540,7 +533,6 @@ proxy-groups:
       - DE-Hysteria | 3-0
       - DE-Hysteria | 4-0
       - US-Hysteria2 | 0-0
-      - US-Hysteria2 | 1-0
       - FR-Hysteria2 | 2-0
       - CloudFlare-Hysteria2 | 3-0
       - CloudFlare-Hysteria2 | 4-0
