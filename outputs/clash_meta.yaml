@@ -444,66 +444,6 @@ proxies:
     password: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
-  - name: DE-vless | 4-0
-    type: vless
-    server: 89.144.35.231
-    port: 23889
-    uuid: 2460b5d1-0d74-427d-ad6c-bbe2aaab65cf
-    flow: ''
-    tls: true
-    servername: www.sky.com
-    network: xhttp
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: /
-    reality-opts:
-      public-key: JNcfkAqeuYew3pxXliMPe8vDro8JmzbJynQobOipGn4
-      short-id: 8f589d63440b23a0
-  - name: CloudFlare-vless | 5-0
-    type: vless
-    server: fan3.394615.xyz
-    port: 34500
-    uuid: 8b66e552-e89d-4c4f-bb5a-e3d37bf151b8
-    flow: ''
-    tls: true
-    servername: www.lovelive-anime.jp
-    network: xhttp
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: /
-    reality-opts:
-      public-key: Yg6kOijRv1IbFcwhY0WmwJ8KW7YTtux4QlQhekEzNEQ
-      short-id: 3a1381d1b2cc9e19
-  - name: DE-vless | 6-0
-    type: vless
-    server: 89.144.35.230
-    port: 54582
-    uuid: 5cfc52bc-e701-4160-89df-930a0c040576
-    flow: xtls-rprx-vision
-    tls: true
-    servername: apple.com
-    network: xhttp
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: /
-    reality-opts:
-      public-key: kfw5DgkyKiovC3dzb-o2PUYnZPnbYvbx2IwERUv9czY
-      short-id: 225e2cc8
-  - name: CloudFlare-vless | 7-0
-    type: vless
-    server: 2a14:7584:d097::a
-    port: 11330
-    uuid: 53d74aab-6471-4c1b-ace7-fac837d1bfbd
-    flow: ''
-    tls: true
-    servername: toarumajutsunoindex.fandom.com
-    network: xhttp
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: /
-    reality-opts:
-      public-key: 3HaD5Ztk3X4gi3aJLVesV6KSJTW2YGG-hvGD3ZumJkE
-      short-id: fa789b2f5ff56959
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -536,10 +476,6 @@ proxy-groups:
       - FR-Hysteria2 | 2-0
       - CloudFlare-Hysteria2 | 3-0
       - CloudFlare-Hysteria2 | 4-0
-      - DE-vless | 4-0
-      - CloudFlare-vless | 5-0
-      - DE-vless | 6-0
-      - CloudFlare-vless | 7-0
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
