@@ -430,20 +430,6 @@ proxies:
     password: dongtaiwang.com
     sni: www.microsoft.com
     skip-cert-verify: true
-  - name: CloudFlare-Hysteria2 | 3-0
-    type: hysteria2
-    server: '[2a14'
-    port: 7584
-    password: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
-  - name: CloudFlare-Hysteria2 | 4-0
-    type: hysteria2
-    server: '[2001'
-    port: .nan
-    password: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -474,8 +460,6 @@ proxy-groups:
       - DE-Hysteria | 4-0
       - US-Hysteria2 | 0-0
       - FR-Hysteria2 | 2-0
-      - CloudFlare-Hysteria2 | 3-0
-      - CloudFlare-Hysteria2 | 4-0
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
