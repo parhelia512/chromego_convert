@@ -93,21 +93,31 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: TR-anytls | 2-1
-    type: anytls
-    server: 45.221.98.14
-    port: 59901
-    password: dongtaiwang.com
-    client-fingerprint: chrome
-    udp: true
-    idle-session-check-interval: 30
-    idle-session-timeout: 30
-    min-idle-session: 0
-    alpn:
-      - h2
-      - http/1.1
+  - name: CloudFlare-hysteria | 2-1
+    type: hysteria
+    server: ip1.758733.xyz
+    port: 23008
+    auth-str: alvin9999.com
+    sni: apple.com
     skip-cert-verify: true
-  - name: FR-vless | 3-1
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: FR-hysteria | 2-2
+    type: hysteria
+    server: 5.178.101.33
+    port: 23008
+    auth-str: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: FR-vless | 2-3
     type: vless
     server: 195.154.200.13
     port: 17401
@@ -131,7 +141,69 @@ proxies:
         enabled: true
         up: 50
         down: 100
-  - name: FR-vless | 3-2
+  - name: FR-hysteria | 2-4
+    type: hysteria
+    server: 2001:bc8:32d7:402::3
+    port: 20001
+    auth-str: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: FR-hysteria | 2-5
+    type: hysteria
+    server: 2001:bc8:32d7:402::4
+    port: 20001
+    auth-str: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: TR-anytls | 3-1
+    type: anytls
+    server: 45.221.98.14
+    port: 59901
+    password: dongtaiwang.com
+    client-fingerprint: chrome
+    udp: true
+    idle-session-check-interval: 30
+    idle-session-timeout: 30
+    min-idle-session: 0
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - name: FR-vless | 4-1
+    type: vless
+    server: 195.154.200.13
+    port: 17401
+    uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
+    network: tcp
+    udp: true
+    tls: true
+    flow: null
+    servername: itunes.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
+      short-id: 8ef4455ba637425b
+    smux:
+      enabled: true
+      protocol: h2mux
+      max-connections: 1
+      min-streams: 4
+      padding: true
+      brutal-opts:
+        enabled: true
+        up: 50
+        down: 100
+  - name: FR-vless | 4-2
     type: vless
     server: 2001:bc8:32d7:181::2
     port: 17401
@@ -155,7 +227,7 @@ proxies:
         enabled: true
         up: 50
         down: 100
-  - name: FR-vless | 3-3
+  - name: FR-vless | 4-3
     type: vless
     server: 2001:bc8:32d7:181::3
     port: 17401
@@ -179,14 +251,14 @@ proxies:
         enabled: true
         up: 50
         down: 100
-  - name: US-mieru | 4-1
+  - name: US-mieru | 5-1
     type: mieru
     server: 157.254.223.48
     port: 33990
     transport: TCP
     username: dongtaiwang.com
     password: dongtaiwang.com
-  - name: CloudFlare-hysteria | 5-1
+  - name: CloudFlare-hysteria | 6-1
     type: hysteria
     server: 2a14:7584:d097::a
     port: 54177
@@ -198,7 +270,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: US-hysteria2 | 6-1
+  - name: US-hysteria2 | 7-1
     type: hysteria2
     server: 157.254.223.24
     port: 30088
@@ -210,7 +282,7 @@ proxies:
     skip-cert-verify: true
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-hysteria | 6-2
+  - name: FR-hysteria | 7-2
     type: hysteria
     server: 5.178.101.33
     port: 23008
@@ -222,7 +294,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-vless | 6-3
+  - name: FR-vless | 7-3
     type: vless
     server: 195.154.200.13
     port: 17401
@@ -246,7 +318,7 @@ proxies:
         enabled: true
         up: 50
         down: 100
-  - name: FR-hysteria | 6-4
+  - name: FR-hysteria | 7-4
     type: hysteria
     server: 2001:bc8:32d7:402::3
     port: 20001
@@ -258,7 +330,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-hysteria | 6-5
+  - name: FR-hysteria | 7-5
     type: hysteria
     server: 2001:bc8:32d7:402::4
     port: 20001
@@ -270,7 +342,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: US-hysteria | 7-1
+  - name: US-hysteria | 8-1
     type: hysteria
     server: 208.87.243.151
     port: 10023
@@ -282,7 +354,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: CloudFlare-hysteria | 8-1
+  - name: CloudFlare-hysteria | 9-1
     type: hysteria
     server: 2a14:7584:d097::a
     port: 54177
@@ -294,7 +366,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: CloudFlare-anytls | 9-1
+  - name: CloudFlare-anytls | 10-1
     type: anytls
     server: fan2.856098.xyz
     port: 8443
@@ -308,7 +380,7 @@ proxies:
       - h2
       - http/1.1
     skip-cert-verify: true
-  - name: CloudFlare-hysteria | 10-1
+  - name: CloudFlare-hysteria | 11-1
     type: hysteria
     server: 2a14:7584:d099::a
     port: 26691
@@ -320,7 +392,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: DE-hysteria | 11-1
+  - name: DE-hysteria | 12-1
     type: hysteria
     server: 5.83.129.143
     port: 26691
@@ -467,22 +539,27 @@ proxy-groups:
     proxies:
       - FR-hysteria2 | 0-1
       - FR-hysteria | 1-1
-      - TR-anytls | 2-1
-      - FR-vless | 3-1
-      - FR-vless | 3-2
-      - FR-vless | 3-3
-      - US-mieru | 4-1
-      - CloudFlare-hysteria | 5-1
-      - US-hysteria2 | 6-1
-      - FR-hysteria | 6-2
-      - FR-vless | 6-3
-      - FR-hysteria | 6-4
-      - FR-hysteria | 6-5
-      - US-hysteria | 7-1
-      - CloudFlare-hysteria | 8-1
-      - CloudFlare-anytls | 9-1
-      - CloudFlare-hysteria | 10-1
-      - DE-hysteria | 11-1
+      - CloudFlare-hysteria | 2-1
+      - FR-hysteria | 2-2
+      - FR-vless | 2-3
+      - FR-hysteria | 2-4
+      - FR-hysteria | 2-5
+      - TR-anytls | 3-1
+      - FR-vless | 4-1
+      - FR-vless | 4-2
+      - FR-vless | 4-3
+      - US-mieru | 5-1
+      - CloudFlare-hysteria | 6-1
+      - US-hysteria2 | 7-1
+      - FR-hysteria | 7-2
+      - FR-vless | 7-3
+      - FR-hysteria | 7-4
+      - FR-hysteria | 7-5
+      - US-hysteria | 8-1
+      - CloudFlare-hysteria | 9-1
+      - CloudFlare-anytls | 10-1
+      - CloudFlare-hysteria | 11-1
+      - DE-hysteria | 12-1
       - CloudFlare-Hysteria | 0-0
       - DE-Hysteria | 1-0
       - CA-Hysteria | 2-0
