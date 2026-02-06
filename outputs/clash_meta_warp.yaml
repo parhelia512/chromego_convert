@@ -434,6 +434,51 @@ proxies:
     password: dongtaiwang.com
     sni: www.microsoft.com
     skip-cert-verify: true
+  - name: CloudFlare-vless | 0-0
+    type: vless
+    server: fan3.394615.xyz
+    port: 34500
+    uuid: 8b66e552-e89d-4c4f-bb5a-e3d37bf151b8
+    flow: ''
+    tls: true
+    servername: www.lovelive-anime.jp
+    network: xhttp
+    client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: /
+    reality-opts:
+      public-key: Yg6kOijRv1IbFcwhY0WmwJ8KW7YTtux4QlQhekEzNEQ
+      short-id: 3a1381d1b2cc9e19
+  - name: DE-vless | 2-0
+    type: vless
+    server: 89.144.35.230
+    port: 54582
+    uuid: 5cfc52bc-e701-4160-89df-930a0c040576
+    flow: xtls-rprx-vision
+    tls: true
+    servername: apple.com
+    network: xhttp
+    client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: /
+    reality-opts:
+      public-key: kfw5DgkyKiovC3dzb-o2PUYnZPnbYvbx2IwERUv9czY
+      short-id: 225e2cc8
+  - name: CloudFlare-vless | 3-0
+    type: vless
+    server: 2a14:7584:d097::a
+    port: 11330
+    uuid: 53d74aab-6471-4c1b-ace7-fac837d1bfbd
+    flow: ''
+    tls: true
+    servername: toarumajutsunoindex.fandom.com
+    network: xhttp
+    client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: /
+    reality-opts:
+      public-key: 3HaD5Ztk3X4gi3aJLVesV6KSJTW2YGG-hvGD3ZumJkE
+      short-id: fa789b2f5ff56959
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -465,6 +510,9 @@ proxy-groups:
       - DE-Hysteria | 4-0
       - US-Hysteria2 | 0-0
       - FR-Hysteria2 | 2-0
+      - CloudFlare-vless | 0-0
+      - DE-vless | 2-0
+      - CloudFlare-vless | 3-0
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -496,6 +544,9 @@ proxy-groups:
       - DE-Hysteria | 4-0
       - US-Hysteria2 | 0-0
       - FR-Hysteria2 | 2-0
+      - CloudFlare-vless | 0-0
+      - DE-vless | 2-0
+      - CloudFlare-vless | 3-0
   - name: WARP前置节点
     type: select
     proxies:
