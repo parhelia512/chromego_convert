@@ -186,32 +186,18 @@ proxies:
     transport: TCP
     username: dongtaiwang.com
     password: dongtaiwang.com
-  - name: DE-tuic | 5-1
-    server: 89.144.35.231
-    port: 33457
-    type: tuic
-    uuid: 66d37a65-7f6f-4e7c-a0f6-163bd917756a
-    password: dongtaiwang.com
-    alpn:
-      - h3
+  - name: CloudFlare-hysteria | 5-1
+    type: hysteria
+    server: 2a14:7584:d097::a
+    port: 54177
+    auth-str: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
-    reduce-rtt: true
-    udp-relay-mode: native
-    congestion-controller: bbr
-  - name: CloudFlare-tuic | 5-2
-    server: 2a14:7583:299d::a
-    port: 33457
-    type: tuic
-    uuid: 66d37a65-7f6f-4e7c-a0f6-163bd917756a
-    password: dongtaiwang.com
     alpn:
       - h3
-    sni: apple.com
-    skip-cert-verify: true
-    reduce-rtt: true
-    udp-relay-mode: native
-    congestion-controller: bbr
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
   - name: US-hysteria2 | 6-1
     type: hysteria2
     server: 157.254.223.24
@@ -404,9 +390,9 @@ proxies:
       - h3
   - name: DE-Hysteria | 4-0
     type: hysteria
-    server: 89.144.35.231
-    port: 18899
-    ports: 18899
+    server: 5.83.129.90
+    port: 54177
+    ports: 54177
     auth-str: dongtaiwang.com
     up: 80
     down: 100
@@ -441,8 +427,7 @@ proxy-groups:
       - FR-vless | 3-2
       - FR-vless | 3-3
       - US-mieru | 4-1
-      - DE-tuic | 5-1
-      - CloudFlare-tuic | 5-2
+      - CloudFlare-hysteria | 5-1
       - US-hysteria2 | 6-1
       - FR-hysteria | 6-2
       - FR-vless | 6-3
