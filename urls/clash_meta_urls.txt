@@ -1,3 +1,5 @@
+https://gitlab.com/free9999/ipupdate/-/raw/master/quick/3/config.yaml
+https://gitlab.com/free9999/ipupdate/-/raw/master/quick/config.yaml
 https://gitlab.com/free9999/ipupdate/-/raw/master/clash.meta2/2/config.yaml
 https://gitlab.com/free9999/ipupdate/-/raw/master/clash.meta2/3/config.yaml
 https://gitlab.com/free9999/ipupdate/-/raw/master/backup/img/1/2/ipp/clash.meta2/2/config.yaml
@@ -5,8 +7,4 @@ https://gitlab.com/free9999/ipupdate/-/raw/master/backup/img/1/2/ipp/clash.meta2
 https://gitlab.com/free9999/ipupdate/-/raw/master/backup/img/1/2/ipp/clash.meta2/4/config.yaml
 https://gitlab.com/free9999/ipupdate/-/raw/master/backup/img/1/2/ipp/clash.meta2/5/config.yaml
 https://gitlab.com/free9999/ipupdate/-/raw/master/backup/img/1/2/ipp/quick/2/config.yaml
-https://gitlab.com/free9999/ipupdate/-/raw/master/backup/img/1/2/ipp/quick/3/config.yaml
 https://gitlab.com/free9999/ipupdate/-/raw/master/backup/img/1/2/ipp/quick/4/config.yaml
-https://gitlab.com/free9999/ipupdate/-/raw/master/quick/3/config.yaml
-https://gitlab.com/free9999/ipupdate/-/raw/master/quick/config.yaml
-
