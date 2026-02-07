@@ -318,21 +318,28 @@ proxies:
     skip-cert-verify: true
     alpn:
       - h3
-  - name: US-Hysteria2 | 0-0
+  - name: CloudFlare-Hysteria2 | 0-0
+    type: hysteria2
+    server: '[2001'
+    port: .nan
+    password: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+  - name: US-Hysteria2 | 2-0
     type: hysteria2
     server: 157.254.223.43
     port: 27921
     password: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
-  - name: US-Hysteria2 | 1-0
+  - name: US-Hysteria2 | 3-0
     type: hysteria2
     server: 157.254.223.24
     port: 30088
     password: alvin9999.com
     sni: apple.com
     skip-cert-verify: true
-  - name: FR-Hysteria2 | 2-0
+  - name: FR-Hysteria2 | 4-0
     type: hysteria2
     server: 62.210.124.146
     port: 22000
@@ -360,9 +367,10 @@ proxy-groups:
       - CA-Hysteria | 2-0
       - DE-Hysteria | 3-0
       - DE-Hysteria | 4-0
-      - US-Hysteria2 | 0-0
-      - US-Hysteria2 | 1-0
-      - FR-Hysteria2 | 2-0
+      - CloudFlare-Hysteria2 | 0-0
+      - US-Hysteria2 | 2-0
+      - US-Hysteria2 | 3-0
+      - FR-Hysteria2 | 4-0
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
