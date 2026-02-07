@@ -345,13 +345,6 @@ proxies:
     password: dongtaiwang.com
     sni: www.microsoft.com
     skip-cert-verify: true
-  - name: CloudFlare-Hysteria2 | 3-0
-    type: hysteria2
-    server: '[2a14'
-    port: 7584
-    password: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -377,7 +370,6 @@ proxy-groups:
       - US-Hysteria2 | 0-0
       - US-Hysteria2 | 1-0
       - FR-Hysteria2 | 2-0
-      - CloudFlare-Hysteria2 | 3-0
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -403,7 +395,6 @@ proxy-groups:
       - US-Hysteria2 | 0-0
       - US-Hysteria2 | 1-0
       - FR-Hysteria2 | 2-0
-      - CloudFlare-Hysteria2 | 3-0
   - name: WARP前置节点
     type: select
     proxies:
