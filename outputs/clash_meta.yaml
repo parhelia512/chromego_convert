@@ -222,19 +222,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: US-hysteria | 8-1
-    type: hysteria
-    server: 208.87.243.151
-    port: 10023
-    auth-str: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-    protocol: udp
-    up: 11 Mbps
-    down: 55 Mbps
-  - name: CloudFlare-anytls | 9-1
+  - name: CloudFlare-anytls | 8-1
     type: anytls
     server: fan2.856098.xyz
     port: 8443
@@ -360,8 +348,7 @@ proxy-groups:
       - FR-vless | 5-3
       - US-mieru | 6-1
       - CloudFlare-hysteria | 7-1
-      - US-hysteria | 8-1
-      - CloudFlare-anytls | 9-1
+      - CloudFlare-anytls | 8-1
       - CloudFlare-Hysteria | 0-0
       - DE-Hysteria | 1-0
       - CA-Hysteria | 2-0
