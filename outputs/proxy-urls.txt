@@ -8,7 +8,7 @@ vless://add14a5b-f648-4423-8a1f-8b8f54c0daef@2001:bc8:32d7:181::3:17401?encrypti
 hysteria://2a14:7584:d097::a:54177/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#CloudFlare-hysteria | 7-1
 hysteria://[2001:NaN/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#CloudFlare-Hysteria | 0-0
 hysteria://5.83.129.153:20088/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#DE-Hysteria | 1-0
-hysteria://98.142.247.21:39228/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#CA-Hysteria | 2-0
+hysteria://5.83.129.153:20088/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#DE-Hysteria | 2-0
 hysteria://5.83.129.90:54177/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#DE-Hysteria | 3-0
 hysteria://5.83.129.90:54177/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#DE-Hysteria | 4-0
 hysteria2://dongtaiwang.com@[2001:NaN/?sni=apple.com&insecure=NaN#CloudFlare-Hysteria2 | 0-0

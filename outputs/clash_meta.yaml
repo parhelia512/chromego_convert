@@ -264,11 +264,11 @@ proxies:
     skip-cert-verify: true
     alpn:
       - h3
-  - name: CA-Hysteria | 2-0
+  - name: DE-Hysteria | 2-0
     type: hysteria
-    server: 98.142.247.21
-    port: 39228
-    ports: 39228
+    server: 5.83.129.153
+    port: 20088
+    ports: 20088
     auth-str: dongtaiwang.com
     up: 80
     down: 100
@@ -351,7 +351,7 @@ proxy-groups:
       - CloudFlare-anytls | 8-1
       - CloudFlare-Hysteria | 0-0
       - DE-Hysteria | 1-0
-      - CA-Hysteria | 2-0
+      - DE-Hysteria | 2-0
       - DE-Hysteria | 3-0
       - DE-Hysteria | 4-0
       - CloudFlare-Hysteria2 | 0-0
