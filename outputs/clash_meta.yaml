@@ -313,10 +313,10 @@ proxies:
     password: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
-  - name: US-Hysteria2 | 2-0
+  - name: DE-Hysteria2 | 2-0
     type: hysteria2
-    server: 157.254.223.43
-    port: 27921
+    server: 89.144.35.34
+    port: 50022
     password: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
@@ -355,7 +355,7 @@ proxy-groups:
       - DE-Hysteria | 3-0
       - DE-Hysteria | 4-0
       - CloudFlare-Hysteria2 | 0-0
-      - US-Hysteria2 | 2-0
+      - DE-Hysteria2 | 2-0
       - US-Hysteria2 | 3-0
       - FR-Hysteria2 | 4-0
 rules:
