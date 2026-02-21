@@ -320,34 +320,6 @@ proxies:
       - h3
   - name: DE-Hysteria | 2-0
     type: hysteria
-    server: 5.83.129.153
-    port: 20088
-    ports: 20088
-    auth-str: dongtaiwang.com
-    up: 80
-    down: 100
-    fast-open: true
-    protocol: udp
-    sni: apple.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-  - name: DE-Hysteria | 3-0
-    type: hysteria
-    server: 5.83.129.90
-    port: 54177
-    ports: 54177
-    auth-str: dongtaiwang.com
-    up: 80
-    down: 100
-    fast-open: true
-    protocol: udp
-    sni: apple.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-  - name: DE-Hysteria | 4-0
-    type: hysteria
     server: 5.83.129.90
     port: 54177
     ports: 54177
@@ -410,8 +382,6 @@ proxy-groups:
       - CloudFlare-Hysteria | 0-0
       - DE-Hysteria | 1-0
       - DE-Hysteria | 2-0
-      - DE-Hysteria | 3-0
-      - DE-Hysteria | 4-0
       - CloudFlare-Hysteria2 | 0-0
       - DE-Hysteria2 | 2-0
       - US-Hysteria2 | 3-0
@@ -438,8 +408,6 @@ proxy-groups:
       - CloudFlare-Hysteria | 0-0
       - DE-Hysteria | 1-0
       - DE-Hysteria | 2-0
-      - DE-Hysteria | 3-0
-      - DE-Hysteria | 4-0
       - CloudFlare-Hysteria2 | 0-0
       - DE-Hysteria2 | 2-0
       - US-Hysteria2 | 3-0

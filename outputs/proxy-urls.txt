@@ -10,9 +10,7 @@ vless://add14a5b-f648-4423-8a1f-8b8f54c0daef@2001:bc8:32d7:181::4:17401?encrypti
 vless://add14a5b-f648-4423-8a1f-8b8f54c0daef@2001:bc8:32d7:181::5:17401?encryption=none&flow=&security=reality&sni=itunes.apple.com&fp=chrome&pbk=IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU&sid=8ef4455ba637425b&type=tcp&serviceName=&host=&path=#FR-vless | 8-5
 hysteria://[2001:NaN/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#CloudFlare-Hysteria | 0-0
 hysteria://5.83.129.153:20088/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#DE-Hysteria | 1-0
-hysteria://5.83.129.153:20088/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#DE-Hysteria | 2-0
-hysteria://5.83.129.90:54177/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#DE-Hysteria | 3-0
-hysteria://5.83.129.90:54177/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#DE-Hysteria | 4-0
+hysteria://5.83.129.90:54177/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#DE-Hysteria | 2-0
 hysteria2://dongtaiwang.com@[2001:NaN/?sni=apple.com&insecure=NaN#CloudFlare-Hysteria2 | 0-0
 hysteria2://dongtaiwang.com@89.144.35.34:50022/?sni=apple.com&insecure=NaN#DE-Hysteria2 | 2-0
 hysteria2://alvin9999.com@157.254.223.24:30088/?sni=apple.com&insecure=NaN#US-Hysteria2 | 3-0
