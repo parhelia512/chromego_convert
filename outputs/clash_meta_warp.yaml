@@ -135,7 +135,104 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: TR-anytls | 4-1
+  - name: CloudFlare-tuic | 4-1
+    server: ip1.758733.xyz
+    port: 10088
+    type: tuic
+    uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
+    password: dongtaiwang.com
+    sni: apple.com
+    alpn:
+      - h3
+    request-timeout: 8000
+    udp-relay-mode: native
+    skip-cert-verify: true
+    congestion-controller: bbr
+  - name: CloudFlare-hysteria | 4-2
+    type: hysteria
+    server: ip1.758733.xyz
+    port: 23008
+    auth-str: alvin9999.com
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: FR-vless | 4-3
+    type: vless
+    server: 2001:bc8:32d7:181::3
+    port: 17401
+    uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
+    network: tcp
+    udp: true
+    tls: true
+    flow: null
+    servername: itunes.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
+      short-id: 8ef4455ba637425b
+    smux:
+      enabled: true
+      protocol: h2mux
+      max-connections: 1
+      min-streams: 4
+      padding: true
+      brutal-opts:
+        enabled: true
+        up: 50
+        down: 100
+  - name: FR-vless | 4-4
+    type: vless
+    server: 2001:bc8:32d7:181::4
+    port: 17401
+    uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
+    network: tcp
+    udp: true
+    tls: true
+    flow: null
+    servername: itunes.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
+      short-id: 8ef4455ba637425b
+    smux:
+      enabled: true
+      protocol: h2mux
+      max-connections: 1
+      min-streams: 4
+      padding: true
+      brutal-opts:
+        enabled: true
+        up: 50
+        down: 100
+  - name: FR-vless | 4-5
+    type: vless
+    server: 2001:bc8:32d7:181::5
+    port: 17401
+    uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
+    network: tcp
+    udp: true
+    tls: true
+    flow: null
+    servername: itunes.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
+      short-id: 8ef4455ba637425b
+    smux:
+      enabled: true
+      protocol: h2mux
+      max-connections: 1
+      min-streams: 4
+      padding: true
+      brutal-opts:
+        enabled: true
+        up: 50
+        down: 100
+  - name: TR-anytls | 5-1
     type: anytls
     server: 45.221.98.14
     port: 59901
@@ -149,78 +246,6 @@ proxies:
       - h2
       - http/1.1
     skip-cert-verify: true
-  - name: FR-vless | 5-1
-    type: vless
-    server: 2001:bc8:32d7:181::3
-    port: 17401
-    uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
-    network: tcp
-    udp: true
-    tls: true
-    flow: null
-    servername: itunes.apple.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
-      short-id: 8ef4455ba637425b
-    smux:
-      enabled: true
-      protocol: h2mux
-      max-connections: 1
-      min-streams: 4
-      padding: true
-      brutal-opts:
-        enabled: true
-        up: 50
-        down: 100
-  - name: FR-vless | 5-2
-    type: vless
-    server: 2001:bc8:32d7:181::2
-    port: 17401
-    uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
-    network: tcp
-    udp: true
-    tls: true
-    flow: null
-    servername: itunes.apple.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
-      short-id: 8ef4455ba637425b
-    smux:
-      enabled: true
-      protocol: h2mux
-      max-connections: 1
-      min-streams: 4
-      padding: true
-      brutal-opts:
-        enabled: true
-        up: 50
-        down: 100
-  - name: FR-vless | 5-3
-    type: vless
-    server: 2001:bc8:32d7:181::3
-    port: 17401
-    uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
-    network: tcp
-    udp: true
-    tls: true
-    flow: null
-    servername: itunes.apple.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
-      short-id: 8ef4455ba637425b
-    smux:
-      enabled: true
-      protocol: h2mux
-      max-connections: 1
-      min-streams: 4
-      padding: true
-      brutal-opts:
-        enabled: true
-        up: 50
-        down: 100
   - name: US-mieru | 6-1
     type: mieru
     server: 157.254.223.48
@@ -362,10 +387,12 @@ proxy-groups:
       - CloudFlare-hysteria | 1-1
       - FR-hysteria2 | 2-1
       - FR-hysteria | 3-1
-      - TR-anytls | 4-1
-      - FR-vless | 5-1
-      - FR-vless | 5-2
-      - FR-vless | 5-3
+      - CloudFlare-tuic | 4-1
+      - CloudFlare-hysteria | 4-2
+      - FR-vless | 4-3
+      - FR-vless | 4-4
+      - FR-vless | 4-5
+      - TR-anytls | 5-1
       - US-mieru | 6-1
       - CloudFlare-hysteria | 7-1
       - CloudFlare-anytls | 8-1
@@ -388,10 +415,12 @@ proxy-groups:
       - CloudFlare-hysteria | 1-1
       - FR-hysteria2 | 2-1
       - FR-hysteria | 3-1
-      - TR-anytls | 4-1
-      - FR-vless | 5-1
-      - FR-vless | 5-2
-      - FR-vless | 5-3
+      - CloudFlare-tuic | 4-1
+      - CloudFlare-hysteria | 4-2
+      - FR-vless | 4-3
+      - FR-vless | 4-4
+      - FR-vless | 4-5
+      - TR-anytls | 5-1
       - US-mieru | 6-1
       - CloudFlare-hysteria | 7-1
       - CloudFlare-anytls | 8-1
