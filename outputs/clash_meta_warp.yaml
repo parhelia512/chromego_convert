@@ -342,7 +342,7 @@ proxies:
   - name: DE-Hysteria2 | 2-0
     type: hysteria2
     server: 89.144.35.34
-    port: 50022
+    port: 43608
     password: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
