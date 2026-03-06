@@ -150,21 +150,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: CloudFlare-anytls | 7-1
-    type: anytls
-    server: fan2.856098.xyz
-    port: 8443
-    password: dongtaiwang.com
-    client-fingerprint: chrome
-    udp: true
-    idle-session-check-interval: 30
-    idle-session-timeout: 30
-    min-idle-session: 0
-    alpn:
-      - h2
-      - http/1.1
-    skip-cert-verify: true
-  - name: CloudFlare-hysteria | 8-1
+  - name: CloudFlare-hysteria | 7-1
     type: hysteria
     server: ip1.758733.xyz
     port: 23008
@@ -176,7 +162,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-vless | 8-2
+  - name: FR-vless | 7-2
     type: vless
     server: 2001:bc8:32d7:181::2
     port: 17401
@@ -200,7 +186,7 @@ proxies:
         enabled: true
         up: 50
         down: 100
-  - name: FR-vless | 8-3
+  - name: FR-vless | 7-3
     type: vless
     server: 2001:bc8:32d7:181::3
     port: 17401
@@ -224,7 +210,7 @@ proxies:
         enabled: true
         up: 50
         down: 100
-  - name: FR-vless | 8-4
+  - name: FR-vless | 7-4
     type: vless
     server: 2001:bc8:32d7:181::4
     port: 17401
@@ -248,7 +234,7 @@ proxies:
         enabled: true
         up: 50
         down: 100
-  - name: FR-vless | 8-5
+  - name: FR-vless | 7-5
     type: vless
     server: 2001:bc8:32d7:181::5
     port: 17401
@@ -272,6 +258,58 @@ proxies:
         enabled: true
         up: 50
         down: 100
+  - name: US-hysteria | 8-1
+    type: hysteria
+    server: 208.87.243.151
+    port: 10023
+    auth-str: dongtaiwang.com
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: IR-anytls | 9-1
+    type: anytls
+    server: 151.242.183.75
+    port: 33333
+    password: dongtaiwang.com
+    client-fingerprint: chrome
+    udp: true
+    idle-session-check-interval: 30
+    idle-session-timeout: 30
+    min-idle-session: 0
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - name: CloudFlare-hysteria | 9-2
+    type: hysteria
+    server: 2a14:7584:d097::a
+    port: 54177
+    auth-str: dongtaiwang.com
+    sni: bing.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: CloudFlare-anytls | 10-1
+    type: anytls
+    server: fan2.856098.xyz
+    port: 8443
+    password: dongtaiwang.com
+    client-fingerprint: chrome
+    udp: true
+    idle-session-check-interval: 30
+    idle-session-timeout: 30
+    min-idle-session: 0
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
   - name: CloudFlare-Hysteria | 0-0
     type: hysteria
     server: '[2001'
@@ -353,12 +391,15 @@ proxy-groups:
       - TR-anytls | 4-1
       - US-mieru | 5-1
       - CloudFlare-hysteria | 6-1
-      - CloudFlare-anytls | 7-1
-      - CloudFlare-hysteria | 8-1
-      - FR-vless | 8-2
-      - FR-vless | 8-3
-      - FR-vless | 8-4
-      - FR-vless | 8-5
+      - CloudFlare-hysteria | 7-1
+      - FR-vless | 7-2
+      - FR-vless | 7-3
+      - FR-vless | 7-4
+      - FR-vless | 7-5
+      - US-hysteria | 8-1
+      - IR-anytls | 9-1
+      - CloudFlare-hysteria | 9-2
+      - CloudFlare-anytls | 10-1
       - CloudFlare-Hysteria | 0-0
       - DE-Hysteria | 1-0
       - DE-Hysteria | 2-0
