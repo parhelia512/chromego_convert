@@ -265,12 +265,12 @@ proxies:
     password: dongtaiwang.com
     sni: www.bing.com
     skip-cert-verify: true
-  - name: US-Hysteria2 | 3-0
+  - name: CloudFlare-Hysteria2 | 3-0
     type: hysteria2
-    server: 157.254.223.24
-    port: 30088
-    password: alvin9999.com
-    sni: apple.com
+    server: '[2a10'
+    port: 3
+    password: VNws548Lj/fDRk58HE6dKAcTNpb8+iIk+ycqKEBNG/U=
+    sni: www.microsoft.com
     skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
@@ -292,7 +292,7 @@ proxy-groups:
       - DE-Hysteria | 2-0
       - CloudFlare-Hysteria2 | 0-0
       - US-Hysteria2 | 2-0
-      - US-Hysteria2 | 3-0
+      - CloudFlare-Hysteria2 | 3-0
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT

@@ -11,4 +11,4 @@ hysteria://5.83.129.153:20088/?protocol=udp&insecure=NaN&peer=apple.com&auth=don
 hysteria://5.83.129.90:54177/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#DE-Hysteria | 2-0
 hysteria2://dongtaiwang.com@[2001:NaN/?sni=apple.com&insecure=NaN#CloudFlare-Hysteria2 | 0-0
 hysteria2://dongtaiwang.com@157.254.223.43:27921/?sni=www.bing.com&insecure=NaN#US-Hysteria2 | 2-0
-hysteria2://alvin9999.com@157.254.223.24:30088/?sni=apple.com&insecure=NaN#US-Hysteria2 | 3-0
+hysteria2://VNws548Lj/fDRk58HE6dKAcTNpb8+iIk+ycqKEBNG/U=@[2a10:3/?sni=www.microsoft.com&insecure=NaN#CloudFlare-Hysteria2 | 3-0
