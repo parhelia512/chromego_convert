@@ -174,7 +174,14 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: FR-tuic | 7-1
+  - name: IR-mieru | 7-1
+    type: mieru
+    server: 151.242.183.103
+    port: 23014
+    transport: TCP
+    username: tcp_3flnfpno
+    password: A4Hv3H5yb8meP1MN
+  - name: FR-tuic | 7-2
     server: 5.178.101.117
     port: 30006
     type: tuic
@@ -290,51 +297,6 @@ proxies:
     password: VNws548Lj/fDRk58HE6dKAcTNpb8+iIk+ycqKEBNG/U=
     sni: www.microsoft.com
     skip-cert-verify: true
-  - name: TW-vless | 2-0
-    type: vless
-    server: 111.243.109.147
-    port: 34500
-    uuid: 8b66e552-e89d-4c4f-bb5a-e3d37bf151b8
-    flow: ''
-    tls: true
-    servername: www.lovelive-anime.jp
-    network: xhttp
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: /
-    reality-opts:
-      public-key: Yg6kOijRv1IbFcwhY0WmwJ8KW7YTtux4QlQhekEzNEQ
-      short-id: 3a1381d1b2cc9e19
-  - name: DE-vless | 4-0
-    type: vless
-    server: 89.144.35.230
-    port: 54582
-    uuid: 5cfc52bc-e701-4160-89df-930a0c040576
-    flow: xtls-rprx-vision
-    tls: true
-    servername: apple.com
-    network: xhttp
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: /
-    reality-opts:
-      public-key: kfw5DgkyKiovC3dzb-o2PUYnZPnbYvbx2IwERUv9czY
-      short-id: 225e2cc8
-  - name: CloudFlare-vless | 5-0
-    type: vless
-    server: 2a14:7584:d097::a
-    port: 11330
-    uuid: 53d74aab-6471-4c1b-ace7-fac837d1bfbd
-    flow: ''
-    tls: true
-    servername: toarumajutsunoindex.fandom.com
-    network: xhttp
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: /
-    reality-opts:
-      public-key: 3HaD5Ztk3X4gi3aJLVesV6KSJTW2YGG-hvGD3ZumJkE
-      short-id: fa789b2f5ff56959
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -348,7 +310,8 @@ proxy-groups:
       - TR-anytls | 4-1
       - US-tuic | 5-1
       - CloudFlare-hysteria | 6-1
-      - FR-tuic | 7-1
+      - IR-mieru | 7-1
+      - FR-tuic | 7-2
       - IR-anytls | 8-1
       - CloudFlare-hysteria | 8-2
       - CloudFlare-anytls | 9-1
@@ -358,9 +321,6 @@ proxy-groups:
       - CloudFlare-Hysteria2 | 0-0
       - US-Hysteria2 | 2-0
       - CloudFlare-Hysteria2 | 3-0
-      - TW-vless | 2-0
-      - DE-vless | 4-0
-      - CloudFlare-vless | 5-0
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -374,7 +334,8 @@ proxy-groups:
       - TR-anytls | 4-1
       - US-tuic | 5-1
       - CloudFlare-hysteria | 6-1
-      - FR-tuic | 7-1
+      - IR-mieru | 7-1
+      - FR-tuic | 7-2
       - IR-anytls | 8-1
       - CloudFlare-hysteria | 8-2
       - CloudFlare-anytls | 9-1
@@ -384,9 +345,6 @@ proxy-groups:
       - CloudFlare-Hysteria2 | 0-0
       - US-Hysteria2 | 2-0
       - CloudFlare-Hysteria2 | 3-0
-      - TW-vless | 2-0
-      - DE-vless | 4-0
-      - CloudFlare-vless | 5-0
   - name: WARP前置节点
     type: select
     proxies:
