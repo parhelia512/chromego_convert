@@ -137,20 +137,7 @@ proxies:
     udp-relay-mode: native
     skip-cert-verify: true
     congestion-controller: bbr
-  - name: US-tuic | 5-1
-    server: 157.254.223.48
-    port: 11540
-    type: tuic
-    uuid: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
-    password: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
-    sni: www.microsoft.com
-    alpn:
-      - h3
-    request-timeout: 8000
-    udp-relay-mode: native
-    skip-cert-verify: true
-    congestion-controller: bbr
-  - name: IR-anytls | 6-1
+  - name: IR-anytls | 5-1
     type: anytls
     server: 151.242.183.75
     port: 33333
@@ -164,7 +151,7 @@ proxies:
       - h2
       - http/1.1
     skip-cert-verify: true
-  - name: CloudFlare-hysteria | 6-2
+  - name: CloudFlare-hysteria | 5-2
     type: hysteria
     server: 2a14:7584:d097::a
     port: 54177
@@ -176,7 +163,7 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: CloudFlare-anytls | 7-1
+  - name: CloudFlare-anytls | 6-1
     type: anytls
     server: fan2.856098.xyz
     port: 8443
@@ -190,7 +177,7 @@ proxies:
       - h2
       - http/1.1
     skip-cert-verify: true
-  - name: TR-anytls | 8-1
+  - name: TR-anytls | 7-1
     type: anytls
     server: 45.221.98.14
     port: 59901
@@ -204,7 +191,7 @@ proxies:
       - h2
       - http/1.1
     skip-cert-verify: true
-  - name: US-tuic | 9-1
+  - name: US-tuic | 8-1
     server: 157.254.223.48
     port: 11540
     type: tuic
@@ -290,12 +277,11 @@ proxy-groups:
       - FR-hysteria | 3-1
       - IR-mieru | 4-1
       - FR-tuic | 4-2
-      - US-tuic | 5-1
-      - IR-anytls | 6-1
-      - CloudFlare-hysteria | 6-2
-      - CloudFlare-anytls | 7-1
-      - TR-anytls | 8-1
-      - US-tuic | 9-1
+      - IR-anytls | 5-1
+      - CloudFlare-hysteria | 5-2
+      - CloudFlare-anytls | 6-1
+      - TR-anytls | 7-1
+      - US-tuic | 8-1
       - CloudFlare-Hysteria | 0-0
       - DE-Hysteria | 1-0
       - DE-Hysteria | 2-0
