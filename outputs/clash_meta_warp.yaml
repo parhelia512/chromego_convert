@@ -235,30 +235,6 @@ proxies:
     udp-relay-mode: native
     skip-cert-verify: true
     congestion-controller: bbr
-  - name: CloudFlare-hysteria | 10-1
-    type: hysteria
-    server: 2a14:7584:d097::a
-    port: 54177
-    auth-str: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-    protocol: udp
-    up: 11 Mbps
-    down: 55 Mbps
-  - name: CloudFlare-hysteria | 11-1
-    type: hysteria
-    server: 2a14:7584:d097::a
-    port: 54177
-    auth-str: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-    protocol: udp
-    up: 11 Mbps
-    down: 55 Mbps
   - name: CloudFlare-Hysteria | 0-0
     type: hysteria
     server: '[2001'
@@ -340,8 +316,6 @@ proxy-groups:
       - CloudFlare-anytls | 7-1
       - TR-anytls | 8-1
       - US-tuic | 9-1
-      - CloudFlare-hysteria | 10-1
-      - CloudFlare-hysteria | 11-1
       - CloudFlare-Hysteria | 0-0
       - DE-Hysteria | 1-0
       - DE-Hysteria | 2-0
@@ -366,8 +340,6 @@ proxy-groups:
       - CloudFlare-anytls | 7-1
       - TR-anytls | 8-1
       - US-tuic | 9-1
-      - CloudFlare-hysteria | 10-1
-      - CloudFlare-hysteria | 11-1
       - CloudFlare-Hysteria | 0-0
       - DE-Hysteria | 1-0
       - DE-Hysteria | 2-0
