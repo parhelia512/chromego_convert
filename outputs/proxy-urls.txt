@@ -8,6 +8,3 @@ tuic://6845cb43-4b8d-49e8-a011-1051d6c4d2ae:6845cb43-4b8d-49e8-a011-1051d6c4d2ae
 hysteria://[2001:NaN/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#CloudFlare-Hysteria | 0-0
 hysteria://5.83.129.153:20088/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#DE-Hysteria | 1-0
 hysteria://5.83.129.90:54177/?protocol=udp&insecure=NaN&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#DE-Hysteria | 2-0
-hysteria2://dongtaiwang.com@[2001:NaN/?sni=apple.com&insecure=NaN#CloudFlare-Hysteria2 | 0-0
-hysteria2://dongtaiwang.com@157.254.223.43:27921/?sni=www.bing.com&insecure=NaN#US-Hysteria2 | 2-0
-hysteria2://VNws548Lj/fDRk58HE6dKAcTNpb8+iIk+ycqKEBNG/U=@[2a10:3/?sni=www.microsoft.com&insecure=NaN#CloudFlare-Hysteria2 | 3-0
