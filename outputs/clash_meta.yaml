@@ -217,11 +217,11 @@ proxies:
     skip-cert-verify: true
     alpn:
       - h3
-  - name: DE-Hysteria | 1-0
+  - name: TW-Hysteria | 1-0
     type: hysteria
-    server: 5.83.129.153
-    port: 20088
-    ports: 20088
+    server: 111.243.102.83
+    port: 56385
+    ports: 56385
     auth-str: dongtaiwang.com
     up: 80
     down: 100
@@ -261,7 +261,7 @@ proxy-groups:
       - US-tuic | 7-1
       - US-tuic | 8-1
       - CloudFlare-Hysteria | 0-0
-      - DE-Hysteria | 1-0
+      - TW-Hysteria | 1-0
       - DE-Hysteria | 2-0
 rules:
   - DOMAIN,clash.razord.top,DIRECT
