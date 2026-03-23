@@ -177,13 +177,13 @@ proxies:
       - h2
       - http/1.1
     skip-cert-verify: true
-  - name: US-tuic | 7-1
-    server: 157.254.223.24
-    port: 41122
+  - name: FR-tuic | 7-1
+    server: 163.172.116.154
+    port: 33887
     type: tuic
-    uuid: 2aec7bfd-4178-4ee5-9bc5-fe4c241fdc15
-    password: 2aec7bfd-4178-4ee5-9bc5-fe4c241fdc15
-    sni: www.microsoft.com
+    uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
+    password: dongtaiwang.com
+    sni: bing.com
     alpn:
       - h3
     request-timeout: 8000
@@ -258,7 +258,7 @@ proxy-groups:
       - IR-anytls | 5-1
       - CloudFlare-hysteria | 5-2
       - CloudFlare-anytls | 6-1
-      - US-tuic | 7-1
+      - FR-tuic | 7-1
       - US-tuic | 8-1
       - CloudFlare-Hysteria | 0-0
       - TW-Hysteria | 1-0
