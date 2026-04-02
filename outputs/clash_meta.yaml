@@ -190,12 +190,12 @@ proxies:
     udp-relay-mode: native
     skip-cert-verify: true
     congestion-controller: bbr
-  - name: US-tuic | 8-1
-    server: 157.254.223.48
-    port: 11540
+  - name: FR-tuic | 8-1
+    server: 5.178.101.117
+    port: 30006
     type: tuic
-    uuid: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
-    password: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+    uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
+    password: dongtaiwang.com
     sni: www.microsoft.com
     alpn:
       - h3
@@ -259,7 +259,7 @@ proxy-groups:
       - CloudFlare-hysteria | 5-2
       - CloudFlare-anytls | 6-1
       - FR-tuic | 7-1
-      - US-tuic | 8-1
+      - FR-tuic | 8-1
       - CloudFlare-Hysteria | 0-0
       - DE-Hysteria | 1-0
       - DE-Hysteria | 2-0
