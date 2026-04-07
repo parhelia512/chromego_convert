@@ -135,13 +135,19 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: IR-mieru | 4-1
-    type: mieru
+  - name: IR-tuic | 4-1
     server: 151.242.183.103
-    port: 23014
-    transport: TCP
-    username: tcp_3flnfpno
-    password: A4Hv3H5yb8meP1MN
+    port: 11882
+    type: tuic
+    uuid: e473c549-4737-4236-8f6b-6840fd22a9d9
+    password: dongtaiwang.com
+    sni: www.microsoft.com
+    alpn:
+      - h3
+    request-timeout: 8000
+    udp-relay-mode: native
+    skip-cert-verify: true
+    congestion-controller: bbr
   - name: FR-tuic | 4-2
     server: 5.178.101.117
     port: 30006
@@ -273,7 +279,7 @@ proxy-groups:
       - CloudFlare-hysteria | 1-1
       - FR-hysteria2 | 2-1
       - FR-hysteria | 3-1
-      - IR-mieru | 4-1
+      - IR-tuic | 4-1
       - FR-tuic | 4-2
       - IR-anytls | 5-1
       - CloudFlare-hysteria | 5-2
@@ -293,7 +299,7 @@ proxy-groups:
       - CloudFlare-hysteria | 1-1
       - FR-hysteria2 | 2-1
       - FR-hysteria | 3-1
-      - IR-mieru | 4-1
+      - IR-tuic | 4-1
       - FR-tuic | 4-2
       - IR-anytls | 5-1
       - CloudFlare-hysteria | 5-2
