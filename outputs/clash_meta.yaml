@@ -196,6 +196,19 @@ proxies:
     udp-relay-mode: native
     skip-cert-verify: true
     congestion-controller: bbr
+  - name: FR-tuic | 7-2
+    server: 5.178.101.117
+    port: 30006
+    type: tuic
+    uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
+    password: dongtaiwang.com
+    sni: www.microsoft.com
+    alpn:
+      - h3
+    request-timeout: 8000
+    udp-relay-mode: native
+    skip-cert-verify: true
+    congestion-controller: bbr
   - name: FR-tuic | 8-1
     server: 5.178.101.117
     port: 30006
@@ -265,6 +278,7 @@ proxy-groups:
       - CloudFlare-hysteria | 5-2
       - CloudFlare-anytls | 6-1
       - FR-tuic | 7-1
+      - FR-tuic | 7-2
       - FR-tuic | 8-1
       - CloudFlare-Hysteria | 0-0
       - DE-Hysteria | 1-0
