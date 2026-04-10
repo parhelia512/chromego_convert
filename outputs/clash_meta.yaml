@@ -117,19 +117,20 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: IR-tuic | 4-1
-    server: 151.242.183.103
-    port: 11882
-    type: tuic
-    uuid: e473c549-4737-4236-8f6b-6840fd22a9d9
+  - name: TR-anytls | 4-1
+    type: anytls
+    server: 45.221.98.11
+    port: 11777
     password: dongtaiwang.com
-    sni: www.microsoft.com
+    client-fingerprint: chrome
+    udp: true
+    idle-session-check-interval: 30
+    idle-session-timeout: 30
+    min-idle-session: 0
     alpn:
-      - h3
-    request-timeout: 8000
-    udp-relay-mode: native
+      - h2
+      - http/1.1
     skip-cert-verify: true
-    congestion-controller: bbr
   - name: FR-tuic | 4-2
     server: 5.178.101.117
     port: 30006
@@ -272,7 +273,7 @@ proxy-groups:
       - CloudFlare-hysteria | 1-1
       - FR-hysteria2 | 2-1
       - FR-hysteria | 3-1
-      - IR-tuic | 4-1
+      - TR-anytls | 4-1
       - FR-tuic | 4-2
       - IR-anytls | 5-1
       - CloudFlare-hysteria | 5-2
