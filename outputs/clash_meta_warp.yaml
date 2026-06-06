@@ -169,14 +169,14 @@ proxies:
   - name: DE-Hysteria | 1-0
     type: hysteria
     server: 5.83.129.153
-    port: 20088
-    ports: 20088
-    auth-str: dongtaiwang.com
+    port: 27626
+    ports: 27626
+    auth-str: github.com/Alvin9999-newpac/fanqiang
     up: 80
     down: 100
     fast-open: true
     protocol: udp
-    sni: apple.com
+    sni: bing.com
     skip-cert-verify: true
     alpn:
       - h3
