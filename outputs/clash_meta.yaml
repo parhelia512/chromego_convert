@@ -147,15 +147,15 @@ proxies:
       - h3
   - name: DE-Hysteria | 1-0
     type: hysteria
-    server: 5.83.129.153
-    port: 27626
-    ports: 27626
-    auth-str: github.com/Alvin9999-newpac/fanqiang
+    server: 5.83.129.90
+    port: 54177
+    ports: 54177
+    auth-str: dongtaiwang.com
     up: 80
     down: 100
     fast-open: true
     protocol: udp
-    sni: bing.com
+    sni: apple.com
     skip-cert-verify: true
     alpn:
       - h3
