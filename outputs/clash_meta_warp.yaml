@@ -37,49 +37,25 @@ proxies:
     protocol: udp
     up: 11 Mbps
     down: 55 Mbps
-  - name: CloudFlare-hysteria | 1-1
-    type: hysteria
-    server: 2a14:7584:d099::a
-    port: 26691
-    auth-str: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-    protocol: udp
-    up: 11 Mbps
-    down: 55 Mbps
-  - name: FR-hysteria2 | 2-1
-    type: hysteria2
-    server: 2001:bc8:32d7:302::17
-    port: 20088
-    password: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-    protocol: udp
-    up: 11 Mbps
-    down: 55 Mbps
-  - name: FR-hysteria | 3-1
-    type: hysteria
-    server: 2001:bc8:32d7:17b::2
-    port: 11000
-    auth-str: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-    protocol: udp
-    up: 11 Mbps
-    down: 55 Mbps
-  - name: CloudFlare-anytls | 4-1
+  - name: CloudFlare-anytls | 1-1
     type: anytls
     server: anytls2.864106.xyz
     port: 19000
     password: github.com/Alvin9999-newpac/fanqiang
     sni: anytls2.864106.xyz
-  - name: US-mieru | 5-1
+  - name: US-hysteria | 2-1
+    type: hysteria
+    server: 198.200.57.142
+    port: 22335
+    auth-str: github.com/Alvin9999-newpac/fanqiang
+    sni: bing.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: US-mieru | 3-1
     type: mieru
     server: 198.200.57.152
     port: 33556
@@ -88,7 +64,7 @@ proxies:
     password: github.com/Alvin9999-newpac/fanqiang
     udp: true
     multiplexing: MULTIPLEXING_LOW
-  - name: CloudFlare-hysteria | 6-1
+  - name: CloudFlare-hysteria | 4-1
     type: hysteria
     server: tw-25.497489.xyz
     port: 10099
@@ -100,11 +76,35 @@ proxies:
     protocol: udp
     up: 20 Mbps
     down: 20 Mbps
-  - name: FR-hysteria | 7-1
+  - name: FR-hysteria | 5-1
+    type: hysteria
+    server: 62.210.70.191
+    port: 23556
+    auth-str: github.com/Alvin9999-newpac/fanqiang
+    sni: bing.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: FR-hysteria | 6-1
     type: hysteria
     server: 163.172.117.163
     port: 36699
     auth-str: dongtaiwang.com
+    sni: bing.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: 11 Mbps
+    down: 55 Mbps
+  - name: FR-hysteria | 7-1
+    type: hysteria
+    server: 62.210.70.191
+    port: 23556
+    auth-str: github.com/Alvin9999-newpac/fanqiang
     sni: bing.com
     skip-cert-verify: true
     alpn:
