@@ -483,7 +483,7 @@ async function writeProxyUrlsFile(outputFile, proxies) {
         let downmbps = proxy.down || "55";
         let alpn = (proxy.alpn || []).join(",");
         let obfs = proxy.obfs || "";
-        proxyUrl = `hysteria://${server}:${port}/?protocol=${protocol}&insecure=${insecure}&peer=${peer}&auth=${auth}&upmbps=${upmbps}&downmbps=${downmbps}&alpn=${alpn}&obfs=${obfs}#${name}`;
+        proxyUrl = `hysteria://${server}:${port}/?protocol=${protocol}&insecure=${insecure}&peer=${peer}&auth=${auth}&upmbps=${50}&downmbps=${200}&alpn=${alpn}&obfs=${obfs}#${name}`;
       } else if (proxy.type === "hysteria2") {
         let name = proxy.name;
         let server = proxy.server;
